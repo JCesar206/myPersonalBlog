@@ -14,7 +14,7 @@ const App = () => {
           className='w-40 h-40 mx-auto rounded-full shadow-lg object-cover hover:scale-105 transition-transform' />
           <h1 className='text-3xl font-bold mt-4'>¡Hola! Soy Julio César Yañez Mejia 👋</h1>
           <p className='mt-2 text-gray-700 font-bold'>Desarrollador web apasionado por crear soluciones HTML, CSS, JS, React, Tailwind, SQL.</p>
-          <p className='mt-2 text-gray-600 font-bold'>Lic. en Informática Administrativa. Tengo 40 años.</p>
+          <p className='mt-2 text-gray-600 font-bold'>Lic. en Informática Administrativa.</p>
         </section>
         <section id='habilidades'>
           <h2 className='text-2xl font-semibold mb-2'>🛠️ Habilidades</h2>
