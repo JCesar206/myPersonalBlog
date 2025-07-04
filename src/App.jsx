@@ -27,8 +27,9 @@ const App = () => {
         <section id='proyectos'>
           <h2 className='text-2xl font-semibold mb-2'>📂 Proyectos</h2>
           <ul className='list-disc list-inside text-gray-700'>
+            <li><a href='./components/PasswordManager.jsx' target='_blank' rel='noopener noreferrer'>Administrador de Contraseñas
+              </a></li>
             <li>Carrito de compras en LocalStorage</li>
-            <li>Simulador de presupuesto mensual</li>
             <li>Generador de contraseñas seguras</li>
           </ul>
         </section>
