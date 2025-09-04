@@ -9,9 +9,9 @@ export default function Navbar({ language, setLanguage, darkMode, setDarkMode })
   };
 
   return (
-    <nav className="bg-blue-950 text-white font-semibold dark:bg-gray-950 px-6 py-4 shadow-md sticky top-0 z-50">
+    <nav className="bg-white/95 text-white font-semibold dark:bg-gray-950 px-6 py-4 shadow-md sticky top-0 z-50">
       <div className="flex justify-between items-center">
-        <h1 className="text-xl font-bold hover:text-blue-400">My Personal Blog</h1>
+        <h1 className="text-navbar">My Personal Blog</h1>
 
         {/* Botón menú hamburguesa */}
         <div className="md:hidden">
@@ -22,14 +22,14 @@ export default function Navbar({ language, setLanguage, darkMode, setDarkMode })
 
         {/* Lista menú en escritorio */}
         <ul className="hidden md:flex space-x-6 font-bold">
-          <li><a href="#home" className="hover:text-blue-500">{texts[language].home}</a></li>
-          <li><a href="#about" className="hover:text-blue-500">{texts[language].about}</a></li>
-          <li><a href="#projects" className="hover:text-blue-500">{texts[language].projects}</a></li>
-          <li><a href="#contact" className="hover:text-blue-500">{texts[language].contact}</a></li>
+          <li><a href="#home" className="text-navbar">{texts[language].home}</a></li>
+          <li><a href="#about" className="text-navbar">{texts[language].about}</a></li>
+          <li><a href="#projects" className="text-navbar">{texts[language].projects}</a></li>
+          <li><a href="#contact" className="text-navbar">{texts[language].contact}</a></li>
           <li>
             <button 
               onClick={() => setLanguage(language === "es" ? "en" : "es")} 
-              className="mr-4 hover:text-blue-500"
+              className="mr-4 text-navbar"
             >
               🌐 {language.toUpperCase()}
             </button>
