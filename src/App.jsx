@@ -22,8 +22,9 @@ function App() {
       projects: "Proyectos", passManag: "Administrador de Contraseñas", ecommerce: "Ecommerce Loco",
       passGene: "Generador de contraseñas", contact: "Contacto", contactText: "Puedes contactarme en los siguientes medios:",
       contactText1: "¿Te interesa colaborar o tienes alguna duda? ¡Escribeme a", copyRight: "Todos los derechos reservados",
-      sendEmail: "Enviame un correo", seeProject: "Ver proyecto", madeWith: "Hecho con:", textPro1: "Proyecto1", 
-      textPro2: "Proyecto2", textPro3: "Proyecto3", textPro4: "Proyecto4", textPro5: "Proyecto5", 
+      sendEmail: "Enviame un correo", seeProject: "Ver proyecto", madeWith: "Hecho con:",  
+      descProjec1: "Aplicación administradora de contraseñas, el usuario puede colocar el sitio, usuario y contraseña y la app guarda localmente su información de forma segura.",
+      descProjec2: "Comercio electronico que permite sumar articulos al carrito, suma la cantidad total y descuenta los articulos del stock o los devuelve segun sea el caso. Simula una compra completa.",  
       tecnologies: "Conocimiento y uso de las siguientes tecnologias:"
     },
     en: {
@@ -35,7 +36,8 @@ function App() {
       passGene: "Password Generator", contact: "Contact", contactText: "You can reach me through the following channels:",
       contactText1: "Are you interested in collaborating or have any questions? Write to me at",
       copyRight: "All rights reserved", sendEmail: "Send me an email", madeWith: "Made with:", 
-      titlePro1: "Proyect1", descProjec1: "Description Project 1", titlePro2: "Proyect2", descProjec2: "Description Project 2",
+      titlePro1: "Password Manager", descProjec1: "Password manager application, the user can enter the site, username and password and the app saves their information locally and securely.", 
+      titlePro2: "Crazy Ecommerce", descProjec2: "E-commerce that allows you to add items to your cart, add up the total amount, and deduct items from stock or return them as appropriate. Simulates a complete purchase.", 
       tecnologies: "Knowledge and use of the following technologies:", 
     }
   };
@@ -46,17 +48,17 @@ function App() {
 
 <main className="container mx-auto p-6 lg:p-16"> {/* About me */}
   <section id="about" className="min-h-[80vh] flex flex-col items-center justify-center text-center pb-12 px-4 py-3">
-    <h1 className="style-header pb-12">🛠️ {texts[language].about}</h1>
+    <h1 className="style-header pb-12">😊 {texts[language].about}</h1>
 
-    <div className="mb-6 w-45 h-45 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-lg border-4 border-purple-950 dark:hover:border-purple-500">
+    <div className="mb-6 w-45 h-45 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-lg border-4 border-blue-700 dark:border-purple-700">
       <img src="./myPhoto.jpg" alt="myPhoto"
         className="w-72 h-72 object-cover scale-105 hover:scale-110 transition-transform duration-300 ease-in-out" />
       </div>
           
     <p className="text-complete pb-16"> {texts[language].aboutText}</p>
-    <p className="text-complete text-2xl pb-3 pt-3">{texts[language].tecnologies}</p><br/><br/>
+    <p className="text-complete text-2xl pb-3 pt-3">🛠️ {texts[language].tecnologies}</p><br/><br/>
     <div className="flex items-center justify-center">
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-7 gap-3 pb-12">
+      <div className="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-7 gap-3 pb-12">
         <DiHtml5 className="button-style" size={30} />
         <DiCss3 className="button-style" size={30} />
         <DiJavascript1 className="button-style" size={30} />
@@ -76,7 +78,7 @@ function App() {
   </section>
 
       <section id="projects" className="py-16 bg-blue-50 rounded-lg shadow-xl p-8 mb-12 dark:bg-gray-900/90">
-          <h2 className="style-header pt-6 pb-6 text-center">{texts[language].projects}</h2>
+          <h2 className="style-header pt-6 pb-6 text-center">📱 {texts[language].projects}</h2>
           
           <div className="flex items-center justify-center">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl">
@@ -140,7 +142,7 @@ function App() {
           <div className="">
             <h2 className="style-header">📬 {texts[language].contact}</h2>
             <p className="text-complete">{texts[language].contactText}</p><br/>
-            <a href="mailto:jcesar206@hotmail.com.com"
+            <a href="mailto:jcesar206@hotmail.com"
               className="bg-white text-indigo-800 hover:bg-blue-200 px-6 py-2 dark:text-purple-800 dark:hover:bg-purple-300 rounded-full text-sm font-bold shadow-md transition-colors duration-300 ease-in-out">
               {texts[language].sendEmail}
             </a>

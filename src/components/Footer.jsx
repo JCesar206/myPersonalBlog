@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
-	
+
 	return (
 		<footer className="bg-blue-950 text-white bottom-0 left-0 py-4 w-full">
 			<div className="flex justify-center space-x-6 mb-2">
