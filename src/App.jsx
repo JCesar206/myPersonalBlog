@@ -1,6 +1,6 @@
 import { useState } from "react";
 import {DiHtml5, DiCss3, DiJavascript1, DiMysql, DiReact, DiGit, DiGithub, DiNodejsSmall} from "react-icons/di";
-import {SiTailwindcss, SiPostman, SiTypescript, SiJest} from "react-icons/si";
+import {SiTailwindcss, SiPostman, SiTypescript, SiJest } from "react-icons/si";
 import {VscVscodeInsiders} from "react-icons/vsc";
 import { FaReact, FaVuejs } from "react-icons/fa";
 import Navbar from "./components/Navbar";
