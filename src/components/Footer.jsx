@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
 
@@ -13,6 +14,9 @@ const Footer = () => {
         </a>
         <a href="mailto:jcesar206@hotmail.com">
           <FaEnvelope  className="hover:text-blue-400 transition-colors" size={20}/>
+        </a>
+				<a href="mailto:jcesary06@gmail.com">
+          <SiGmail  className="hover:text-blue-400 transition-colors" size={20}/>
         </a>
 			</div>
 			<p className="text-sm text-center text-white font-bold gover:text-blue-300">&copy; {new Date().getFullYear()} My Personal Blog. | Juls. |
