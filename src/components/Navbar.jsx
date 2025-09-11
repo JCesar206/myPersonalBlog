@@ -9,7 +9,7 @@ export default function Navbar({ language, setLanguage, darkMode, setDarkMode })
   };
 
   return (
-    <nav className="bg-white/95 text-indigo-800 font-bold dark:bg-gray-900/90 dark:text-white px-6 py-4 shadow-md sticky top-0 z-50">
+    <nav className="bg-white/70 text-indigo-800 font-bold dark:bg-gray-900/70 dark:text-white px-6 py-4 shadow-md sticky top-0 z-50">
       <div className="flex justify-between items-center">
         <h1 className="text-navbar">{texts[language].page}</h1>
 

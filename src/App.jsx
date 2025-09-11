@@ -25,7 +25,7 @@ function App() {
       sendEmail: "Enviame un correo", seeProject: "Ver proyecto", madeWith: "Hecho con:",  
       descProjec1: "Aplicación administradora de contraseñas, el usuario puede colocar el sitio, usuario y contraseña y la app guarda localmente su información de forma segura.",
       descProjec2: "Comercio electronico que permite sumar articulos al carrito, suma la cantidad total y descuenta los articulos del stock o los devuelve segun sea el caso. Simula una compra completa.",  
-      tecnologies: "Conocimiento y uso de las siguientes tecnologias:"
+      tecnologies: "Conocimiento y uso de las siguientes tecnologias:", goToPage: "Ir a la página", home1: "Bienvenido",
     },
     en: {
       title: "My Personal Blog", home: "Welcome to my Personal Blog", desc: "Here I share my projects and web development experience.",
@@ -38,7 +38,7 @@ function App() {
       copyRight: "All rights reserved", sendEmail: "Send me an email", madeWith: "Made with:", 
       titlePro1: "Password Manager", descProjec1: "Password manager application, the user can enter the site, username and password and the app saves their information locally and securely.", 
       titlePro2: "Crazy Ecommerce", descProjec2: "E-commerce that allows you to add items to your cart, add up the total amount, and deduct items from stock or return them as appropriate. Simulates a complete purchase.", 
-      tecnologies: "Knowledge and use of the following technologies:", 
+      tecnologies: "Knowledge and use of the following technologies:", goToPage: "Go to page", home1: "Welcome",
     }
   };
 
@@ -47,6 +47,7 @@ function App() {
       <Navbar language={language} setLanguage={setLanguage} darkMode={darkMode} setDarkMode={setDarkMode} />
 
 <main className="container mx-auto p-6 lg:p-16"> {/* About me */}
+  <section id="home" className="items-center text-center font-extrabold text-4xl text-blue-950 dark:text-white hover:text-purple-400 pb-6">{texts[language].home1} 😎</section>
   <section id="about" className="min-h-[80vh] flex flex-col items-center justify-center text-center pb-12 px-4 py-3">
     <h1 className="style-header pb-12">😊 {texts[language].about}</h1>
 
@@ -91,6 +92,7 @@ function App() {
                   <h3 className="text-xl font-semibold mb-2 text-purple-950 text-center">{texts[language].passGene}</h3>
                   <p className="text-gray-700 text-sm">{texts[language].descProjec1}</p>
                 <div className="style-button-card"><FaReact size={24}/><SiTailwindcss size={24}/></div>
+                  <button type="submit" className="text-white font-semibold text-sm pt-3 pb-3 pl-8 pr-8 justify-between rounded bg-purple-500 hover:bg-pink-600 dark:bg-purple-900 cursor-pointer">{texts[language].goToPage}</button>
                 </div>
               </a>
               {/* Tarjeta de Proyecto 2 - Convertida a Enlace Clickeable */}
@@ -101,6 +103,7 @@ function App() {
                   <h3 className="text-xl font-semibold mb-2 text-purple-950 text-center">{texts[language].ecommerce}</h3>
                   <p className="text-gray-700 text-sm">{texts[language].descProjec2}</p>
                 <div className="style-button-card"><FaReact size={24}/><SiTailwindcss size={24}/></div>
+                <button type="submit" className="text-white font-semibold text-sm pt-3 pb-3 pl-8 pr-8 justify-between rounded bg-purple-500 hover:bg-pink-600 dark:bg-purple-900 cursor-pointer">{texts[language].goToPage}</button>
                 </div>
               </a>
               {/* Tarjeta de Proyecto 3 - Convertida a Enlace Clickeable */}
@@ -110,7 +113,7 @@ function App() {
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">{texts[language].project3}</h3>
                   <p className="text-gray-700 text-sm">{texts[language].descProjec3}</p>
-                <div className="style-button-card"><FaVuejs size={24}/><SiTailwindcss size={24}/></div>
+                <div className="style-button-card"><FaReact size={24}/><SiTailwindcss size={24}/></div>
                 </div>
               </a>
               {/* Tarjeta de Proyecto 4 - Convertida a Enlace Clickeable */}
@@ -123,14 +126,14 @@ function App() {
                 <div className="style-button-card"><SiTypescript size={24}/><SiTailwindcss size={24}/></div>
                 </div>
               </a>
-              {/* Tarjeta de Proyecto 4 - Convertida a Enlace Clickeable */}
+              {/* Tarjeta de Proyecto 5 - Convertida a Enlace Clickeable */}
               <a href="#" target="_blank" rel="noopener noreferrer" 
                 className="bg-white rounded-lg shadow-md hover:shadow-2xl shadow-blue-500 dark:shadow-purple-800 transition-shadow duration-300 ease-in-out block overflow-hidden">
                 <img src="./next.jpg" alt="Proyecto 2" className="w-full h-48 object-cover"/>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2 text-gray-900">{texts[language].project5}</h3>
                   <p className="text-gray-700 text-sm">{texts[language].descProjec5}</p>
-                <div className="style-button-card"><FaReact size={24}/><SiTailwindcss size={24}/></div>
+                <div className="style-button-card"><FaVuejs size={24}/><SiTailwindcss size={24}/></div>
                 </div>
               </a>
             </div>
