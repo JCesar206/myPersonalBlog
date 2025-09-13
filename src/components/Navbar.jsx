@@ -29,11 +29,11 @@ export default function Navbar({ language, setLanguage, darkMode, setDarkMode })
           <li>
             <button 
               onClick={() => setLanguage(language === "es" ? "en" : "es")} 
-              className="mr-4 text-navbar"
+              className="mr-4 text-navbar cursor-pointer"
             >
               🌐 {language.toUpperCase()}
             </button>
-            <button onClick={() => setDarkMode(!darkMode)}>
+            <button onClick={() => setDarkMode(!darkMode)} className="cursor-pointer">
               {darkMode ? "🌙" : "☀️"}
             </button>
           </li>

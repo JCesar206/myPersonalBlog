@@ -23,8 +23,9 @@ function App() {
       passGene: "Generador de contraseñas", contact: "Contacto", contactText: "Puedes contactarme en los siguientes medios:",
       contactText1: "¿Te interesa colaborar o tienes alguna duda? ¡Escribeme a", copyRight: "Todos los derechos reservados",
       sendEmail: "Enviame un correo", seeProject: "Ver proyecto", madeWith: "Hecho con:",  
-      descProjec1: "Aplicación administradora de contraseñas, el usuario puede colocar el sitio, usuario y contraseña y la app guarda localmente su información de forma segura.",
-      descProjec2: "Comercio electronico que permite sumar articulos al carrito, suma la cantidad total y descuenta los articulos del stock o los devuelve segun sea el caso. Simula una compra completa.",  
+      descPro1: "Aplicación administradora de contraseñas, el usuario puede colocar el sitio, usuario y contraseña y la app guarda localmente su información de forma segura.",
+      descPro2: "Comercio electronico que permite sumar articulos al carrito, suma la cantidad total y descuenta los articulos del stock o los devuelve segun sea el caso. Simula una compra completa.",
+      titlePro3: "", descPro3: "", titlePro4: "", descPro4: "", titlePro5: "", descPro5: "",
       tecnologies: "Conocimiento y uso de las siguientes tecnologias:", goToPage: "Ir a la página", home1: "Bienvenido",
     },
     en: {
@@ -36,8 +37,9 @@ function App() {
       passGene: "Password Generator", contact: "Contact", contactText: "You can reach me through the following channels:",
       contactText1: "Are you interested in collaborating or have any questions? Write to me at",
       copyRight: "All rights reserved", sendEmail: "Send me an email", madeWith: "Made with:", 
-      titlePro1: "Password Manager", descProjec1: "Password manager application, the user can enter the site, username and password and the app saves their information locally and securely.", 
-      titlePro2: "Crazy Ecommerce", descProjec2: "E-commerce that allows you to add items to your cart, add up the total amount, and deduct items from stock or return them as appropriate. Simulates a complete purchase.", 
+      titlePro1: "Password Manager", descPro1: "Password manager application, the user can enter the site, username and password and the app saves their information locally and securely.", 
+      titlePro2: "Crazy Ecommerce", descPro2: "E-commerce that allows you to add items to your cart, add up the total amount, and deduct items from stock or return them as appropriate. Simulates a complete purchase.", 
+      titlePro3: "", descPro3: "", titlePro4: "", descPro4: "", titlePro5: "", descPro5: "",
       tecnologies: "Knowledge and use of the following technologies:", goToPage: "Go to page", home1: "Welcome",
     }
   };
@@ -60,85 +62,140 @@ function App() {
     <p className="text-complete text-2xl pb-3 pt-3">🛠️ {texts[language].tecnologies}</p><br/><br/>
     <div className="flex items-center justify-center">
       <div className="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-7 gap-3 pb-12">
-        <DiHtml5 className="button-style" size={30} />
-        <DiCss3 className="button-style" size={30} />
-        <DiJavascript1 className="button-style" size={30} />
-        <DiReact className="button-style" size={30} />
-        <SiTailwindcss className="button-style" size={30} />
-        <DiMysql className="button-style" size={30} />
-        <DiNodejsSmall className="button-style" size={30} />
-        <DiGit className="button-style" size={30} />
-        <DiGithub className="button-style" size={30} />
-        <VscVscodeInsiders className="button-style" size={30} />
-        <SiPostman className="button-style" size={30} />
-        <FaVuejs className="button-style" size={30} />
-        <SiTypescript className="button-style" size={30} />
-        <SiJest className="button-style" size={30} />
+        <DiHtml5 className="button-style" size={30} title="HTML5"/>
+        <DiCss3 className="button-style" size={30} title="CSS3"/>
+        <DiJavascript1 className="button-style" size={30} title="JavaScript"/>
+        <DiReact className="button-style" size={30} title="React"/>
+        <SiTailwindcss className="button-style" size={30} title="Tailwind CSS"/>
+        <DiMysql className="button-style" size={30} title="MySQL"/>
+        <DiNodejsSmall className="button-style" size={30} title="Node.js"/>
+        <DiGit className="button-style" size={30} title="Git"/>
+        <DiGithub className="button-style" size={30} title="Github"/>
+        <VscVscodeInsiders className="button-style" size={30} title="VS Code"/>
+        <SiPostman className="button-style" size={30} title="Postman"/>
+        <FaVuejs className="button-style" size={30} title="Vue"/>
+        <SiTypescript className="button-style" size={30} title="TypeScript"/>
+        <SiJest className="button-style" size={30} title="Jest"/>
       </div>
     </div>
   </section>
 
-      <section id="projects" className="py-16 bg-blue-50 rounded-lg shadow-xl p-8 mb-12 dark:bg-gray-900/90">
-          <h2 className="style-header pt-6 pb-6 text-center">📱 {texts[language].projects}</h2>
-          
-          <div className="flex items-center justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 max-w-6xl">
-              
-              {/* Tarjeta de Proyecto 1 - Convertida a Enlace Clickeable */}
-              <a href="https://jcesar206.github.io/passwordManager/" target="_blank" rel="noopener noreferrer" 
-                className="bg-white rounded-lg shadow-md hover:shadow-2xl shadow-blue-500 dark:shadow-purple-800 transition-shadow duration-300 ease-in-out block overflow-hidden">
-                <img src="./passwordManager01.jpg" alt="Proyecto 1" className="w-full h-48 object-cover"/>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-purple-950 text-center">{texts[language].passGene}</h3>
-                  <p className="text-gray-700 text-sm">{texts[language].descProjec1}</p>
-                <div className="style-button-card"><FaReact size={24}/><SiTailwindcss size={24}/></div>
-                  <button type="submit" className="text-white font-semibold text-sm pt-3 pb-3 pl-8 pr-8 justify-between rounded bg-purple-500 hover:bg-pink-600 dark:bg-purple-900 cursor-pointer">{texts[language].goToPage}</button>
-                </div>
-              </a>
-              {/* Tarjeta de Proyecto 2 - Convertida a Enlace Clickeable */}
-              <a href="https://jcesar206.github.io/ecommerce-react/" target="_blank" rel="noopener noreferrer" 
-                className="bg-white rounded-lg shadow-md hover:shadow-2xl shadow-blue-500 dark:shadow-purple-800 transition-shadow duration-300 ease-in-out block overflow-hidden">
-                <img src="./ecommerceSimple01.jpg" alt="Proyecto 2" className="w-full h-48 object-cover"/>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-purple-950 text-center">{texts[language].ecommerce}</h3>
-                  <p className="text-gray-700 text-sm">{texts[language].descProjec2}</p>
-                <div className="style-button-card"><FaReact size={24}/><SiTailwindcss size={24}/></div>
-                <button type="submit" className="text-white font-semibold text-sm pt-3 pb-3 pl-8 pr-8 justify-between rounded bg-purple-500 hover:bg-pink-600 dark:bg-purple-900 cursor-pointer">{texts[language].goToPage}</button>
-                </div>
-              </a>
-              {/* Tarjeta de Proyecto 3 - Convertida a Enlace Clickeable */}
-              <a href="#" target="_blank" rel="noopener noreferrer" 
-                className="bg-white rounded-lg shadow-md hover:shadow-2xl shadow-blue-500 dark:shadow-purple-800 transition-shadow duration-300 ease-in-out block overflow-hidden">
-                <img src="./next.jpg" alt="Proyecto 2" className="w-full h-48 object-cover"/>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{texts[language].project3}</h3>
-                  <p className="text-gray-700 text-sm">{texts[language].descProjec3}</p>
-                <div className="style-button-card"><FaReact size={24}/><SiTailwindcss size={24}/></div>
-                </div>
-              </a>
-              {/* Tarjeta de Proyecto 4 - Convertida a Enlace Clickeable */}
-              <a href="#" target="_blank" rel="noopener noreferrer" 
-                className="bg-white rounded-lg shadow-md hover:shadow-2xl shadow-blue-500 dark:shadow-purple-800 transition-shadow duration-300 ease-in-out block overflow-hidden">
-                <img src="./next.jpg" alt="Proyecto 2" className="w-full h-48 object-cover"/>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{texts[language].project4}</h3>
-                  <p className="text-gray-700 text-sm">{texts[language].descProjec4}</p>
-                <div className="style-button-card"><SiTypescript size={24}/><SiTailwindcss size={24}/></div>
-                </div>
-              </a>
-              {/* Tarjeta de Proyecto 5 - Convertida a Enlace Clickeable */}
-              <a href="#" target="_blank" rel="noopener noreferrer" 
-                className="bg-white rounded-lg shadow-md hover:shadow-2xl shadow-blue-500 dark:shadow-purple-800 transition-shadow duration-300 ease-in-out block overflow-hidden">
-                <img src="./next.jpg" alt="Proyecto 2" className="w-full h-48 object-cover"/>
-                <div className="p-6">
-                  <h3 className="text-xl font-semibold mb-2 text-gray-900">{texts[language].project5}</h3>
-                  <p className="text-gray-700 text-sm">{texts[language].descProjec5}</p>
-                <div className="style-button-card"><FaVuejs size={24}/><SiTailwindcss size={24}/></div>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
+  <section id="projects" className="py-16 bg-blue-50 rounded-lg shadow-xl p-8 mb-12 dark:bg-gray-900/90">
+    <h2 className="style-header pt-6 pb-6 text-center">📱 {texts[language].projects}</h2>
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 p-4">
+{/* Proyecto 1 */}
+  <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
+    <img class="w-full h-48 object-cover" src="./passwordManager01.jpg" alt="Password Manager" />
+    
+    <div class="px-6 py-4 hover:shadow-purple-500 shadow-2xl">
+      <div class="font-bold text-xl mb-2">{texts[language].titlePro1}</div>
+      <p class="text-gray-700 font-semibold text-base mb-4">
+        {texts[language].descPro1}
+      </p>
+      
+      <div class="flex flex-wrap gap-2 mt-4 mb-16 style-btn-card">
+        <FaReact size={18} title="React" />
+        <SiTailwindcss size={18} title="Tailwind CSS" />
+      </div>
+    </div>
+    
+    <a href="https://jcesar206.github.io/passwordManager/" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+      <button class="bg-purple-500 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+        {texts[language].goToPage}
+      </button>
+    </a>
+  </div>
+  {/* Proyecto 2 */}
+  <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
+    <img class="w-full h-48 object-cover" src="./ecommerceSimple01.jpg" alt="Ecommerce Loco" />
+    
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">{texts[language].titlePro2}</div>
+      <p class="text-gray-700 font-semibold text-base mb-4">
+        {texts[language].descPro2}
+      </p>
+      
+      <div class="flex flex-wrap gap-2 mt-4 mb-16 style-btn-card">
+        <FaReact size={18} title="React"/>
+        <SiTailwindcss size={18} title="Tailwind CSS"/>
+      </div>
+    </div>
+    
+    <a href="https://jcesar206.github.io/ecommerce-react/" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+      <button class="bg-purple-500 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+        {texts[language].goToPage}
+      </button>
+    </a>
+  </div>
+{/* Proyecto 3 */}
+  <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
+    <img class="w-full h-48 object-cover" src="./next.jpg" alt="Próximamente" />
+    
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">{texts[language].titlePro3}</div>
+      <p class="text-gray-700 font-semibold text-base mb-4">
+        {texts[language].descPro3}
+      </p>
+      
+      <div class="flex flex-wrap gap-2 mt-4 mb-16">
+        <FaReact size={18} title="React" className="style-btn-card" />
+        <SiTailwindcss size={18} title="Tailwind CSS" className="style-btn-card" />
+      </div>
+    </div>
+    
+    <a href="#" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+      <button class="bg-purple-500 hover:bg-purple-800 text-white font-bold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+        {texts[language].goToPage}
+      </button>
+    </a>
+  </div>
+{/* Proyecto 4 */}
+  <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
+    <img class="w-full h-48 object-cover" src="./next.jpg" alt="Próximamente" />
+    
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">{texts[language].titlePro4}</div>
+      <p class="text-gray-700 font-semibold text-base mb-4">
+        {texts[language].descPro4}
+      </p>
+      
+      <div class="flex flex-wrap gap-2 mt-4 mb-16">
+        <FaVuejs size={18} title="Vue" className="style-btn-card" />
+        <SiTailwindcss size={18} title="Tailwind CSS" className="style-btn-card" />
+      </div>
+    </div>
+    
+    <a href="#" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+      <button class="bg-purple-500 hover:bg-purple-800 text-white font-bold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+        {texts[language].goToPage}
+      </button>
+    </a>
+  </div>
+{/* Proyecto 5 */}
+  <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
+    <img class="w-full h-48 object-cover" src="./next.jpg" alt="Próximamente" />
+    
+    <div class="px-6 py-4">
+      <div class="font-bold text-xl mb-2">{texts[language].titlePro5}</div>
+      <p class="text-gray-700 font-semibold text-base mb-4">
+        {texts[language].descPro5}
+      </p>
+      
+      <div class="flex flex-wrap gap-2 mt-4 mb-16">
+        <SiTypescript size={18} title="TypeScript" className="style-btn-card" />
+        <SiTailwindcss size={18} title="Tailwind CSS" className="style-btn-card" />
+      </div>
+    </div>
+    
+    <a href="#" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+      <button class="bg-purple-500 hover:bg-purple-800 text-white font-bold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+        {texts[language].goToPage}
+      </button>
+    </a>
+  </div>
+  
+</div>
+</section>
 
         {/* Contact */}
         <section id="contact" className="min-h-[28vh] bg-gray-600/10 dark:bg-gray-900/90 rounded-4xl flex flex-col items-center justify-center text-center pb-12 px-4 py-3">
