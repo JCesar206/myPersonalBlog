@@ -62,20 +62,20 @@ function App() {
     <p className="text-complete text-2xl pb-3 pt-3">🛠️ {texts[language].tecnologies}</p><br/><br/>
     <div className="flex items-center justify-center">
       <div className="grid grid-cols-4 sm:grid-cols-2 lg:grid-cols-7 gap-3 pb-12">
-        <DiHtml5 className="button-style" size={30} title="HTML5"/>
-        <DiCss3 className="button-style" size={30} title="CSS3"/>
-        <DiJavascript1 className="button-style" size={30} title="JavaScript"/>
-        <DiReact className="button-style" size={30} title="React"/>
-        <SiTailwindcss className="button-style" size={30} title="Tailwind CSS"/>
-        <DiMysql className="button-style" size={30} title="MySQL"/>
-        <DiNodejsSmall className="button-style" size={30} title="Node.js"/>
-        <DiGit className="button-style" size={30} title="Git"/>
-        <DiGithub className="button-style" size={30} title="Github"/>
-        <VscVscodeInsiders className="button-style" size={30} title="VS Code"/>
-        <SiPostman className="button-style" size={30} title="Postman"/>
-        <FaVuejs className="button-style" size={30} title="Vue"/>
-        <SiTypescript className="button-style" size={30} title="TypeScript"/>
-        <SiJest className="button-style" size={30} title="Jest"/>
+        <DiHtml5 className="icon-tech-style" size={30} title="HTML5"/>
+        <DiCss3 className="icon-tech-style" size={30} title="CSS3"/>
+        <DiJavascript1 className="icon-tech-style" size={30} title="JavaScript"/>
+        <DiReact className="icon-tech-style" size={30} title="React"/>
+        <SiTailwindcss className="icon-tech-style" size={30} title="Tailwind CSS"/>
+        <DiMysql className="icon-tech-style" size={30} title="MySQL"/>
+        <DiNodejsSmall className="icon-tech-style" size={30} title="Node.js"/>
+        <DiGit className="icon-tech-style" size={30} title="Git"/>
+        <DiGithub className="icon-tech-style" size={30} title="Github"/>
+        <VscVscodeInsiders className="icon-tech-style" size={30} title="VS Code"/>
+        <SiPostman className="icon-tech-style" size={30} title="Postman"/>
+        <FaVuejs className="icon-tech-style" size={30} title="Vue"/>
+        <SiTypescript className="icon-tech-style" size={30} title="TypeScript"/>
+        <SiJest className="icon-tech-style" size={30} title="Jest"/>
       </div>
     </div>
   </section>
@@ -88,19 +88,19 @@ function App() {
     <img class="w-full h-48 object-cover" src="./passwordManager01.jpg" alt="Password Manager" />
     
     <div class="px-6 py-4 hover:shadow-purple-500 shadow-2xl">
-      <div class="font-bold text-xl mb-2">{texts[language].titlePro1}</div>
-      <p class="text-gray-700 font-semibold text-base mb-4">
+      <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro1}</div>
+      <p class="text-indigo-800 font-semibold text-base mb-4">
         {texts[language].descPro1}
       </p>
       
-      <div class="flex flex-wrap gap-2 mt-4 mb-16 style-btn-card">
-        <FaReact size={18} title="React" />
-        <SiTailwindcss size={18} title="Tailwind CSS" />
+      <div class="flex flex-wrap gap-2 mt-4 mb-16 justify-center style-icon-card">
+        <FaReact size={18} title="React"/>
+        <SiTailwindcss size={18} title="Tailwind CSS"/>
       </div>
     </div>
     
-    <a href="https://jcesar206.github.io/passwordManager/" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
-      <button class="bg-purple-500 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+    <a href="https://jcesar206.github.io/passwordManager/" target="_blank" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+      <button class="style-btn-gotopage">
         {texts[language].goToPage}
       </button>
     </a>
@@ -110,19 +110,19 @@ function App() {
     <img class="w-full h-48 object-cover" src="./ecommerceSimple01.jpg" alt="Ecommerce Loco" />
     
     <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">{texts[language].titlePro2}</div>
-      <p class="text-gray-700 font-semibold text-base mb-4">
+      <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro2}</div>
+      <p class="text-indigo-800 font-semibold text-base mb-4">
         {texts[language].descPro2}
       </p>
       
-      <div class="flex flex-wrap gap-2 mt-4 mb-16 style-btn-card">
+      <div class="flex flex-wrap gap-2 mt-4 mb-16 justify-center style-icon-card">
         <FaReact size={18} title="React"/>
         <SiTailwindcss size={18} title="Tailwind CSS"/>
       </div>
     </div>
     
-    <a href="https://jcesar206.github.io/ecommerce-react/" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
-      <button class="bg-purple-500 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+    <a href="https://jcesar206.github.io/ecommerce-react/" target="_blank" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+      <button class="style-btn-gotopage">
         {texts[language].goToPage}
       </button>
     </a>
@@ -132,19 +132,19 @@ function App() {
     <img class="w-full h-48 object-cover" src="./next.jpg" alt="Próximamente" />
     
     <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">{texts[language].titlePro3}</div>
-      <p class="text-gray-700 font-semibold text-base mb-4">
+      <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro3}</div>
+      <p class="text-indigo-800 font-semibold text-base mb-4">
         {texts[language].descPro3}
       </p>
       
-      <div class="flex flex-wrap gap-2 mt-4 mb-16">
-        <FaReact size={18} title="React" className="style-btn-card" />
-        <SiTailwindcss size={18} title="Tailwind CSS" className="style-btn-card" />
+      <div class="flex flex-wrap gap-2 mt-4 mb-16 justify-center style-icon-card">
+        <FaReact size={18} title="React"/>
+        <SiTailwindcss size={18} title="Tailwind CSS"/>
       </div>
     </div>
     
     <a href="#" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
-      <button class="bg-purple-500 hover:bg-purple-800 text-white font-bold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+      <button class="style-btn-gotopage">
         {texts[language].goToPage}
       </button>
     </a>
@@ -154,19 +154,19 @@ function App() {
     <img class="w-full h-48 object-cover" src="./next.jpg" alt="Próximamente" />
     
     <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">{texts[language].titlePro4}</div>
-      <p class="text-gray-700 font-semibold text-base mb-4">
+      <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro4}</div>
+      <p class="text-indigo-800 font-semibold text-base mb-4">
         {texts[language].descPro4}
       </p>
       
-      <div class="flex flex-wrap gap-2 mt-4 mb-16">
-        <FaVuejs size={18} title="Vue" className="style-btn-card" />
-        <SiTailwindcss size={18} title="Tailwind CSS" className="style-btn-card" />
+      <div class="flex flex-wrap gap-2 mt-4 mb-16 justify-center style-icon-card">
+        <FaVuejs size={18} title="Vue"/>
+        <SiTailwindcss size={18} title="Tailwind CSS"/>
       </div>
     </div>
     
-    <a href="#" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
-      <button class="bg-purple-500 hover:bg-purple-800 text-white font-bold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+    <a href="#" target="_blank" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+      <button class="style-btn-gotopage">
         {texts[language].goToPage}
       </button>
     </a>
@@ -176,19 +176,19 @@ function App() {
     <img class="w-full h-48 object-cover" src="./next.jpg" alt="Próximamente" />
     
     <div class="px-6 py-4">
-      <div class="font-bold text-xl mb-2">{texts[language].titlePro5}</div>
-      <p class="text-gray-700 font-semibold text-base mb-4">
+      <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro5}</div>
+      <p class="text-indigo-800 font-semibold text-base mb-4">
         {texts[language].descPro5}
       </p>
       
-      <div class="flex flex-wrap gap-2 mt-4 mb-16">
-        <SiTypescript size={18} title="TypeScript" className="style-btn-card" />
-        <SiTailwindcss size={18} title="Tailwind CSS" className="style-btn-card" />
+      <div class="flex flex-wrap gap-2 mt-4 mb-16 justify-center style-icon-card">
+        <SiTypescript size={18} title="TypeScript"/>
+        <SiTailwindcss size={18} title="Tailwind CSS"/>
       </div>
     </div>
     
-    <a href="#" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
-      <button class="bg-purple-500 hover:bg-purple-800 text-white font-bold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer">
+    <a href="#" target="_blank" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+      <button class="style-btn-gotopage">
         {texts[language].goToPage}
       </button>
     </a>
