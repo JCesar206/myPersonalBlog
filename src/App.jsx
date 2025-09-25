@@ -15,11 +15,10 @@ function App() {
     es: {
       title: "Mi Blog Personal", home: "Bienvenido a mi Blog Personal",
       desc: "Aquí comparto mis proyectos y experiencia en desarrollo web.", about: "Sobre mí",
-      aboutText: `Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y
-      accesibilidad. Especializado en HTML, CSS, JavaScript y frameworks como React, Vue y TypeScript, con
-      conocimientos en UX/UI y diseño responsivo. Busco una oportunidad en una empresa que valore la innovación
-      y el desarrollo de soluciones digitales eficientes.`,
-      projects: "Proyectos", passManag: "Administrador de Contraseñas", ecommerce: "Ecommerce Loco",
+      aboutText: `Desarrollador web con experiencia en la creación de sitios y aplicaciones 
+      optimizadas para rendimiento y accesibilidad. Especializado en HTML, CSS, JavaScript y 
+      frameworks como React, Vue y TypeScript, con conocimientos en UX/UI y diseño responsivo. Busco una oportunidad en una empresa que valore la innovación
+      y el desarrollo de soluciones digitales eficientes.`, projects: "Proyectos", passManag: "Administrador de Contraseñas", ecommerce: "Ecommerce Loco",
       passGene: "Generador de contraseñas", contact: "Contacto", contactText: "Puedes contactarme en los siguientes medios:",
       contactText1: "¿Te interesa colaborar o tienes alguna duda? ¡Escribeme a", copyRight: "Todos los derechos reservados",
       sendEmail: "Enviame un correo", seeProject: "Ver proyecto", madeWith: "Hecho con:",  
