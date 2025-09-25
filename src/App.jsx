@@ -15,17 +15,18 @@ function App() {
     es: {
       title: "Mi Blog Personal", home: "Bienvenido a mi Blog Personal",
       desc: "Aquí comparto mis proyectos y experiencia en desarrollo web.", about: "Sobre mí",
-      aboutText: `Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y
-      accesibilidad. Especializado en HTML, CSS, JavaScript y frameworks como React, Vue y TypeScript, con
-      conocimientos en UX/UI y diseño responsivo. Busco una oportunidad en una empresa que valore la innovación
-      y el desarrollo de soluciones digitales eficientes.`,
-      projects: "Proyectos", passManag: "Administrador de Contraseñas", ecommerce: "Ecommerce Loco",
+      aboutText: `Desarrollador web con experiencia en la creación de sitios y aplicaciones 
+      optimizadas para rendimiento y accesibilidad. Especializado en HTML, CSS, JavaScript y 
+      frameworks como React, Vue y TypeScript, con conocimientos en UX/UI y diseño responsivo. Busco una oportunidad en una empresa que valore la innovación
+      y el desarrollo de soluciones digitales eficientes.`, projects: "Proyectos", passManag: "Administrador de Contraseñas", ecommerce: "Ecommerce Loco",
       passGene: "Generador de contraseñas", contact: "Contacto", contactText: "Puedes contactarme en los siguientes medios:",
       contactText1: "¿Te interesa colaborar o tienes alguna duda? ¡Escribeme a", copyRight: "Todos los derechos reservados",
       sendEmail: "Enviame un correo", seeProject: "Ver proyecto", madeWith: "Hecho con:",  
-      descPro1: "Aplicación administradora de contraseñas, el usuario puede colocar el sitio, usuario y contraseña y la app guarda localmente su información de forma segura.",
-      descPro2: "Comercio electronico que permite sumar articulos al carrito, suma la cantidad total y descuenta los articulos del stock o los devuelve segun sea el caso. Simula una compra completa.",
-      titlePro3: "", descPro3: "", titlePro4: "", descPro4: "", titlePro5: "", descPro5: "",
+      descPro1: `Aplicación administradora de contraseñas, el usuario puede colocar el sitio, usuario y contraseña y la app 
+      guarda localmente su información de forma segura.`,descPro2: `Comercio electronico que permite sumar articulos al carrito, 
+      suma la cantidad total y descuenta los articulos del stock o los devuelve segun sea el caso. Simula una compra completa.`,
+      titlePro3: "", descPro3: "", titlePro4: "Finanzas Personales", descPro4: `Finanzas personales Aplicacion de finanzas personales hecha con Vue + 
+      Tailwind permite gestionar de forma simple los gastos e ingresos a una cuenta.`, titlePro5: "", descPro5: "",
       tecnologies: "Conocimiento y uso de las siguientes tecnologias:", goToPage: "Ir a la página", home1: "Bienvenido",
     },
     en: {
@@ -37,9 +38,11 @@ function App() {
       passGene: "Password Generator", contact: "Contact", contactText: "You can reach me through the following channels:",
       contactText1: "Are you interested in collaborating or have any questions? Write to me at",
       copyRight: "All rights reserved", sendEmail: "Send me an email", madeWith: "Made with:", 
-      titlePro1: "Password Manager", descPro1: "Password manager application, the user can enter the site, username and password and the app saves their information locally and securely.", 
-      titlePro2: "Crazy Ecommerce", descPro2: "E-commerce that allows you to add items to your cart, add up the total amount, and deduct items from stock or return them as appropriate. Simulates a complete purchase.", 
-      titlePro3: "", descPro3: "", titlePro4: "", descPro4: "", titlePro5: "", descPro5: "",
+      titlePro1: "Password Manager", descPro1: `Password manager application, the user can enter the site, username and 
+      password and the app saves their information locally and securely.`, titlePro2: "Crazy Ecommerce", descPro2: `E-commerce that allows 
+      you to add items to your cart, add up the total amount, and deduct items from stock or return them as appropriate. Simulates a complete purchase.`, 
+      titlePro3: "", descPro3: "", titlePro4: "Personal Finance", descPro4: `Personal Finance.
+      A personal finance app built with Vue + Tailwind that allows you to easily manage expenses and income in an account.`, titlePro5: "", descPro5: "",
       tecnologies: "Knowledge and use of the following technologies:", goToPage: "Go to page", home1: "Welcome",
     }
   };
@@ -151,7 +154,7 @@ function App() {
   </div>
 {/* Proyecto 4 */}
   <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
-    <img class="w-full h-48 object-cover" src="./next.jpg" alt="Próximamente" />
+    <img class="w-full h-48 object-cover" src="./personalFinance01.jpg" alt="Personal Finance" />
     
     <div class="px-6 py-4">
       <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro4}</div>
@@ -165,7 +168,7 @@ function App() {
       </div>
     </div>
     
-    <a href="#" target="_blank" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+    <a href="https://jcesar206.github.io/personalFinanceVue/" target="_blank" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
       <button class="style-btn-gotopage">
         {texts[language].goToPage}
       </button>
