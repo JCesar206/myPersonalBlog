@@ -176,7 +176,7 @@ function App() {
   </div>
 {/* Proyecto 5 */}
   <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
-    <img class="w-full h-48 object-cover" src="./next.jpg" alt="Próximamente" />
+    <img class="w-full h-48 object-cover" src="./miniSocialMedia01.jpg" alt="Próximamente" />
     
     <div class="px-6 py-4">
       <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro5}</div>
@@ -190,7 +190,7 @@ function App() {
       </div>
     </div>
     
-    <a href="#" target="_blank" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
+    <a href="https://jcesar206.github.io/miniSocialMediaTS/" target="_blank" class="absolute bottom-2 left-1/2 -translate-x-1/2 w-[90%] flex justify-center">
       <button class="style-btn-gotopage">
         {texts[language].goToPage}
       </button>
