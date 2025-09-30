@@ -8,5 +8,7 @@
 @layer components {.style-header {@apply text-indigo-900 text-3xl font-bold hover:text-purple-300 dark:text-white justify-center;}}
 @layer components {.content-main {@apply py-16 bg-indigo-300 border-2 rounded-4xl text-indigo-900 font-bold hover:text-purple-500 dark:bg-gray-700/90 shadow-xl p-8 mb-12;}}
 @layer components {.style-icon-card {@apply font-bold text-indigo-950 hover:text-purple-400 dark:hover:text-purple-900;}}
+@layer components {.style-icon-cardGold {@apply font-bold text-orange-400 hover:text-yellow-300 dark:hover:text-orange-500;}}
 @layer components {.style-btn-gotopage {@apply bg-purple-500 hover:bg-purple-800 text-white font-semibold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer}}
 @layer components {.style-icon-footer {@apply hover:text-blue-400 transition-colors}}
+@layer components {.style-btn-gotopageGold {@apply bg-yellow-600 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer;}}
