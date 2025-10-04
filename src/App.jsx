@@ -34,7 +34,7 @@ function App() {
 
     <div className="mb-6 w-45 h-45 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-lg border-4 border-blue-700 dark:border-purple-700">
       <img src="./myPhoto.jpg" alt="myPhoto"
-        className="w-72 h-72 object-contain scale-105 hover:scale-110 transition-transform duration-300 ease-in-out" />
+        className="w-72 h-72 object-cover scale-105 hover:scale-110 transition-transform duration-300 ease-in-out" />
       </div>
           
     <p className="text-complete pb-16"> {texts[language].aboutText}</p>
