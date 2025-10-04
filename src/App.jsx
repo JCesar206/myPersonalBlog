@@ -34,7 +34,7 @@ function App() {
 
     <div className="mb-6 w-45 h-45 sm:w-56 sm:h-56 lg:w-64 lg:h-64 rounded-full overflow-hidden shadow-lg border-4 border-blue-700 dark:border-purple-700">
       <img src="./myPhoto.jpg" alt="myPhoto"
-        className="w-72 h-72 object-cover scale-105 hover:scale-110 transition-transform duration-300 ease-in-out" />
+        className="w-72 h-72 object-contain scale-105 hover:scale-110 transition-transform duration-300 ease-in-out" />
       </div>
           
     <p className="text-complete pb-16"> {texts[language].aboutText}</p>
@@ -64,7 +64,7 @@ function App() {
       <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-3 p-4">
 {/* Proyecto 1 */}
   <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
-    <img class="w-full h-48 object-cover" src="./passwordManager01.jpg" alt="Administrador de Contraseñas" />
+    <img class="w-full h-48 object-contain" src="./passwordManager01.jpg" alt="Administrador de Contraseñas" />
     
     <div class="px-6 py-4 hover:shadow-purple-500 shadow-2xl">
       <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro1}</div>
@@ -86,7 +86,7 @@ function App() {
   </div>
   {/* Proyecto 2 */}
   <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
-    <img class="w-full h-48 object-cover" src="./ecommerceSimple01.jpg" alt="Ecommerce Loco" />
+    <img class="w-full h-48 object-contain" src="./ecommerceSimple01.jpg" alt="Ecommerce Loco" />
     
     <div class="px-6 py-4">
       <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro2}</div>
@@ -108,7 +108,7 @@ function App() {
   </div>
 {/* Proyecto 3 */}
   <div class="relative max-w-sm rounded-lg overflow-hidden bg-white text-orange-600 shadow-md shadow-yellow-500 hover:shadow-xl transform transition duration-300 hover:scale-105">
-    <img class="w-full h-48 object-cover" src="./crazyNote01.jpg" alt="Nota Loca" />
+    <img class="w-full h-48 object-contain" src="./crazyNote01.jpg" alt="Nota Loca" />
     
     <div class="px-6 py-4">
       <div class="font-bold text-yellow-600 text-xl mb-2">{texts[language].titlePro3}</div>
@@ -130,7 +130,7 @@ function App() {
   </div>
 {/* Proyecto 4 */}
   <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
-    <img class="w-full h-48 object-cover" src="./personalFinance01.jpg" alt="Finanzas Personales" />
+    <img class="w-full h-48 object-contain" src="./personalFinance01.jpg" alt="Finanzas Personales" />
     
     <div class="px-6 py-4">
       <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro4}</div>
@@ -152,7 +152,7 @@ function App() {
   </div>
 {/* Proyecto 5 */}
   <div class="relative max-w-sm rounded-lg overflow-hidden bg-white shadow-md shadow-purple-800 hover:shadow-xl transform transition duration-300 hover:scale-105">
-    <img class="w-full h-48 object-cover" src="./miniSocialMedia01.jpg" alt="Mini Red Social" />
+    <img class="w-full h-48 object-contain" src="./miniSocialMedia01.jpg" alt="Mini Red Social" />
     
     <div class="px-6 py-4">
       <div class="font-bold text-indigo-900 text-xl mb-2">{texts[language].titlePro5}</div>
