@@ -29,7 +29,7 @@ function App() {
 
 <main className="container mx-auto p-6 lg:p-16"> 
   {/* Botón flotante Whatsapp */}
-    <a href="https://wa.me/5217221828896" target="_blank" className="fixed bottom-20 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"><FaWhatsapp size={24} /></a>
+    <a href="https://wa.me/5217221828896" target="_blank" className="sticky bottom-10 right-4 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"><FaWhatsapp size={24} title="Contactame"/></a>
   {/* About me */}
   <section id="home" className="items-center text-center font-extrabold text-4xl text-blue-950 dark:text-white hover:text-purple-400 pb-6">{texts[language].home1} 😎</section>
   <section id="about" className="min-h-[80vh] flex flex-col items-center justify-center text-center pb-12 px-4 py-3">
