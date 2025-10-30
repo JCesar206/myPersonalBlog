@@ -7,16 +7,16 @@ const Footer = () => {
 		<footer className="bg-blue-950 text-white bottom-0 left-0 py-4 w-full">
 			<div className="flex justify-center space-x-6 mb-2">
 				<a href="https://github.com/JCesar206" target="_blank" rel="noreferrer">
-          <FaGithub className="style-icon-footer" size={20}/>
+          <FaGithub className="style-icon-footer" size={20} title="Github"/>
         </a>
 				<a href="https://www.linkedin.com/in/jcesar206" target="_blank" rel="noreferrer">
-          <FaLinkedin className="style-icon-footer" size={20}/>
+          <FaLinkedin className="style-icon-footer" size={20} title="Linkedin"/>
         </a>
         <a href="mailto:jcesar206@hotmail.com">
-          <FaEnvelope className="style-icon-footer" size={20}/>
+          <FaEnvelope className="style-icon-footer" size={20} title="Hotmail"/>
         </a>
 				<a href="mailto:jcesary06@gmail.com">
-          <SiGmail className="style-icon-footer" size={20}/>
+          <SiGmail className="style-icon-footer" size={20} title="Gmail"/>
         </a>
 			</div>
 			<p className="text-sm text-center text-white font-bold gover:text-blue-300">&copy; {new Date().getFullYear()} My Personal Blog. | Juls. |
