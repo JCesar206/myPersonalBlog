@@ -33,7 +33,7 @@ function App() {
         />
 
         {/* Contenido principal */}
-        <main className="w-full max-w-6xl mx-auto px-4 mt-20 space-y-2">
+        <main className="w-full max-w-6xl mx-auto px-4 mt-20 space-y-4 min-h-screen">
           {/* Sección Acerca */}
           <section id="about" className="-pt-2 -pb-14">
             <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow">

@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 const Footer = () => {
 
 	return (
-		<footer className="bg-blue-950 text-white bottom-0 left-0 py-4 w-full">
+		<footer className="bg-blue-950 text-white bottom-0 left-0 py-4 -pt-3 w-full">
 			<div className="flex justify-center space-x-6 mb-2">
 				<a href="https://github.com/JCesar206" target="_blank" rel="noreferrer">
           <FaGithub className="style-icon-footer" size={20} title="Github"/>

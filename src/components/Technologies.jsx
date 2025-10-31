@@ -19,7 +19,7 @@ const techs = [
 ];
 
 return (
-  <section id="about" className="pt-24 pb-12 px-4">
+  <section id="about" className="pt-8 pb-8 px-4">
   <div className="max-w-5xl mx-auto bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-2xl shadow-purple-800">
     <h2 className="text-2xl font-bold mb-6 text-blue-500 hover:text-blue-800 dark:text-white text-center">{title} 🛠️</h2>
 <div className="flex flex-wrap justify-center gap-6">

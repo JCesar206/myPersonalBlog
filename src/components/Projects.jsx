@@ -44,12 +44,12 @@ export default function Projects({ language }) {
 			es: "Finanzas Personales",
 			en: "Personal Finance",
 		},
-		image: "./personalFinance01.jpg",
+		image: "./personalExpenses01.jpg",
 		description: {
-			es: "Finanzas personales Aplicacion de finanzas personales hecha con Vue + Tailwind permite gestionar de forma simple los gastos e ingresos a una cuenta.",
-			en: "Personal Finance.A personal finance app built with Vue + Tailwind that allows you to easily manage expenses and income in an account.",
+			es: "Finanzas personales Aplicacion de finanzas personales hecha con React + Tailwind permite gestionar de forma simple los gastos e ingresos a una cuenta.",
+			en: "Personal Finance.A personal finance app built with React + Tailwind that allows you to easily manage expenses and income in an account.",
 		},
-		link: "https://jcesar206.github.io/personalFinanceVue/",
+		link: "https://jcesar206.github.io/personalExpenses-React/",
 	},
 	{
 		title: {
@@ -66,7 +66,7 @@ export default function Projects({ language }) {
 	];
 
 	return (
-		<section id="about" className="pt-20 pb-12 px-4">
+		<section id="about" className="pt-8 pb-8 px-4">
   			<div className="max-w-5xl mx-auto bg-blue-100 dark:bg-gray-800/20 rounded-xl p-8 shadow-2xl shadow-blue-700">
 				<h2 className="text-2xl font-bold mb-6 text-blue-500 hover:text-blue-500 dark:text-white text-center">{title} 📱</h2>
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-items-center">

@@ -6,7 +6,7 @@ export default function About({ language }) {
 	};
 
 	return (
-		<section id="about" className="pt-20 pb-8 px-4">
+		<section id="about" className="pt-8 pb-8 px-4">
   			<div className="max-w-5xl mx-auto bg-blue-100 dark:bg-gray-800 rounded-xl p-2 shadow-2xl shadow-blue-700">
 					<h2 className="text-2xl font-bold mb-6 text-blue-600 hover:text-blue-800 dark:text-white text-center">{title} 😉</h2>
 						<img src="./myPhoto.jpg" alt="Foto Profesional" className="mx-auto rounded-full w-40 h-40 object-cover transition-transform duration-500 hover:scale-105 shadow-2xl shadow-blue-800" />
