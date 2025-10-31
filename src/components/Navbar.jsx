@@ -35,23 +35,23 @@ export default function Navbar({ setDarkMode, setLanguage, language, darkMode })
   const toggleLanguage = () => setLanguage(prev => (prev === "es" ? "en" : "es"));
 
   return (
-    <nav className="w-full fixed top-0 bg-white dark:bg-gray-900 shadow z-50">
+    <nav className="w-full fixed top-0 bg-blue-100/90 dark:bg-gray-900 shadow z-50">
       <div className="max-w-6xl mx-auto flex justify-between items-center p-4">
         {/* Título */}
-        <div className="text-xl font-bold hover:text-blue-400 hover:shadow-blue-700">{labels[language].title}</div>
+        <div className="text-xl font-bold text-blue-400 dark:text-white">{labels[language].title}</div>
 
         {/* Links en pantallas grandes */}
         <div className="hidden md:flex gap-6">
-          <a href="#about" className="transition-colors duration-300 hover:text-blue-500 hover:underline font-bold">
+          <a href="#about" className="transition-colors duration-300 text-blue-400 hover:text-blue-700 hover:underline font-bold dark:text-white">
             {labels[language].about}
           </a>
-          <a href="#tech" className="transition-colors duration-300 hover:text-blue-500 hover:underline font-bold">
+          <a href="#tech" className="transition-colors duration-300 text-blue-400 hover:text-blue-700 hover:underline font-bold dark:text-white">
             {labels[language].tech}
           </a>
-          <a href="#projects" className="transition-colors duration-300 hover:text-blue-500 hover:underline font-bold">
+          <a href="#projects" className="transition-colors duration-300 text-blue-400 hover:text-blue-700 hover:underline font-bold dark:text-white">
             {labels[language].projects}
           </a>
-          <a href="#contact" className="transition-colors duration-300 hover:text-blue-500 hover:underline font-bold">
+          <a href="#contact" className="transition-colors duration-300 text-blue-400 hover:text-blue-700 hover:underline font-bold dark:text-white">
             {labels[language].contact}
           </a>
         </div>
@@ -64,13 +64,12 @@ export default function Navbar({ setDarkMode, setLanguage, language, darkMode })
           </button>
 
           {/* Icono de idioma */}
-          <button onClick={toggleLanguage} className="text-xl font-bold cursor-pointer hover:text-blue-700">
+          <button onClick={toggleLanguage} className="text-xl font-bold text-blue-400 cursor-pointer hover:text-blue-700 hover:underline dark:text-white">
             {language === "es" ? "EN" : "ES"}
           </button>
 
           {/* Menú hamburguesa */}
-          <button className="md:hidden text-xl cursor-pointer hover:text-blue-700" onClick={() => setOpen(!open)}>
-            ☰
+          <button className="md:hidden text-xl text-blue-400 cursor-pointer hover:text-blue-700 hover:underline dark:text-white" onClick={() => setOpen(!open)}> {open ? '✖' : '☰'}
           </button>
         </div>
       </div>

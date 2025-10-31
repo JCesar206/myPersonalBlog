@@ -1,8 +1,19 @@
+import { useState } from "react";
+
 export default function Card({ title, description, image, link, language }) {
+  const [expanded, setExpanded] = useState(false);
   const buttonText = {
     es: "Ir al proyecto",
     en: "Go to project",
   }
+
+  const toggleText = {
+    es: expanded ? 'Ver menos ...' : 'Ver más ...',
+    en: expanded ? 'Show less ...' : 'Show more ...',
+  }
+
+  const maxLength = 100; // Caracteres antes de cortar el text
+  const shortText = description[language].slice(0, maxLength) + '...';
 
   return (
     <div className="bg-white dark:bg-gray-800 rounded shadow w-full max-w-xs flex flex-col h-full transform transition-transform duration-300 hover:scale-105">
@@ -14,7 +25,10 @@ export default function Card({ title, description, image, link, language }) {
       <div className="flex flex-col justify-between flex-grow p-4 shadow-2xl hover:shadow-blue-900">
         <div>
           <h3 className="text-xl font-bold text-indigo-900 dark:text-white text-center">{title[language]}</h3>
-          <p className="mt-2 text-sm font-semibold text-blue-600 dark:text-white">{description[language]}</p>
+          <p className="mt-2 text-sm font-semibold text-blue-600 dark:text-white">{expanded ? description[language] : shortText}</p>
+          <button onClick={() => setExpanded(!expanded)} className="mt-2 text-blue-300 hover:underline text-sm cursor-pointer font-semibold">
+            {toggleText[language]}
+          </button>
         </div>
         <div className="mt-4">
           <a
