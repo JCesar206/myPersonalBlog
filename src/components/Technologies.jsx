@@ -19,13 +19,13 @@ const techs = [
 ];
 
 return (
-  <section id="about" className="pt-8 pb-8 px-4">
-  <div className="max-w-5xl mx-auto bg-gray-100 dark:bg-gray-800 rounded-xl p-8 shadow-2xl shadow-purple-800">
-    <h2 className="text-2xl font-bold mb-6 text-blue-500 hover:text-blue-800 dark:text-white text-center">{title} 🛠️</h2>
+  <section id="about">
+  <div className="space-y-6 max-w-5xl mx-auto bg-blue-100 dark:bg-gray-800/40 rounded-xl shadow-2xl shadow-pink-500 p-4">
+    <h2 className="text-2xl font-bold text-blue-500 hover:text-blue-400 dark:text-white text-center">{title} 🛠️</h2>
 <div className="flex flex-wrap justify-center gap-6">
   {techs.map(t => (
     <div key={t.name} className="flex flex-col items-center">
-      <i className={`${t.icon} text-4xl`}></i>
+      <i className={`${t.icon} text-1xl`}></i>
       <span className="mt-2 text-sm font-semibold text-blue-500 dark:text-white">{t.name}</span>
     </div>
   ))}

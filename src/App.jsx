@@ -9,10 +9,9 @@ import Contact from "./components/Contact";
 import "./App.css";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false)
-  const [language, setLanguage] = useState("es")
+  const [darkMode, setDarkMode] = useState(false);
+  const [language, setLanguage] = useState("es");
 
-  // Aplica la clase "dark" al <html> cuando cambia el tema
   useEffect(() => {
     if (darkMode) {
       document.documentElement.classList.add("dark");
@@ -22,8 +21,13 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
-      <div className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white min-h-screen flex flex-col">
+    <div className={darkMode ? "dark font-inter" : "font-inter"}>
+      <div className="
+        min-h-screen 
+        bg-gradient-to-br from-blue-200/60 via-purple-200/50 to-pink-200/40 
+        dark:bg-gradient-to-br dark:from-gray-900 dark:via-gray-800 dark:to-black
+      ">
+
         {/* Navbar */}
         <Navbar
           setDarkMode={setDarkMode}
@@ -32,45 +36,72 @@ function App() {
           darkMode={darkMode}
         />
 
-        {/* Contenido principal */}
-        <main className="w-full max-w-6xl mx-auto px-4 mt-20 space-y-4 min-h-screen">
-          {/* Sección Acerca */}
-          <section id="about" className="-pt-2 -pb-14">
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow">
-              <About language={language} />
-            </div>
+        {/* Layout principal */}
+        <div className="max-w-6xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-6 pt-24 pb-6">
+
+          {/* About */}
+          <section
+            id="about"
+            className="
+              rounded-3xl p-6
+              backdrop-blur-xl bg-white/20 dark:bg-white/10
+              border border-white/30 dark:border-white/10
+              shadow-xl shadow-black/10
+            "
+          >
+            <About language={language} />
           </section>
 
-          {/* Sección Tecnologías */}
-          <section id="tech" className="-pt-2 -pb-10">
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow">
+          {/* Technologies + Contact */}
+          <div className="flex flex-col gap-6">
+
+            <section
+              id="tech"
+              className="
+                rounded-3xl p-6
+                backdrop-blur-xl bg-white/20 dark:bg-white/10
+                border border-white/30 dark:border-white/10
+                shadow-xl shadow-black/10
+              "
+            >
               <Technologies language={language} />
-            </div>
-          </section>
+            </section>
 
-          {/* Sección Proyectos */}
-          <section id="projects" className="-pt-2 -pb-10">
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow">
-              <Projects language={language} />
-            </div>
-          </section>
-
-          {/* Sección Contacto */}
-          <section id="contact" className="-pt-2 -pb-10">
-            <div className="bg-gray-100 dark:bg-gray-800 rounded-xl p-6 shadow">
+            <section
+              id="contact"
+              className="
+                rounded-3xl p-6
+                backdrop-blur-xl bg-white/20 dark:bg-white/10
+                border border-white/30 dark:border-white/10
+                shadow-xl shadow-black/10
+              "
+            >
               <Contact language={language} />
-            </div>
+            </section>
+
+          </div>
+        </div>
+
+        {/* Projects */}
+        <div className="max-w-6xl mx-auto p-4 mt-8">
+          <section
+            id="projects"
+            className="
+              rounded-3xl p-6
+              backdrop-blur-xl bg-white/20 dark:bg-white/10
+              border border-white/30 dark:border-white/10
+              shadow-xl shadow-black/10
+            "
+          >
+            <Projects language={language} />
           </section>
-        </main>
+        </div>
 
-        {/* Footer */}
         <Footer />
-
-        {/* Icono flotante de WhatsApp */}
         <WhatsAppIcon />
       </div>
     </div>
-  )
+  );
 }
 
 export default App;

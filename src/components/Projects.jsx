@@ -1,3 +1,6 @@
+{/*el usuario puede colocar el sitio, usuario y contraseña. the user can enter the site, username and password and.*/}
+{/*que permite sumar articulos al carrito, suma la cantidad total y descuenta los articulos del stock o los devuelve segun sea el caso.  that allows you to add items to your cart, add up the total amount, and deduct items from stock or return them as appropriate. */}
+
 import Card from "../components/Card";
 
 export default function Projects({ language }) {
@@ -10,8 +13,8 @@ export default function Projects({ language }) {
 			},
 			image: "./passwordManager01.jpg",
 			description: {
-				es: "Aplicación administradora de contraseñas, el usuario puede colocar el sitio, usuario y contraseña y la app guarda localmente su información de forma segura.",
-				en: "Password manager application, the user can enter the site, username and password and the app saves their information locally and securely.",
+				es: "Aplicación administradora de contraseñas. La app guarda localmente su nombre de usuario y contraseña de forma segura.",
+				en: "Password manager app. The app securely stores your username and password locally.",
 		},
 		link: "https://jcesar206.github.io/passwordManager/",
 	},
@@ -22,8 +25,8 @@ export default function Projects({ language }) {
 		},
 		image: "./ecommerceSimple01.jpg",
 		description: {
-			es: "Comercio electrónico que permite sumar articulos al carrito, suma la cantidad total y descuenta los articulos del stock o los devuelve segun sea el caso. Simula una compra completa.",
-			en: "E-commerce that allows you to add items to your cart, add up the total amount, and deduct items from stock or return them as appropriate. Simulates a complete purchase.",
+			es: "Comercio electrónico. Simula una compra completa de productos que se encontraban en un carrito de compras.",
+			en: "E-commerce. Simulates a complete purchase of products that were in a shopping cart.",
 		},
 		link: "https://jcesar206.github.io/ecommerce-react/",
 	},
@@ -34,8 +37,8 @@ export default function Projects({ language }) {
 		},
 		image: "./crazyNote01.jpg",
 		description: {
-			es: "Nota Loca con Base de Datos. Este proyecto te permite tener una cuenta personal y poder crear notas, guardarlas, editarlas, eliminarlas de la base de datos.",
-			en: "Crazy Notes with Database. This project allows you to have a personal account and create notes, save them, edit them, and delete them from the database.",
+			es: "Nota Loca con DB. La aplicación permite guardar notas en una base de datos ingresando con tu usuario y contraseña.",
+			en: "Note Loca with DB. The application allows you to save notes in a database by logging in with your username and password.",
 		},
 		link: "https://jcesar206.github.io/notesFront/"
 	},
@@ -46,8 +49,8 @@ export default function Projects({ language }) {
 		},
 		image: "./personalExpenses01.jpg",
 		description: {
-			es: "Finanzas personales Aplicacion de finanzas personales hecha con React + Tailwind permite gestionar de forma simple los gastos e ingresos a una cuenta.",
-			en: "Personal Finance.A personal finance app built with React + Tailwind that allows you to easily manage expenses and income in an account.",
+			es: "Finanzas personales. Permite gestionar de forma simple los gastos e ingresos a una cuenta.",
+			en: "Personal finance. It allows you to easily manage expenses and income to an account.",
 		},
 		link: "https://jcesar206.github.io/personalExpenses-React/",
 	},
@@ -58,16 +61,16 @@ export default function Projects({ language }) {
 		},
 		image: "./miniSocialMedia01.jpg",
 		description: {
-			es: "Con esta app puedes subir imagenes locales, comentarios y colocarles emojis simples al igual que editar y eliminar el comentario. Disfruta esta mini red social.",
-			en: "With this app, you can upload local images and comments, add simple emojis, and edit and delete comments. Enjoy this mini social network.",
+			es: "Mini red social que permite agregar imagenes, emojis y comentarios de forma divertida.",
+			en: "A mini social network that allows you to add images, emojis, and comments in a fun way.",
 		},
 		link: "https://jcesar206.github.io/miniSocialMediaTS/",
 	},
 	];
 
 	return (
-		<section id="about" className="pt-8 pb-8 px-4">
-  			<div className="max-w-5xl mx-auto bg-blue-100 dark:bg-gray-800/20 rounded-xl p-8 shadow-2xl shadow-blue-700">
+		<section id="about">
+  			<div className="max-w-5xl mx-auto rounded-xl p-5 shadow-2xl shadow-yellow-400">
 				<h2 className="text-2xl font-bold mb-6 text-blue-500 hover:text-blue-500 dark:text-white text-center">{title} 📱</h2>
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-items-center">
 				{projects.map(p => (
