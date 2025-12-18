@@ -25,7 +25,7 @@ return (
 <div className="flex flex-wrap justify-center gap-6">
   {techs.map(t => (
     <div key={t.name} className="flex flex-col items-center">
-      <i className={`${t.icon} text-1xl`}></i>
+      <i className={`${t.icon} text-6xl`}></i>
       <span className="mt-2 text-sm font-semibold text-blue-500 dark:text-white">{t.name}</span>
     </div>
   ))}
