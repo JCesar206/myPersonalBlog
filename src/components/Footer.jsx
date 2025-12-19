@@ -19,7 +19,7 @@ const Footer = () => {
           <SiGmail className="style-icon-footer" size={20} title="Gmail"/>
         </a>
 			</div>
-			<p className="text-sm text-center text-white font-bold gover:text-blue-300">&copy; {new Date().getFullYear()} My Personal Blog. | Juls. |
+			<p className="text-sm text-center text-white font-bold hover:text-blue-300">&copy; {new Date().getFullYear()} My Personal Blog. | Juls. |
 				All right reserved.</p>
 		</footer>
 	);

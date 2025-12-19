@@ -6,19 +6,19 @@ export default function Navbar({ setDarkMode, setLanguage, language, darkMode })
   // Etiquetas bilingües
   const labels = {
     es: {
-      title: "👨‍💻🌐 Mi Blog Personal",
-      about: "😉 Acerca",
-      tech: "🛠️ Tecnologías",
-      projects: "📱 Proyectos",
-      contact: "📧 Contacto",
+      title: "Mi Blog Personal",
+      about: "Acerca",
+      tech: "Tecnologías",
+      projects: "Proyectos",
+      contact: "Contacto",
       form: "Formulario"
     },
     en: {
-      title: "👨‍💻🌐 My Personal Blog",
-      about: "😉 About",
-      tech: "🛠️ Technologies",
-      projects: "📱 Projects",
-      contact: "📧 Contact",
+      title: "My Personal Blog",
+      about: "About",
+      tech: "Technologies",
+      projects: "Projects",
+      contact: "Contact",
       form: "Form"
     },
   }
