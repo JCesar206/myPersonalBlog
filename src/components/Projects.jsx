@@ -35,12 +35,12 @@ export default function Projects({ language }) {
 			es: "Nota Loka",
 			en: "Crazy Note",
 		},
-		image: "./crazyNote01.jpg",
+		image: "./localNotes01.jpg",
 		description: {
-			es: "Nota Loca con DB. La aplicación permite guardar notas en una base de datos ingresando con tu usuario y contraseña.",
-			en: "Note Loca with DB. The application allows you to save notes in a database by logging in with your username and password.",
+			es: "Nota Loca Local. La aplicación permite guardar notas en almacenamiento local.",
+			en: "Note Loca Local. The application allows you to save notes in localStorage.",
 		},
-		link: "https://jcesar206.github.io/notesFront/"
+		link: "https://jcesar206.github.io/localNotes/"
 	},
 	{
 		title: {
