@@ -22,11 +22,11 @@ export default function Card({ title, description, image, link, language }) {
         alt={title[language]}
         className="w-full h-40 object-cover rounded-2xl"
       />
-      <div className="flex flex-col justify-between flex-grow p-4 shadow-2xl hover:shadow-red-900">
+      <div className="flex flex-col justify-between flex-grow p-4">
         <div>
-          <h3 className="text-xl font-bold text-indigo-900 dark:text-white text-center">{title[language]}</h3>
-          <p className="font-inter mt-2 text-sm font-bold text-blue-600 dark:text-white">{expanded ? description[language] : shortText}</p>
-          <button onClick={() => setExpanded(!expanded)} className="mt-2 text-blue-300 hover:underline text-sm cursor-pointer font-semibold">
+          <h3 className="text-xl font-bold text-purple-900 dark:text-white text-center">{title[language]}</h3>
+          <p className="font-inter mt-2 text-sm font-bold text-purple-600 dark:text-white">{expanded ? description[language] : shortText}</p>
+          <button onClick={() => setExpanded(!expanded)} className="mt-2 text-purple-300 hover:underline text-sm cursor-pointer font-semibold">
             {toggleText[language]}
           </button>
         </div>
@@ -35,7 +35,7 @@ export default function Card({ title, description, image, link, language }) {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full block w-12.5 text-center px-4 py-2 bg-blue-400 font-bold text-white hover:bg-blue-700 dark:bg-purple-600 dark:hover:bg-purple-900 font-sans"
+            className="rounded-full block w-12.5 text-center px-4 py-2 bg-purple-500 font-bold text-white hover:bg-purple-700 dark:bg-purple-600 dark:hover:bg-purple-900 font-sans"
           >
             {buttonText[language]}
           </a>

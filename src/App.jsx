@@ -18,8 +18,8 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="font-inter">
-      <div className="min-h-screen bg-gradient-to-br from-indigo-100 via-purple-100 to-pink-100 dark:from-indigo-800 dark:via-purple-800 dark:to-black">
+    <div className="font-inter bg-gradient-to-br from-purple-200 to-indigo-400">
+      <div className="flex items-center flex-col bg-red-500 dark:bg-black">
 
         <Navbar
           setDarkMode={setDarkMode}
@@ -41,12 +41,12 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
             {/* TECHNOLOGIES – tech / mono */}
-            <section id="tech" className="font-mono rounded-3xl p-10 bg-gradient-to-br from-emerald-400 to-teal-500 dark:from-emerald-500 dark:to-teal-600 text-zinc-900 shadow-xl shadow-emerald-500/30">
+            <section id="tech" className="font-mono rounded-3xl p-10 bg-gradient-to-br from-indigo-500 to-violet-500 dark:from-indigo-600 dark:to-violet-700 text-white shadow-xl shadow-emerald-500/30">
               <Technologies language={language} />
             </section>
 
             {/* CONTACT – clean / sans */}
-            <section id="contact" className="font-sans rounded-3xl p-10 bg-gradient-to-br from-amber-300 to-orange-500 dark:from-amber-500 dark:to-orange-600 text-zinc-900 shadow-xl shadow-orange-500/30">
+            <section id="contact" className="font-sans rounded-3xl p-10 bg-gradient-to-br from-indigo-500 to-violet-500 dark:from-indigo-600 dark:to-violet-700 text-white shadow-xl shadow-orange-500/30">
               <Contact language={language} />
               <ContactForm/>
             </section>
@@ -54,8 +54,7 @@ function App() {
           </div>
 
           {/* PROJECTS – bold / modern */}
-          <section id="projects" className="font-sans rounded-3xl p-12bg-gradient-to-br from-fuchsia-500 to-pink-600
-            dark:from-fuchsia-600 dark:to-pink-600 text-white shadow-xl shadow-pink-500/30">
+          <section id="projects" className="font-sans rounded-3xl p-12bg-gradient-to-br from-indigo-500 to-violet-600 dark:from-indigo-600 dark:to-violet-600 text-white shadow-xl shadow-pink-500/30">
             <Projects language={language} />
           </section>
 

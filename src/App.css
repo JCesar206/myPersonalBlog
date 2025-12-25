@@ -60,3 +60,8 @@
     @apply bg-yellow-600 hover:bg-orange-600 text-white font-semibold py-2 px-6 rounded-full w-full transition duration-300 cursor-pointer;
   }
 }
+
+@layer components {.style-navbar-section{
+  @apply text-white hover:text-black hover:bg-white font-semibold py-3 px-6 rounded-full text-center dark:text-white
+  }
+}

@@ -67,11 +67,12 @@ export default function Projects({ language }) {
 		link: "https://jcesar206.github.io/miniSocialMediaTS/",
 	},
 	];
+	
 
 	return (
 		<section id="about">
-  			<div className="max-w-5xl mx-auto rounded-xl p-5 shadow-2xl shadow-yellow-400">
-				<h2 className="text-2xl font-bold mb-6 text-pink-500 hover:text-pink-700 dark:text-white text-center">{title} 📱</h2>
+  			<div className="bg-gradient-to-br from-indigo-500 to-violet-500 dark:from-indigo-600 dark:to-violet-700 max-w-5xl mx-auto rounded-xl p-5">
+				<h2 className="text-2xl font-bold mb-6 text-white dark:text-white text-center">{title}</h2>
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-items-center">
 				{projects.map(p => (
 					<Card key={p.title.es} {...p} language={language} />
