@@ -3,6 +3,7 @@ import { TbMessageLanguage } from "react-icons/tb";
 import { FaSun, FaMoon } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
 import { MdOutlineSegment } from "react-icons/md";
+import DownloadCV from "./DownloadCV";
 
 export default function Navbar({ setDarkMode, setLanguage, language, darkMode }) {
   const [open, setOpen] = useState(false)
@@ -14,12 +15,14 @@ export default function Navbar({ setDarkMode, setLanguage, language, darkMode })
       tech: "Tecnologías",
       projects: "Proyectos",
       contact: "Contacto",
+      download: "Descargar CV",
     },
     en: {
       hero: "About",
       tech: "Technologies",
       projects: "Projects",
       contact: "Contact",
+      download: "Download CV",
     },
   }
 
@@ -43,7 +46,7 @@ useEffect(() => {
 
         {/*Desktop Links*/}
         <div className="hidden md:flex items-center gap-8 text-sm">
-          {["hero","tech","projects","contact"].map((key) => (
+          {["hero","tech","projects","contact","download"].map((key) => (
             <a
               key={key}
               href={`#${key === "tech" ? "technologies" : key}`} className="font-medium text-gray-700 dark:text-gray-200 hover:bg-indigo-800 hover:text-white px-4 py-3 rounded-full transition">
@@ -82,7 +85,7 @@ useEffect(() => {
     {open && (
       <div className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm md:hidden">
         <div className="absolute top-24 left-1/2 -translate-x-1/2 w-[90%] bg-white dark:bg-gray-900 dark:text-white rounded-3xl shadow-2xl p-6 flex flex-col gap-5 text-center text-1xl">
-          {["hero","technologies","projects","contact"].map((id) => (
+          {["hero","technologies","projects","contact","download"].map((id) => (
             <a
               key={id}
               href={`#${id}`}
@@ -93,6 +96,7 @@ useEffect(() => {
               </a>
             ))}
         </div>
+        <DownloadCV/>
       </div>
     )}
     </>
