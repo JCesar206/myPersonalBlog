@@ -1,36 +1,49 @@
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub } from "react-icons/fa";
+import { SiTailwindcss, SiTypescript, SiJest, SiPostman } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
+import { GrMysql } from "react-icons/gr";
+import { VscVscode, VscAzure } from "react-icons/vsc";
+
 export default function Technologies({ language }) {
   const title = language === "es" ? "Tecnologías y Herramientas" : "Technologies and Tools";
 const techs = [
-  { name: "HTML5", icon: "devicon-html5-plain colored" },
-  { name: "CSS3", icon: "devicon-css3-plain colored" },
-  { name: "JavaScript", icon: "devicon-javascript-plain colored" },
-  { name: "React", icon: "devicon-react-original colored" },
-  { name: "TypeScript", icon: "devicon-typescript-plain colored" },
-  { name: "Vue", icon: "devicon-vuejs-plain colored" },
-  { name: "Tailwind", icon: "devicon-tailwindcss-plain colored" },
-  { name: "MySQL", icon: "devicon-mysql-plain colored" },
-  { name: "Node.js", icon: "devicon-nodejs-plain colored" },
-  { name: "Jest", icon: "devicon-jest-plain colored" },
-  { name: "Git", icon: "devicon-git-plain colored" },
-  { name: "GitHub", icon: "devicon-github-original colored" },
-  { name: "VS Code", icon: "devicon-vscode-plain colored" },
-  { name: "Postman", icon: "devicon-postman-plain colored" },
-  { name: "Azure", icon: "devicon-azure-plain colored" },
+  { name: "HTML5", icon: FaHtml5 },
+  { name: "CSS3", icon: FaCss3Alt },
+  { name: "JavaScript", icon: FaJs },
+  { name: "React", icon: FaReact },
+  { name: "TypeScript", icon: BiLogoTypescript },
+  { name: "Vue", icon: SiTailwindcss },
+  { name: "Tailwind", icon: SiTailwindcss },
+  { name: "MySQL", icon: GrMysql },
+  { name: "Node.js", icon: FaNodeJs },
+  { name: "Jest", icon: SiJest },
+  { name: "Git", icon: FaGithubAlt },
+  { name: "GitHub", icon: FaGithub },
+  { name: "VS Code", icon: VscVscode },
+  { name: "Postman", icon: SiPostman },
+  { name: "Azure", icon: VscAzure },
 ];
 
 return (
-  <section id="about">
-  <div className="space-y-6 max-w-5xl mx-auto bg-white dark:bg-gray-800/40 rounded-xl shadow-2xl shadow-purple-500 p-4">
-    <h2 className="text-2xl font-bold text-purple-500 dark:text-white text-center">{title}</h2>
-<div className="flex flex-wrap justify-center gap-6">
-  {techs.map(t => (
-    <div key={t.name} className="flex flex-col items-center">
-      <i className={`${t.icon} text-1xl`}></i>
-      <span className="mt-2 text-sm font-semibold text-purple-500 dark:text-white">{t.name}</span>
+  <section id="technologies" className="space-y-12">
+    {/*Title*/}
+    <h2 className="text-center text-3xl md:text-4xl font-extrabold  text-gray-900 dark:text-indigo-700">
+      {title}
+    </h2>
+    {/*Grid*/}
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+      {techs.map(({ name, icon: Icon }) => (
+        <div
+          key={name}
+          className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-white dark:bg-gray-900 p-6 shadow-md hover:shadow-xl transition"
+        >
+          <Icon className="text-4xl text-indigo-600"/>
+          <span className="font-semibold text-gray-800 dark:text-gray-200 text-xs">
+              {name}
+            </span>
+        </div>
+      ))}
     </div>
-  ))}
-    </div>
-  </div>
-</section>
+  </section>
   );
 }

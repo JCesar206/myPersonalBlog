@@ -2,11 +2,12 @@ import { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import WhatsAppIcon from "./components/WhatsAppIcon";
-import About from "./components/About";
+import Hero from "./components/Hero";
 import Technologies from "./components/Technologies";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ContactForm from "./components/ContactForm";
+import Section from "./components/Section";
 import "./App.css";
 
 function App() {
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <div className="font-inter bg-gradient-to-br from-purple-200 to-indigo-400">
-      <div className="flex items-center flex-col bg-red-500 dark:bg-black">
+      <div className="flex items-center flex-col dark:bg-black">
 
         <Navbar
           setDarkMode={setDarkMode}
@@ -33,30 +34,30 @@ function App() {
         <main className="max-w-5xl mx-auto px-4 space-y-28">
 
           {/* ABOUT – editorial / serif */}
-          <section id="about" className="font-serif rounded-3xl p-12 bg-gradient-to-br from-indigo-500 to-violet-600 dark:from-indigo-600 dark:to-violet-700 text-white shadow-xl shadow-indigo-500/30">
-            <About language={language} />
-          </section>
+          <Section id="hero" className="font-serif">
+            <Hero language={language} />
+          </Section>
 
           {/* TECH + CONTACT */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
             {/* TECHNOLOGIES – tech / mono */}
-            <section id="tech" className="font-mono rounded-3xl p-10 bg-gradient-to-br from-indigo-500 to-violet-500 dark:from-indigo-600 dark:to-violet-700 text-white shadow-xl shadow-emerald-500/30">
+            <Section id="tech" className="font-mono">
               <Technologies language={language} />
-            </section>
+            </Section>
 
             {/* CONTACT – clean / sans */}
-            <section id="contact" className="font-sans rounded-3xl p-10 bg-gradient-to-br from-indigo-500 to-violet-500 dark:from-indigo-600 dark:to-violet-700 text-white shadow-xl shadow-orange-500/30">
-              <Contact language={language} />
+            <Section id="contact" className="font-sans">
+              <Contact language={language}/>
               <ContactForm/>
-            </section>
+            </Section>
 
           </div>
 
           {/* PROJECTS – bold / modern */}
-          <section id="projects" className="font-sans rounded-3xl p-12bg-gradient-to-br from-indigo-500 to-violet-600 dark:from-indigo-600 dark:to-violet-600 text-white shadow-xl shadow-pink-500/30">
+          <Section id="projects" className="font-sans">
             <Projects language={language} />
-          </section>
+          </Section>
 
         </main>
 

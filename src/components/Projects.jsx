@@ -70,15 +70,16 @@ export default function Projects({ language }) {
 	
 
 	return (
-		<section id="about">
-  			<div className="bg-gradient-to-br from-indigo-500 to-violet-500 dark:from-indigo-600 dark:to-violet-700 max-w-5xl mx-auto rounded-xl p-5">
-				<h2 className="text-2xl font-bold mb-6 text-white dark:text-white text-center">{title}</h2>
-				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-8 justify-items-center">
-				{projects.map(p => (
+		<section id="projects" className="space-y-10">
+				<h2 className="text-2xl md:text-3xl font-extrabold text-center text-gray-900 dark:text-indigo-700">
+					{title}
+				</h2>
+
+				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+				{projects.map((p) => (
 					<Card key={p.title.es} {...p} language={language} />
 				))}
 				</div>
-			</div>
 		</section>
 	);
 }

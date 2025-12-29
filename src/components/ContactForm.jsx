@@ -1,45 +1,117 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
-function ContactForm() {
+const STORAGE_KEY = "portfolio-comments";
+
+export default function ContactForm() {
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
+
   const [status, setStatus] = useState("idle");
+  const [comments, setComments] = useState([]);
+
+  // Cargar comentarios guardados
+  useEffect(() => {
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [];
+    setComments(saved);
+  }, []);
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    setForm({...form, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     setStatus("sending");
 
+    const newComment = {
+      ...form,
+      date: new Date().toISOString(),
+    };
+
+    const updatedComments = [newComment, ...comments];
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(updatedComments));
+    setComments(updatedComments);
+
     setTimeout(() => {
       setStatus("sent");
       setForm({ name: "", email: "", message: "" });
 
-      setTimeout(() => setStatus("idle"), 3000);
-    }, 1500);
+      setTimeout(() => setStatus("idle"), 2500);
+    }, 800);
   };
 
-	return (
-		<form onSubmit={handleSubmit} className="mt-8 rounded-3xl p-8 bg-gradient-to-br text-white shadow-xl space-y-5 font-sans">
-			<h3 className="text-2xl font-bold">Envíame un mensaje</h3>
+  return (
+    <div className="mt-12 space-y-10">
+      {/*Form*/}
+      <form
+        onSubmit={handleSubmit}
+        className="rounded-3xl bg-white dark:bg-gray-900 shadow-xl p-6 space-y-5">
+          <h3 className="text-xl font-extrabold text-gray-900 dark:text-white text-center">
+            Deja un comentario
+          </h3>
 
-			<input type="text" name="name" placeholder="Tu nombre" value={form.name} onChange={handleChange} required className="w-full rounded-xl px-4 py-3 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-white/60 border-1 border-white"/>
+          <input
+            type="text"
+            name="name"
+            placeholder="Tu nombre"
+            value={form.name}
+            onChange={handleChange}
+            required
+            className="w-full rounded-xl px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white focus:outline focus:ring-2 focus:ring-indigo-500"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Tu correo (opcional)"
+            value={form.email}
+            onChange={handleChange}
+            className="w-full rounded-xl px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
+          <textarea
+            name="message"
+            placeholder="Escribe tu comentario"
+            rows="4"
+            value={form.message}
+            onChange={handleChange}
+            required
+            className="w-full rounded-xl px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white resize-none focus:outline-none focus:ring-2 focus:ring-indigo-500"
+          />
 
-			<input type="email" name="email" placeholder="Tu correo" value={form.email} onChange={handleChange} required className="w-full rounded-xl px-4 py-3 text-white font-semibold focus:outline-none focus:ring-2 focus:ring-white/60 border-1 border-white"/>
+          <button
+            type="submit"
+            disabled={status === "sending"}
+            className="w-full rounded-xl bg-indigo-600 text-white font-bold py-3 hover:bg-indigo-700 transition disabled:opacity-60 cursor-pointer"
+          >
+            {status === "sending" ? "Guardando..." : status === "sent" ? "Comentario guardado ✔" : "Enviar comentario"}
+          </button>
+        </form>
 
-			<textarea name="message" placeholder="Tu mensaje" rows="4" value={form.message} onChange={handleChange} required
-  className="w-full rounded-xl px-4 py-3 bg-white text-white font-semibold placeholder-zinc-400 resize-none focus:outline-none focus:ring-2 focus:ring-indigo-400"/>
+        {/*Comments List*/}
+        {comments.length > 0 && (
+          <div className="space-y-4">
+            <h4 className="text-lg font-bold text-gray-900 dark:text-white">
+              Comentarios
+            </h4>
 
-			<button type="submit" disabled={status === "sending"} className="w-full rounded-xl bg-white text-purple-600 font-bold py-3 hover:bg-purple-700 hover:text-white cursor-pointer transition disabled:opacity-60">
-				{status === "sending" ? "Enviado..." : status === "sent" ? "Mensaje enviado ✔" : "Enviar mensaje"}
-			</button>
-		</form>
-	);
+            {comments.map((c, i) => (
+              <div
+                key={i}
+                className="rounded-2xl bg-gray-100 dark:bg-gray-800 p-4"
+              >
+                <p className="font-semibold text-indigo-600 dark:text-indigo-400">
+                  {c.name}
+                </p>
+                <p className="text-sm text-gray-700 dark:text-gray-300">
+                  {c.message}
+                </p>
+              </div>
+            ))}
+          </div>
+      )}
+    </div>
+  );
 }
-
-export default ContactForm;
