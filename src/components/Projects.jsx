@@ -1,7 +1,5 @@
-{/*el usuario puede colocar el sitio, usuario y contraseña. the user can enter the site, username and password and.*/}
-{/*que permite sumar articulos al carrito, suma la cantidad total y descuenta los articulos del stock o los devuelve segun sea el caso.  that allows you to add items to your cart, add up the total amount, and deduct items from stock or return them as appropriate. */}
-
 import Card from "../components/Card";
+import BackToTop from "./BackToTop";
 
 export default function Projects({ language }) {
 	const title = language === "es" ? "Proyectos" : "Projects";
@@ -66,6 +64,18 @@ export default function Projects({ language }) {
 		},
 		link: "https://jcesar206.github.io/miniSocialMediaTS/",
 	},
+	{
+	title: {
+		es: "PockétApi App",
+		en: "PocketApi App",
+	},
+	image: "./pocketApi01.jpg",
+	description: {
+		es: "PocketApi App Esta app permite buscar a tu pokémon favorito por nombre o número de identificador mostrando sus caracteristicas y hábilidades. Un pequeño viaje a la nostalgia.",
+		en: "PocketApi App This app lets you search for your favorite Pokémon by name or ID number, displaying its characteristics and abilities. A little trip down memory lane."
+	},
+		link: "https://jcesar206.github.io/pokeApiReact/",
+	},
 	];
 	
 
@@ -80,6 +90,7 @@ export default function Projects({ language }) {
 					<Card key={p.title.es} {...p} language={language} />
 				))}
 				</div>
+				<BackToTop/>
 		</section>
 	);
 }

@@ -4,7 +4,7 @@ import { SiGmail } from "react-icons/si";
 const Footer = () => {
 
 	return (
-	<footer className="w-full px-4 py-6">
+	<footer className="w-full px-4 py-4">
 	  <div className="w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-md rounded-full">
     	<div className="max-w-9xl mx-auto px-4 py-8 flex flex-col items-center gap-6">
 					{/*Social icons*/}
@@ -36,8 +36,7 @@ const Footer = () => {
         </a>
 			</div>
 			{/*Copyright*/}
-			<p className="text-sm text-gray-500 dark:text-gray-400 text-center font-bold">&copy; {new Date().getFullYear()} My Personal Blog. | Juls. |
-				All right reserved.</p>
+			<p className="text-sm text-gray-500 dark:text-gray-400 text-center font-bold">&copy; {new Date().getFullYear()} My Personal Blog. | Juls. | All right reserved.</p>
 			</div>
 		</div>
 		</footer>

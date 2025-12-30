@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub, FaVuejs } from "react-icons/fa";
 import { SiTailwindcss, SiTypescript, SiJest, SiPostman } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
@@ -12,7 +12,7 @@ const techs = [
   { name: "JavaScript", icon: FaJs },
   { name: "React", icon: FaReact },
   { name: "TypeScript", icon: BiLogoTypescript },
-  { name: "Vue", icon: SiTailwindcss },
+  { name: "Vue", icon: FaVuejs },
   { name: "Tailwind", icon: SiTailwindcss },
   { name: "MySQL", icon: GrMysql },
   { name: "Node.js", icon: FaNodeJs },

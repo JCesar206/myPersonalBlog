@@ -19,7 +19,7 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="font-inter bg-gradient-to-br from-purple-200 to-indigo-400">
+    <div className="font-sans text-gray-800 dark:text-gray-200 bg-gradient-to-br from-purple-200 to-indigo-500">
       <div className="flex items-center flex-col dark:bg-black">
 
         <Navbar
@@ -29,9 +29,9 @@ function App() {
           darkMode={darkMode}
         />
 
-        <div className="h-32" />
+        <div className="h-26" />
 
-        <main className="max-w-5xl mx-auto px-4 space-y-28">
+        <main className="max-w-5xl mx-auto px-2 space-y-8">
 
           {/* ABOUT – editorial / serif */}
           <Section id="hero" className="font-serif">
@@ -42,26 +42,26 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
             {/* TECHNOLOGIES – tech / mono */}
-            <Section id="tech" className="font-mono">
+            <Section id="tech" className="font-mono dark:bg-gray-300/70">
               <Technologies language={language} />
             </Section>
 
             {/* CONTACT – clean / sans */}
             <Section id="contact" className="font-sans">
               <Contact language={language}/>
-              <ContactForm/>
+              <ContactForm language={language}/>
             </Section>
 
           </div>
 
           {/* PROJECTS – bold / modern */}
-          <Section id="projects" className="font-sans">
+          <Section id="projects" className="font-sans dark:bg-gray-300/70">
             <Projects language={language} />
           </Section>
 
         </main>
 
-        <div className="mt-32">
+        <div className="mt-10">
           <Footer />
         </div>
 

@@ -45,8 +45,8 @@ useEffect(() => {
         </span>
 
         {/*Desktop Links*/}
-        <div className="hidden md:flex items-center gap-8 text-sm">
-          {["hero","tech","projects","contact","download"].map((key) => (
+        <div className="font-mono font-semibold hidden md:flex items-center gap-8 text-1xl">
+          {["hero","tech","projects","contact"].map((key) => (
             <a
               key={key}
               href={`#${key === "tech" ? "technologies" : key}`} className="font-medium text-gray-700 dark:text-gray-200 hover:bg-indigo-800 hover:text-white px-4 py-3 rounded-full transition">
@@ -85,7 +85,7 @@ useEffect(() => {
     {open && (
       <div className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm md:hidden">
         <div className="absolute top-24 left-1/2 -translate-x-1/2 w-[90%] bg-white dark:bg-gray-900 dark:text-white rounded-3xl shadow-2xl p-6 flex flex-col gap-5 text-center text-1xl">
-          {["hero","technologies","projects","contact","download"].map((id) => (
+          {["hero","technologies","projects","contact"].map((id) => (
             <a
               key={id}
               href={`#${id}`}
