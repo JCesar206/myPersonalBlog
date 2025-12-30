@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { TbMessageLanguage } from "react-icons/tb";
 import { FaSun, FaMoon } from "react-icons/fa6";
 import { IoClose } from "react-icons/io5";
@@ -6,7 +6,8 @@ import { MdOutlineSegment } from "react-icons/md";
 import DownloadCV from "./DownloadCV";
 
 export default function Navbar({ setDarkMode, setLanguage, language, darkMode }) {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
+  const menuRef = useRef(null);
 
   // Etiquetas bilingües
   const labels = {
@@ -34,6 +35,34 @@ useEffect(() => {
   // Alternar tema e idioma
   const toggleTheme = () => setDarkMode((prev) => !prev);
   const toggleLanguage = () => setLanguage(prev => (prev === "es" ? "en" : "es"));
+
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") {
+        setOpen(false);
+      }
+    };
+
+    if (open) {
+      window.addEventListener("keydown", handleEsc);
+    }
+
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, [open]);
+
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (menuRef.current && !menuRef.current.contains(e.target)) {
+        setOpen(false);
+      }
+    };
+
+    if (open) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [open]);
 
   return (
     <>
@@ -84,7 +113,9 @@ useEffect(() => {
     {/*Mobile menu overlay*/}
     {open && (
       <div className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm md:hidden">
-        <div className="absolute top-24 left-1/2 -translate-x-1/2 w-[90%] bg-white dark:bg-gray-900 dark:text-white rounded-3xl shadow-2xl p-6 flex flex-col gap-5 text-center text-1xl">
+        <div 
+        ref={menuRef}
+        className="absolute top-24 left-1/2 -translate-x-1/2 w-[90%] bg-white dark:bg-gray-900 dark:text-white rounded-3xl shadow-2xl p-6 flex flex-col gap-5 text-center text-1xl">
           {["hero","technologies","projects","contact"].map((id) => (
             <a
               key={id}

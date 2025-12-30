@@ -1,4 +1,4 @@
-import DowloadCV from "./DownloadCV";
+import DownloadCV from "./DownloadCV";
 
 const techStyles = {
 	HTML: "font-mono font-bold text-orange-600",
@@ -34,20 +34,8 @@ export default function Hero({ language }) {
 	return (
 		<section
 			id="hero"
-			className="flex flex-col gap-10 md:grid-cols-2 md:items-center"
+			className="grid grid-cols-1 md:grid-cols-2 gap-12 md:items-center"
 		>
-			{/*Image*/}
-			<div className="flex justify-center md:justify-start">
-				<div className="relative">
-					<img
-						src="./myAvatar.jpg"
-						alt="Avatar"
-						className="w-80 h-100 md:w-72 md:h-72 rounded-3xl object-contain shadow-xl transition-transform duration-500 hover:scale-115"/>
-					<span className="absolute -bottom-4 -right-4 bg-indigo-600 text-white p-4 rounded-full shadow-lg font-extrabold">
-						↗
-					</span>
-				</div>
-			</div>
 
 			{/*Content*/}
 			<div className="text-center md:text-left space-y-6">
@@ -65,7 +53,20 @@ export default function Hero({ language }) {
 
 				{/*CTA*/}
 				<div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-					<DowloadCV language={language}/>
+					<DownloadCV language={language}/>
+				</div>
+			</div>
+
+			{/*Image*/}
+			<div className="flex justify-center md:justify-start">
+				<div className="relative">
+					<img
+						src="./myAvatar.jpg"
+						alt="Avatar"
+						className="w-80 h-100 md:w-72 md:h-72 rounded-3xl object-contain shadow-xl transition-transform duration-500 hover:scale-110"/>
+					<span className="absolute -bottom-4 -right-4 bg-indigo-600 text-white p-4 rounded-full shadow-lg font-extrabold">
+						↗
+					</span>
 				</div>
 			</div>
 		</section>

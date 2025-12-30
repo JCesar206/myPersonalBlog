@@ -19,8 +19,8 @@ function App() {
   }, [darkMode]);
 
   return (
-    <div className="font-sans text-gray-800 dark:text-gray-200 bg-gradient-to-br from-purple-200 to-indigo-500">
-      <div className="flex items-center flex-col dark:bg-black">
+    <div className="font-sans text-gray-800 dark:text-gray-200 bg-gradient-to-br from-purple-200 to-indigo-500 dark:from-indigo-800 dark:to-black">
+      <div className="flex items-center flex-col">
 
         <Navbar
           setDarkMode={setDarkMode}
@@ -34,7 +34,7 @@ function App() {
         <main className="max-w-5xl mx-auto px-2 space-y-8">
 
           {/* ABOUT – editorial / serif */}
-          <Section id="hero" className="font-serif">
+          <Section id="hero" className="font-serif dark:bg-indigo-100">
             <Hero language={language}/>
           </Section>
 
@@ -42,12 +42,12 @@ function App() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
 
             {/* TECHNOLOGIES – tech / mono */}
-            <Section id="tech" className="font-mono dark:bg-gray-300/70">
+            <Section id="tech" className="font-mono dark:bg-gray-100/90">
               <Technologies language={language} />
             </Section>
 
             {/* CONTACT – clean / sans */}
-            <Section id="contact" className="font-sans">
+            <Section id="contact" className="font-sans dark:bg-indigo-100">
               <Contact language={language}/>
               <ContactForm language={language}/>
             </Section>
@@ -55,7 +55,7 @@ function App() {
           </div>
 
           {/* PROJECTS – bold / modern */}
-          <Section id="projects" className="font-sans dark:bg-gray-300/70">
+          <Section id="projects" className="font-sans dark:bg-gray-100/90">
             <Projects language={language}/>
           </Section>
 
