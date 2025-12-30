@@ -13,13 +13,14 @@ export default function DownloadCV({ compact = false, language = "es" }) {
 
 	return (
 		<a
-			href="/cvJulioCesarYanezMEnglish.pdf"
-			target="_blank"
-			rel="noopener noreferrer"
+			href={`${import.meta.env.BASE_URL}cvJulioCesarYanezMEnglish.pdf`}
+			download
 			className={`inline-flex items-center gap-2 font-bold transition
-				${compact ? "text-indigo-600 hover:text-indigo-800" :
-					"rounded-full bg-indigo-600 text-white px-6 py-3 shadow-lg hover:bg-indigo-700"
-				}`}>
+			${
+				compact ? "text-indigo-600 hover:text-indigo-950" :
+				"rounded-full bg-indigo-600 text-white px-6 py-3 shadow-lg hover:bg-indigo-950 cursor-pointer"
+			}`}
+			>
 				<FiDownload size={18}/>
 				{!compact && t.download}
 			</a>
