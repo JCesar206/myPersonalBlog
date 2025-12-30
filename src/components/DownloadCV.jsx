@@ -14,7 +14,6 @@ export default function DownloadCV({ compact = false, language = "es" }) {
 	return (
 		<a
 			href="/cvJulioCesarYanezMEnglish.pdf"
-			download
 			target="_blank"
 			rel="noopener noreferrer"
 			className={`inline-flex items-center gap-2 font-bold transition

@@ -29,13 +29,13 @@ function App() {
           darkMode={darkMode}
         />
 
-        <div className="h-26" />
+        <div className="h-26"/>
 
         <main className="max-w-5xl mx-auto px-2 space-y-8">
 
           {/* ABOUT – editorial / serif */}
           <Section id="hero" className="font-serif">
-            <Hero language={language} />
+            <Hero language={language}/>
           </Section>
 
           {/* TECH + CONTACT */}
@@ -56,13 +56,13 @@ function App() {
 
           {/* PROJECTS – bold / modern */}
           <Section id="projects" className="font-sans dark:bg-gray-300/70">
-            <Projects language={language} />
+            <Projects language={language}/>
           </Section>
 
         </main>
 
         <div className="mt-10">
-          <Footer />
+          <Footer language={language}/>
         </div>
 
         <WhatsAppIcon />
