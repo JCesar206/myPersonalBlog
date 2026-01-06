@@ -8,6 +8,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import ContactForm from "./components/ContactForm";
 import Section from "./components/Section";
+import TelegramButton from "./components/TelegramButton";
 import "./App.css";
 
 function App() {
@@ -65,7 +66,8 @@ function App() {
           <Footer language={language}/>
         </div>
 
-        <WhatsAppIcon />
+        <WhatsAppIcon/>
+        <TelegramButton/>
       </div>
     </div>
   );
