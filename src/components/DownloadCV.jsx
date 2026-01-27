@@ -13,7 +13,7 @@ export default function DownloadCV({ compact = false, language = "es" }) {
 
 	return (
 		<a
-			href={`${import.meta.env.BASE_URL}cvJulioCesarYanezMEnglish.pdf`}
+			href={`${import.meta.env.BASE_URL}cv_Fullstack_JulioCYañezM.pdf`}
 			download
 			className={`inline-flex items-center gap-2 font-bold transition
 			${

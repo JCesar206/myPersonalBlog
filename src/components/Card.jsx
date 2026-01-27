@@ -4,7 +4,7 @@ import { FiArrowUpRight } from "react-icons/fi";
 export default function Card({ title, description, image, link, language }) {
   const [expanded, setExpanded] = useState(false);
   const maxLength = 70;
-  const shortText = description[language].slice(0, maxLength) + '...';
+  const shortText = description[language].slice(0, maxLength) + "...";
 
   return (
     <article className="group relative bg-white dark:bg-gray-900 rounded-3xl overflow-hidden shadow-md hover:shadow-2xl transition-all duration-300">

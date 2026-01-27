@@ -1,34 +1,30 @@
 import DownloadCV from "./DownloadCV";
 
 const techStyles = {
-	HTML: "font-mono font-bold text-orange-600",
-	CSS: "font-mono font-bold text-blue-600",
-	JavaScript: "font-mono font-bold text-yellow-500",
-	React: "font-mono font-bold text-cyan-500",
-	Vue: "font-mono font-bold text-emerald-500",
-	TypeScript: "font-mono font-bold text-indigo-600",
-	"UX/UI": "font-semibold text-purple-600",
+	HTML: "tech-badge bg-orange-100 text-orange-700 ring-orange-300",
+	CSS: "tech-badge bg-blue-100 text-blue-700 ring-blue-300",
+	JavaScript: "tech-badge bg-yellow-100 text-yellow-700 ring-yellow-300",
+	React: "tech-badge bg-cyan-100 text-cyan-700 ring-cyan-300",
+	Vue: "tech-badge bg-emerald-100 text-emerald-700 ring-emerald-300",
+	TypeScript: "tech-badge bg-indigo-100 text-indigo-700 ring-indigo-300",
+	Java: "tech-badge bg-red-100 text-red-700 ring-red-300",
+	"UX/UI": "tech-badge bg-purple-100 text-purple-700 ring-purple-300",
 };
 
 export default function Hero({ language }) {
 	const title = language === "es" ? "Acerca de mi" : "About me";
 	const text = {
-  es: [
-    "Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y accesibilidad. Especializado en ",
-    "HTML",", ","CSS",", ","JavaScript",
-    " y frameworks como ",
-    "React",", ","Vue"," y ","TypeScript",
-    ", con conocimientos en ","UX/UI",
-    " y diseño responsivo.",
-  ],
-  en: [
-    "Web developer with experience creating websites and applications optimized for performance and accessibility. Specialized in ",
-    "HTML",", ","CSS",", ","JavaScript",
-    " and frameworks such as ",
-    "React",", ","Vue"," and ","TypeScript",
-    ", with knowledge of ","UX/UI",
-    " and responsive design.",
-  ],
+es: [
+  "Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y accesibilidad. Especializado en ",
+  "HTML", ", ","CSS", ", ","JavaScript"," y frameworks como ",
+  "React", ", ","Vue", ", ","TypeScript"," y ","Java",
+  ", con conocimientos en ","UX/UI"," y diseño responsivo.",
+],
+en: [
+  "Web developer with experience creating websites and applications optimized for performance and accessibility. Specialized in ","HTML", ", ","CSS", ", ","JavaScript",
+  " and frameworks such as ","React", ", ","Vue", ", ","TypeScript",
+  " and ","Java",", with knowledge of ","UX/UI"," and responsive design.",
+],
 };
 
 	return (

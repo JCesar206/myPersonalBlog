@@ -1,7 +1,7 @@
 export default function Contact({ language }) {
 	const title = language === "es" ? "Contacto" : "Contact";
 	const subtitle = 
-		language === "es" ? "¿Tienes un proyecto o una idea? Escríbeme." : "Have a project or an idea? Let's talk.";
+		language === "es" ? "¿Tienes un proyecto o una idea? Escríbeme." : "Have a project or an idea? Lets talk.";
 	
 	return (
 		<section id="contact" className="space-y-6">
