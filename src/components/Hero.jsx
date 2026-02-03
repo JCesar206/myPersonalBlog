@@ -1,14 +1,14 @@
 import DownloadCV from "./DownloadCV";
 
 const techStyles = {
-	HTML: "tech-badge bg-orange-100 text-orange-700 ring-orange-300",
-	CSS: "tech-badge bg-blue-100 text-blue-700 ring-blue-300",
-	JavaScript: "tech-badge bg-yellow-100 text-yellow-700 ring-yellow-300",
-	React: "tech-badge bg-cyan-100 text-cyan-700 ring-cyan-300",
-	Vue: "tech-badge bg-emerald-100 text-emerald-700 ring-emerald-300",
-	TypeScript: "tech-badge bg-indigo-100 text-indigo-700 ring-indigo-300",
-	Java: "tech-badge bg-red-100 text-red-700 ring-red-300",
-	"UX/UI": "tech-badge bg-purple-100 text-purple-700 ring-purple-300",
+	HTML: "tech-badge bg-orange-100 text-orange-700 ring-orange-300 font-semibold",
+	CSS: "tech-badge bg-blue-100 text-blue-700 ring-blue-300 font-semibold",
+	JavaScript: "tech-badge bg-yellow-100 text-yellow-700 ring-yellow-300 font-semibold",
+	React: "tech-badge bg-cyan-100 text-cyan-700 ring-cyan-300 font-semibold",
+	Vue: "tech-badge bg-emerald-100 text-emerald-700 ring-emerald-300 font-semibold",
+	TypeScript: "tech-badge bg-indigo-100 text-indigo-700 ring-indigo-300 font-semibold",
+	Java: "tech-badge bg-red-100 text-red-700 ring-red-300 font-semibold",
+	"UX/UI": "tech-badge bg-purple-100 text-purple-700 ring-purple-300 font-semibold",
 };
 
 export default function Hero({ language }) {
