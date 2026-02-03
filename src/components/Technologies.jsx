@@ -1,5 +1,5 @@
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub, FaVuejs, FaJava } from "react-icons/fa";
-import { SiTailwindcss, SiTypescript, SiJest, SiPostman } from "react-icons/si";
+import { SiTailwindcss, SiJest, SiPostman, SiIntellijidea } from "react-icons/si";
 import { BiLogoTypescript, BiLogoSpringBoot } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { VscVscode, VscAzure } from "react-icons/vsc";
@@ -22,6 +22,7 @@ const techs = [
   { name: "Git", icon: FaGithubAlt },
   { name: "GitHub", icon: FaGithub },
   { name: "VS Code", icon: VscVscode },
+  { name: "Intellij", icon: SiIntellijidea },
   { name: "Postman", icon: SiPostman },
   { name: "Azure", icon: VscAzure },
 ];
