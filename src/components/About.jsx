@@ -1,6 +1,4 @@
- {/* Busco una oportunidad en una empresa que valore la innovación y el desarrollo de soluciones digitales eficientes. */}
- {/*  I am looking for an opportunity at a company that values ​​innovation and the development of efficient digital solutions. */}
-export default function About({ language }) {
+ export default function About({ language }) {
 	const title = language === "es" ? "Acerca de mi" : "About me";
 	const text = {
 		es: "Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y accesibilidad. Especializado en HTML, CSS, JavaScript y frameworks como React, Vue y TypeScript, con conocimientos en UX/UI y diseño responsivo.",
