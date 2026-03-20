@@ -4,7 +4,8 @@ export default function Contact({ language }) {
 	
 	return (
 		<section id="contact" className="space-y-6">
-  		<h2 className="text-2xl md:text-3xl font-extrabold text-center text-gray-900 dark:text-indigo-700">
+  		<h2
+		className="text-center text-2xl md:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-gradient-x hover:scale-105">
 				{t.contact.title}
 			</h2>
 			<p className="text-center text-gray-600 dark:text-indigo-500 font-semibold">
