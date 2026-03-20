@@ -6,6 +6,7 @@ import { MdOutlineSegment } from "react-icons/md";
 import DownloadCV from "./DownloadCV";
 import DownloadCertificate from "./DownloadCertificate";
 import { texts } from "../i18n/texts.js";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Navbar({ setDarkMode, setLanguage, language, darkMode }) {
   const t = texts[language];
@@ -58,7 +59,7 @@ export default function Navbar({ setDarkMode, setLanguage, language, darkMode })
           <span className="font-extrabold text-lg bg-indigo-800 rounded-full px-4 py-3 text-white">JC</span>
 
           {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-8 font-mono font-semibold">
+          <div className="hidden md:flex items-center gap-5 font-mono font-semibold">
             {navItems.map((item) => (
               <a key={item.id} href={`#${item.id}`}
                 className="text-gray-700 dark:text-gray-200 hover:bg-indigo-800 hover:text-white px-4 py-3 rounded-full transition">
@@ -67,11 +68,32 @@ export default function Navbar({ setDarkMode, setLanguage, language, darkMode })
             ))}
           </div>
 
+          {/* Links SocialMedia */}
+          <div className="hidden md:flex items-center gap-3 font-serif">
+            <a href="https://github.com/JCesar206" target="_blank" rel="noopener noreferrer"
+            className="hover:scale-145 hover:text-purple-600 dark:hover:text-violet-400">
+              <FaGithub size={18}/>
+            </a>
+            <a href="https://www.linkedin.com/in/jcesar206" target="_blank" rel="noopener noreferrer"
+            className="hover:scale-150 hover:text-purple-600 dark:hover:text-violet-400">
+              <FaLinkedin size={18}/>
+            </a>
+          </div>
+
           {/* Controls */}
           <div className="flex items-center gap-4">
+            {/* Social Media para pantallas chicas */}
+            <div className="flex md:hidden items-center gap-3">
+              <a href="https://github.com/JCesar206" target="_blank" rel="noopener noreferrer"
+                className="text-gray-700 dark:text-gray-200 hover:text-purple-600 dark:hover:text-violet-400 transition hover:scale-110"><FaGithub size={20}/>
+              </a>
+              <a href="https://www.linkedin.com/in/jcesar206" target="_blank" rel="noopener noreferrer"
+                className="text-gray-700 dark:text-gray-200 hover:text-purple-600 dark:hover:text-violet-400 transition hover:scale-110"><FaLinkedin size={20} />
+            </a>
+            </div>
             {/* Theme */}
             <button onClick={toggleTheme}
-              className="text-gray-700 dark:text-gray-200 hover:text-indigo-600 transition cursor-pointer">
+              className="hover:scake-150 hover:text-purple-600 dark:hover:text-violet-400 transition cursor-pointer">
               {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
             </button>
 
