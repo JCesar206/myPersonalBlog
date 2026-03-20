@@ -7,9 +7,9 @@ export const projects = [
 	},
 	{
 		id: "ecommerceReact",
-		image: "/ecommerceSimple.jpg",
+		image: "/websiteUnderConstruction.jpg",
 		tech: ["React","Tailwind CSS"],
-		github: "https://jcesar206.github.io/ecommerce-react"
+		github: ""
 	},
 	{
 		id: "localNotes",
