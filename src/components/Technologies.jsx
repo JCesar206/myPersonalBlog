@@ -30,7 +30,8 @@ const techs = [
 return (
   <section id="technologies" className="space-y-12">
     {/*Title*/}
-    <h2 className="text-center text-3xl md:text-4xl font-extrabold  text-gray-900 dark:text-indigo-700">
+    <h2
+    className="text-center text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-gradient-x hover:scale-105">
       {title}
     </h2>
     {/*Grid*/}
