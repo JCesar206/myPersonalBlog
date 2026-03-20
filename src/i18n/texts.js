@@ -9,8 +9,8 @@ export const texts = {
     hero: {
       title: "Acerca de mí",
       description: [
-        "Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y accesibilidad. Especializado en ","HTML", ", ", "CSS", ", ", "JavaScript",
-        " y frameworks como ","React", ", ", "Vue", ", ", "TypeScript"," y ", "Java",", con conocimientos en ",
+        "Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y accesibilidad. Especializado en ","HTML",",","CSS",",","JavaScript",
+        "y frameworks como ","React", ",","Vue", ",","TypeScript"," y ","Java",", con conocimientos en",
         "UX/UI"," y diseño responsivo."
       ]
     },
@@ -46,8 +46,8 @@ export const texts = {
           description: "Aplicación administradora de contraseñas. La app guarda localmente su nombre de usuario y contraseña de forma segura."
         },
 				{
-          title: "Ecommerce",
-          description: "Comercio electrónico. Simula una compra completa de productos que se encontraban en un carrito de compras."
+          title: "En construcción",
+          description: ""
         },
 				{
           title: "Nota Loka",
@@ -82,8 +82,8 @@ export const texts = {
     hero: {
       title: "About me",
       description: [
-        "Web developer with experience creating websites and applications optimized for performance and accessibility. Specialized in ","HTML", ", ", "CSS", ", ", "JavaScript"," and frameworks such as ",
-        "React", ", ", "Vue", ", ", "TypeScript"," and ", "Java",", with knowledge of ","UX/UI",
+        "Web developer with experience creating websites and applications optimized for performance and accessibility. Specialized in ","HTML", ",", "CSS", ",", "JavaScript"," and frameworks such as ",
+        "React", ",", "Vue", ",","TypeScript"," and ", "Java",", with knowledge of ","UX/UI",
         " and responsive design."
       ]
     },
@@ -118,8 +118,8 @@ export const texts = {
           description: "Password manager app. The app securely stores your username and password locally."
         },
         {
-          title: "Crazy Ecommerce",
-          description: "E-commerce. Simulates a complete purchase of products that were in a shopping cart."
+          title: "In construction",
+          description: ""
         },
 				{
           title: "Crazy Note",
