@@ -21,11 +21,12 @@ export default function Hero({ language }) {
     <section id="hero" className="grid grid-cols-1 md:grid-cols-2 gap-12 md:items-center">
       {/* Content */}
       <div className="text-center md:text-left space-y-6">
-        <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 dark:text-indigo-700 leading-tight">
+        <h1
+        className="text-center text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-gradient-x hover:scale-105">
           {t.hero.title}
         </h1>
 
-        <p className="text-gray-600 dark:text-gray-800 leading-relaxed max-w-xl mx-auto md:mx-0">
+        <p className="text-gray-600 dark:text-gray-800 font-extralight italic max-w-xl mx-auto md:mx-0">
           {Array.isArray(description) &&
             description.map((part, i) => (
               <span key={i} className={`mr-2 ${techStyles[part] || ""}`}>{part}</span>
@@ -33,7 +34,7 @@ export default function Hero({ language }) {
         </p>
 
         {/* CTA */}
-        <div className="flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+        <div className="flex flex-wrap gap-4 justify-center md:justify-start items-center">
           <DownloadCV language={language}/>
           <DownloadCertificate language={language}/>
         </div>
@@ -43,8 +44,8 @@ export default function Hero({ language }) {
       <div className="flex justify-center md:justify-start">
         <div className="relative">
           <img src="/myAvatar.jpg" alt="Avatar"
-            className="w-80 md:w-72 rounded-3xl object-contain shadow-xl transition-transform duration-500 hover:scale-110"/>
-          <span className="absolute -bottom-4 -right-4 bg-indigo-600 text-white p-4 rounded-full shadow-lg font-extrabold">↗</span>
+            className="w-80 md:w-72 rounded-3xl object-contain shadow-xl transition-transform duration-500 hover:scale-110 ring-4 ring-indigo-500"/>
+          <span className="absolute -bottom-4 -right-4 bg-indigo-600 text-white p-5 rounded-full shadow-lg font-extrabold animate-bounce">↗</span>
         </div>
       </div>
     </section>
