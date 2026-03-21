@@ -32,8 +32,8 @@ export default function DownloadCertificates({ compact = false, language = "es" 
           onChange={(e) => setSelected(e.target.value)}
           className={`rounded-lg border px-3 py-2 text-sm font-semibold cursor-pointer
             ${compact 
-              ? "text-indigo-600 border-indigo-400 dark:bg-gray-800 dark:text-white" 
-              : "bg-gradient-to-l from-indigo-500 via-purple-500 to-pink-500 text-white shadow-lg"}`}
+              ? "text-indigo-500 border-indigo-400 dark:bg-gray-800 dark:text-white" 
+              : "bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 text-white shadow-lg"}`}
         >
           <option value="" className="font-black italic bg-violet-300">{t.buttons.chooseCertificate || "Selecciona un certificado"}</option>
           {certificates.map((cert, i) => (
@@ -51,7 +51,7 @@ export default function DownloadCertificates({ compact = false, language = "es" 
           className={`flex gap-4 justify-center md:justify-start items-center font-bold px-4 py-2 rounded-lg hover:scale-105 transition-transform cursor-pointer
             ${compact 
               ? "text-indigo-600 border-indigo-400 dark:bg-gray-800 dark:text-white" 
-              : "bg-gradient-to-r from-indigo-400 via-violet-500 to-blue-400 text-white shadow-lg"}`}
+              : "bg-gradient-to-r from-indigo-400 via-violet-400 to-pink-400 text-white shadow-lg hover:from-indigo-700 hover:to-purple-700"}`}
         >
           <FiDownload size={18} />
           {t.buttons.download}
