@@ -9,6 +9,7 @@ import Contact from "./components/Contact";
 import ContactForm from "./components/ContactForm";
 import Section from "./components/Section";
 import TelegramButton from "./components/TelegramButton";
+import CurrentJob from "./components/CurrentJob";
 import "./App.css";
 
 function App() {
@@ -48,8 +49,9 @@ function App() {
             </Section>
 
             {/* CONTACT – clean / sans */}
-            <Section id="contact" className="font-sans dark:bg-indigo-100">
+            <Section id="contact" className="font-sans dark:bg-indigo-100 space-y-6">
               <Contact language={language}/>
+              <CurrentJob language={language}/>
               <ContactForm language={language}/>
             </Section>
 
