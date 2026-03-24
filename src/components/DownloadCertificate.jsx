@@ -10,10 +10,10 @@ export default function DownloadCertificates({ compact = false, language = "es" 
   const certificates = [
     { file: "certificate.pdf", label: t.buttons.downloadCertificate },
     { file: "certificado_Fullstack.pdf", label: "Fullstack Certificate" },
-    { file: "certificado_React.pdf", label: "React Certificate" },
+    /* { file: "certificado_React.pdf", label: "React Certificate" },
     { file: "certificado_Node.pdf", label: "Node.js Certificate" },
     { file: "certificado_Tailwind.pdf", label: "Tailwind Certificate" },
-    { file: "certificado_Ingles.pdf", label: "English Certificate" },
+    { file: "certificado_Ingles.pdf", label: "English Certificate" }, */
   ];
 
   const handleDownload = () => {
@@ -38,7 +38,7 @@ export default function DownloadCertificates({ compact = false, language = "es" 
           <option value="" className="font-black italic bg-violet-300">{t.buttons.chooseCertificate || "Selecciona un certificado"}</option>
           {certificates.map((cert, i) => (
             <option key={i} value={cert.file}
-            className="bg-violet-200 text-violet-600 hover:bg-violet-300 dark:bg-white dark:text-violet-600 italic font-semibold"
+            className="bg-white text-black italic font-semibold"
             >
               {cert.label}
             </option>
