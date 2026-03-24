@@ -30,7 +30,10 @@ export const texts = {
       clearFields: "Limpiar campos",
       sendComment: "Enviar comentario",
       iHaveWork: "He trabajado en: ",
-      namePosition: "Desarrollador FullStack"
+      namePosition: "Desarrollador FullStack",
+      visit: "Visita el sitio web",
+      contactMe: "Contáctame",
+      writeToMe: "Escribeme"
     },
     buttons: {
       downloadCV: "Descargar CV",
@@ -105,7 +108,10 @@ export const texts = {
       clearFields: "Clear fields",
       sendComment: "Send comment",
       iHaveWork: "I have work in: ",
-      namePosition: "FullStack Developer"
+      namePosition: "FullStack Developer",
+      visit: "Visit web site",
+      contactMe: "Contact me",
+      writeToMe: "Write to me"
     },
     buttons: {
       downloadCV: "Download CV",

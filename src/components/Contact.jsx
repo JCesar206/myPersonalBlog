@@ -12,7 +12,7 @@ export default function Contact({ language }) {
 				{t.contact.subtitle}	
 			</p>
 			<div className="flex justify-center">
-				<a href="mailto:jcesary06@gmail.com" className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold bg-indigo-600 text-white hover:bg-indigo-900 transition">
+				<a href="mailto:jcesary06@gmail.com" className="inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-bold bg-indigo-600 text-white hover:bg-indigo-900 transition" title={t.contact.writeToMe}>
 					jcesary06@gmail.com
 				</a>
 			</div>

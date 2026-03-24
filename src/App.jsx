@@ -68,8 +68,8 @@ function App() {
           <Footer language={language}/>
         </div>
 
-        <WhatsAppIcon/>
-        <TelegramButton/>
+        <WhatsAppIcon language={language}/>
+        <TelegramButton language={language}/>
       </div>
     </div>
   );
