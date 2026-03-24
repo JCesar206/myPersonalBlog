@@ -2,15 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { supabase } from "../lib/supabase";
 import { texts } from "../i18n/texts.js";
 
-/*
-const API_URL = "https://xhabbjvhizbodbwuehcq.supabase.co/rest/v1/comments";
-const headers = {
-  apikey: import.meta.env.VITE_SUPABASE_ANON_KEY,
-  Authorization: `Bearer ${import.meta.env.VITE_SUPABASE_ANON_KEY}`,
-  "Content-Type": "application/json",
-};
-*/
-
 export default function ContactForm({ language = "es" }) {
   const contact = texts[language].contact;
   const buttons = texts[language].buttons;
@@ -91,7 +82,7 @@ export default function ContactForm({ language = "es" }) {
           value={form.email} onChange={handleChange}
           className="w-full rounded-xl border border-indigo-400 px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-2 focus:ring-indigo-500"/>
 
-        <textarea name="message" placeholder={contact.writeYourComment} rows="4"
+        <textarea name="message" placeholder={contact.writeYourComment} rows="2"
           value={form.message} onChange={handleChange} required
           className="w-full rounded-xl border border-indigo-400 px-4 py-3 bg-gray-100 dark:bg-gray-800 text-gray-900 dark:text-white resize-none focus:ring-2 focus:ring-indigo-500"/>
 
@@ -119,12 +110,12 @@ export default function ContactForm({ language = "es" }) {
 
       {/* COMMENTS */}
       {!loading && comments.length > 0 && (
-        <div className="space-y-4">
+        <div className="space-y-2">
           <h4 className="text-lg font-bold text-indigo-600 dark:text-indigo-700">{contact.title}</h4>
 
           <div className="max-h-45 overflow-y-auto space-y-4 pr-2 scrollbar-thin scrollbar-thumb-indigo-500">
             {comments.map((c, i) => (
-              <div key={i} className="rounded-2xl bg-gray-100 dark:bg-gray-800 p-4">
+              <div key={i} className="rounded-2xl bg-gray-100 dark:bg-gray-800 p-2">
                 <p className="font-semibold text-indigo-600 dark:text-indigo-400">{c.name}</p>
                 <p className="text-sm text-gray-700 dark:text-gray-300 font-semibold italic">{c.message}</p>
               </div>
