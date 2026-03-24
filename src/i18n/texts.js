@@ -28,7 +28,9 @@ export const texts = {
       error: "Ocurrió un error. Intenta de nuevo.",
       sentComment: "Comentario enviado ✔",
       clearFields: "Limpiar campos",
-      sendComment: "Enviar comentario"
+      sendComment: "Enviar comentario",
+      iHaveWork: "He trabajado en: ",
+      namePosition: "Desarrollador FullStack"
     },
     buttons: {
       downloadCV: "Descargar CV",
@@ -101,7 +103,9 @@ export const texts = {
       error: "Something went wrong. Try again.",
       sentComment: "Comment sent ✔",
       clearFields: "Clear fields",
-      sendComment: "Send comment"
+      sendComment: "Send comment",
+      iHaveWork: "I have work in: ",
+      namePosition: "FullStack Developer"
     },
     buttons: {
       downloadCV: "Download CV",
