@@ -41,7 +41,7 @@ return (
           key={name}
           className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-white dark:bg-gray-900 p-6 shadow-md hover:shadow-xl transition"
         >
-          <Icon className="text-4xl text-indigo-600"/>
+          <Icon className="text-6xl text-indigo-600"/>
           <span className="font-semibold text-gray-800 dark:text-gray-200 text-xs">
               {name}
             </span>
