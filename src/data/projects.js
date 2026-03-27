@@ -12,10 +12,10 @@ export const projects = [
 		github: ""
 	},
 	{
-		id: "localNotes",
-		image: "/localNotes.jpg",
+		id: "crazyNotes",
+		image: "/notesApp.jpg",
 		tech: ["React","Tailwind CSS"],
-		github: "https://jcesar206.github.io/localNotes"
+		github: "https://jcesar206.github.io/notesFront/"
 	},
 	{
 		id: "personalExpenses",

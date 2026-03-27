@@ -56,7 +56,7 @@ export const texts = {
         },
 				{
           title: "Nota Loka",
-          description: "Nota Loca Local. La aplicación permite guardar notas en almacenamiento local."
+          description: "Nota Loca Local. La aplicación permite guardar notas en una base de datos que permite agregar emojis y también actualizar la información incluso poner como notas favoritas o completadas."
         },
 				{
           title: "Finanzas Personales",
@@ -133,7 +133,7 @@ export const texts = {
         },
 				{
           title: "Crazy Note",
-          description: "Note Loca Local. The application allows you to save notes in localStorage."
+          description: "Local Notes. The app lets you save notes in a database, add emojis, update information, and even mark notes as favorites or completed."
         },
 				{
           title: "Personal Finance",

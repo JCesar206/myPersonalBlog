@@ -17,7 +17,7 @@ export default function Card({ title, description, image, github, language }) {
       {/* Image */}
       <div className="relative overflow-hidden">
         <img src={image} alt={title}
-          className="h-44 w-full object-cover transition-transform duration-500 group-hover:scale-110"/>
+          className="h-56 w-full object-cover object-center transition-transform duration-500 group-hover:scale-105"/>
       </div>
 
       {/* Arrow */}
