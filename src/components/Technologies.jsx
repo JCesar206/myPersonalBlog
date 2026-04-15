@@ -1,4 +1,4 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub, FaVuejs, FaJava } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub, FaVuejs, FaJava, FaPhp } from "react-icons/fa";
 import { SiTailwindcss, SiJest, SiPostman, SiIntellijidea } from "react-icons/si";
 import { BiLogoTypescript, BiLogoSpringBoot } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
@@ -17,6 +17,7 @@ const techs = [
   { name: "Tailwind", icon: SiTailwindcss },
   { name: "MySQL", icon: GrMysql },
   { name: "Node.js", icon: FaNodeJs },
+  { name: "PHP", icon: FaPhp },
   { name: "Spring Boot", icon: BiLogoSpringBoot },
   { name: "Jest", icon: SiJest },
   { name: "Git", icon: FaGithubAlt },
