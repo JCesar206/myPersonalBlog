@@ -1,6 +1,5 @@
 import React from "react";
 import { texts } from "../i18n/texts.js";
-import { MdOutlineWorkspacePremium } from "react-icons/md";
 
 export default function CurrentJob ({ language = "es" }) {
 	const contact = texts[language].contact;
