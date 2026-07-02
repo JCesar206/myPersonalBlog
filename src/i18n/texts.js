@@ -11,7 +11,7 @@ export const texts = {
       description: [
         "Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y accesibilidad. Especializado en ","HTML",",","CSS",",","JavaScript",
         "y frameworks como ","React", ",","Vue", ",","TypeScript"," y ","Java",", con conocimientos en",
-        "UX/UI"," y diseño responsivo."
+        "UX/UI","  diseño responsivo y","Ciberseguridad","."
       ]
     },
     technologies: {
@@ -30,7 +30,7 @@ export const texts = {
       clearFields: "Limpiar campos",
       sendComment: "Enviar comentario",
       iHaveWork: "He trabajado en: ",
-      namePosition: "Desarrollador FullStack",
+      namePosition: "Ingeniero de Software - Cyberseguridad",
       visit: "Visita el sitio web",
       contactMe: "Contáctame",
       writeToMe: "Escribeme"
@@ -89,7 +89,7 @@ export const texts = {
       description: [
         "Web developer with experience creating websites and applications optimized for performance and accessibility. Specialized in ","HTML", ",", "CSS", ",", "JavaScript"," and frameworks such as ",
         "React", ",", "Vue", ",","TypeScript"," and ", "Java",", with knowledge of ","UX/UI",
-        " and responsive design."
+        ", responsive design and ","Cibersecurity","."
       ]
     },
     technologies: {
@@ -108,7 +108,7 @@ export const texts = {
       clearFields: "Clear fields",
       sendComment: "Send comment",
       iHaveWork: "I have work in: ",
-      namePosition: "FullStack Developer",
+      namePosition: "Software Engineer - Cybersecurity",
       visit: "Visit web site",
       contactMe: "Contact me",
       writeToMe: "Write to me"

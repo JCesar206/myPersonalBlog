@@ -3,6 +3,7 @@ import { SiTailwindcss, SiJest, SiPostman, SiIntellijidea } from "react-icons/si
 import { BiLogoTypescript, BiLogoSpringBoot } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { VscVscode, VscAzure } from "react-icons/vsc";
+import { MdOutlineSecurity } from "react-icons/md";
 
 export default function Technologies({ language }) {
   const title = language === "es" ? "Tecnologías y Herramientas" : "Technologies and Tools";
@@ -26,6 +27,7 @@ const techs = [
   { name: "Intellij", icon: SiIntellijidea },
   { name: "Postman", icon: SiPostman },
   { name: "Azure", icon: VscAzure },
+  { name: "CiberSecurity", icon: MdOutlineSecurity }
 ];
 
 return (

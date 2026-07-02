@@ -11,6 +11,8 @@ const techStyles = {
   TypeScript: "tech-badge bg-indigo-100 text-indigo-700 ring-indigo-300 font-semibold",
   Java: "tech-badge bg-red-100 text-red-700 ring-red-300 font-semibold",
   "UX/UI": "tech-badge bg-purple-100 text-purple-700 ring-purple-300 font-semibold",
+  Ciberseguridad: "tech-badge bg-blue-100 text-blue-700 ring-blue-300 font-semibold",
+  Cibersecurity: "tech-badge bg-blue-100 text-blue-700 ring-blue-300 font-semibold",
 };
 
 export default function Hero({ language }) {
@@ -29,7 +31,7 @@ export default function Hero({ language }) {
         <p className="text-gray-600 dark:text-gray-800 font-extralight italic max-w-xl mx-auto md:mx-0">
           {Array.isArray(description) &&
             description.map((part, i) => (
-              <span key={i} className={`mr-2 ${techStyles[part] || ""}`}>{part}</span>
+              <span key={i} className={`mr-2 ${techStyles[part.replace(/[.,]/g).trim()] || ""}`}>{part}</span>
             ))}
         </p>
 
