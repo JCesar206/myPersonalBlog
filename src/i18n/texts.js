@@ -15,7 +15,8 @@ export const texts = {
       ]
     },
     technologies: {
-      title: "Tecnologías y Herramientas"
+      title: "Tecnologías y Herramientas",
+      cybersecurity: "Ciberseguridad"
     },
     contact: {
       title: "Contacto",
@@ -93,7 +94,8 @@ export const texts = {
       ]
     },
     technologies: {
-      title: "Technologies and Tools"
+      title: "Technologies and Tools",
+      cybersecurity: "Cybersecurity"
     },
     contact: {
       title: "Contact",
