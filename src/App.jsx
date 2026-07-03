@@ -33,7 +33,7 @@ function App() {
 
         <div className="h-26"/>
 
-        <main className="max-w-5xl mx-auto px-2 space-y-8">
+        <main className="max-w-5xl mx-auto px-1 space-y-8">
 
           {/* ABOUT – editorial / serif */}
           <Section id="hero" className="font-serif dark:bg-indigo-100">
@@ -41,7 +41,7 @@ function App() {
           </Section>
 
           {/* TECH + CONTACT */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
             {/* TECHNOLOGIES – tech / mono */}
             <Section id="tech" className="font-mono dark:bg-gray-100/90">
