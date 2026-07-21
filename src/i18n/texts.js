@@ -52,8 +52,8 @@ export const texts = {
           description: "Aplicación administradora de contraseñas. La app guarda localmente su nombre de usuario y contraseña de forma segura."
         },
 				{
-          title: "En construcción",
-          description: ""
+          title: "Comercio Electrónico",
+          description: "DevShop es un ecommerce Full Stack desarrollado con React, Node.js, Express y MySQL que integra autenticación JWT, carrito de compras, panel administrativo, carga de imágenes, soporte multilenguaje y diseño responsive, desplegado en GitHub Pages y Render."
         },
 				{
           title: "Nota Loka",
@@ -130,8 +130,8 @@ export const texts = {
           description: "Password manager app. The app securely stores your username and password locally."
         },
         {
-          title: "In construction",
-          description: ""
+          title: "Ecommerce",
+          description: "DevShop is a full-stack e-commerce application built with React, Node.js, Express, and MySQL that features JWT authentication, a shopping cart, an admin dashboard, image uploading, multi-language support, and a responsive design, deployed on GitHub Pages and Render."
         },
 				{
           title: "Crazy Note",

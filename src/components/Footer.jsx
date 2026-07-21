@@ -6,7 +6,7 @@ export default function Footer({ language = "es" }) {
 	const t = texts[language];
 
 	return (
-	<footer className="w-full px-4 py-6">
+	<footer className="w-full px-14 py-6">
 	  <div className="w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl shadow-md rounded-full">
     	<div className="max-w-6xl mx-auto px-6 py-6 flex flex-col items-center gap-6">
 					{/*Social icons*/}
@@ -27,7 +27,8 @@ export default function Footer({ language = "es" }) {
         </a>
 			</div>
 			{/*Copyright*/}
-			<p className="text-sm text-gray-500 dark:text-gray-400 text-center font-bold">&copy; {new Date().getFullYear()} {t.footer.nameApp} | Juls | {t.footer.rights}</p>
+			<p className="text-sm text-gray-500 dark:text-gray-400 text-center hover:text-purple-500 hover:scale-90 font-bold">&copy; {new Date().getFullYear()} {t.footer.nameApp} | Juls | 
+				{t.footer.rights}</p>
 			</div>
 		</div>
 		</footer>

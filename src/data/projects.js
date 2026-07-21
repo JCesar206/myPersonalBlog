@@ -5,13 +5,12 @@ export const projects = [
 		tech: ["React","Tailwind CSS"],
 		github: "https://jcesar206.github.io/passwordManager/"
 	},
-	/*
 	{
 		id: "ecommerceReact",
-		image: "/websiteUnderConstruction.jpg",
+		image: "/ecommerce.jpg",
 		tech: ["React","Tailwind CSS"],
-		github: ""
-	},*/
+		github: "https://jcesar206.github.io/ecommerceFront/"
+	},
 	{
 		id: "crazyNotes",
 		image: "/notesApp.jpg",
