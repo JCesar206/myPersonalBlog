@@ -7,11 +7,10 @@ export default function DownloadCV({ compact = false, language = "es" }) {
 	return (
 		<a href={`${import.meta.env.BASE_URL}cv_Fullstack_JulioCYañezM.pdf`}
 			download
-			className={`inline-flex items-center gap-2 font-bold transition
+			className={`inline-flex items-center gap-2 font-bold transition border-1
 			${compact ? 
-				"text-indigo-600 hover:text-indigo-950" 
-				: `rounded-lg bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 text-white 
-				text-xs px-6 py-3 shadow-lg hover:from-indigo-700 hover:to-purple-700 cursor-pointer hover:scale-105 transition-transform`}`}>
+				"text-black font-semibold hover:bg-gray-300" 
+				: `rounded-lg text-black text-xs font-semibold px-6 py-3 hover:bg-gray-300 shadow-lg cursor-pointer`}`}>
 				<FiDownload size={18}/>
 				{t.buttons.downloadCV}
 				{!compact && t.download}

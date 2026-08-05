@@ -39,6 +39,8 @@ export const texts = {
     buttons: {
       downloadCV: "Descargar CV",
       downloadCertificate: "Descargar certificado",
+      introductionToCibersecurity: "Introducción a Ciberseguridad",
+      cyberThreatManagment: "Administración de Amenazas Cibernéticas",
       clearFields: "Limpiar campos",
       sendComment: "Enviar comentario",
       viewProject: "Ver proyecto",
@@ -117,7 +119,9 @@ export const texts = {
     },
     buttons: {
       downloadCV: "Download CV",
-      downloadCertificate: "Download certificate",
+      downloadCertificate: "Download Certificate",
+      introductionToCibersecurity: "Introduction to Cibersecurity",
+      cyberThreatManagment: "Cyber Threat Managment",
       clearFields: "Clear fields",
       sendComment: "Send comment",
       sending: "Sending..."

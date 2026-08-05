@@ -8,12 +8,9 @@ export default function DownloadCertificates({ compact = false, language = "es" 
 
   // 🔑 Lista de certificados
   const certificates = [
-    { file: "certificate.pdf", label: t.buttons.downloadCertificate },
-    { file: "certificado_Fullstack.pdf", label: "Fullstack Certificate" },
-    /* { file: "certificado_React.pdf", label: "React Certificate" },
-    { file: "certificado_Node.pdf", label: "Node.js Certificate" },
-    { file: "certificado_Tailwind.pdf", label: "Tailwind Certificate" },
-    { file: "certificado_Ingles.pdf", label: "English Certificate" }, */
+    // { file: "", label: t.buttons.downloadCertificate },
+    { file: "Introduction_to_Cybersecurity_certificate.pdf", label: t.buttons.introductionToCibersecurity },
+    { file: "Cyber_Threat_Management_certificate.pdf", label: t.buttons.cyberThreatManagment },
   ];
 
   const handleDownload = () => {
@@ -32,14 +29,12 @@ export default function DownloadCertificates({ compact = false, language = "es" 
           onChange={(e) => setSelected(e.target.value)}
           className={`rounded-lg border px-3 py-2 text-sm font-semibold cursor-pointer
             ${compact 
-              ? "text-indigo-500 border-indigo-400 dark:bg-gray-800 dark:text-white" 
-              : "bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 text-white shadow-lg"}`}
+              ? "dark:bg-gray-800 dark:text-white" 
+              : "text-black shadow-lg hover:bg-gray-300"}`}
         >
-          <option value="" className="font-black italic bg-violet-300">{t.buttons.chooseCertificate || "Selecciona un certificado"}</option>
+          <option value="" className="font-black italic bg-gray-200">{t.buttons.chooseCertificate || "Selecciona un certificado"}</option>
           {certificates.map((cert, i) => (
-            <option key={i} value={cert.file}
-            className="bg-white text-black italic font-semibold"
-            >
+            <option key={i} value={cert.file} className="bg-white text-black italic font-semibold">
               {cert.label}
             </option>
           ))}
@@ -48,10 +43,10 @@ export default function DownloadCertificates({ compact = false, language = "es" 
         <button
           onClick={handleDownload}
           disabled={!selected}
-          className={`flex gap-4 justify-center md:justify-start items-center font-bold px-4 py-2 rounded-lg hover:scale-105 transition-transform cursor-pointer
+          className={`flex gap-4 justify-center md:justify-start items-center font-bold px-4 py-2 rounded-lg transition-transform cursor-pointer
             ${compact 
-              ? "text-indigo-600 border-indigo-400 dark:bg-gray-800 dark:text-white" 
-              : "bg-gradient-to-r from-indigo-400 via-violet-400 to-pink-400 text-white shadow-lg hover:from-indigo-700 hover:to-purple-700"}`}
+              ? "text-black dark:bg-gray-800 dark:text-white" 
+              : "border-1 border-black text-black font-semibold hover:bg-gray-300"}`}
         >
           <FiDownload size={18} />
           {t.buttons.download}
