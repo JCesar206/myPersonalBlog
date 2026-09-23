@@ -31,7 +31,7 @@ export const texts = {
       clearFields: "Limpiar campos",
       sendComment: "Enviar comentario",
       iHaveWork: "He trabajado en: ",
-      namePosition: "Ingeniero de Software - Cyberseguridad",
+      namePosition: "Desarrollador de Software - Cyberseguridad",
       visit: "Visita el sitio web",
       contactMe: "Contáctame",
       writeToMe: "Escribeme"
@@ -112,7 +112,7 @@ export const texts = {
       clearFields: "Clear fields",
       sendComment: "Send comment",
       iHaveWork: "I have work in: ",
-      namePosition: "Software Engineer - Cybersecurity",
+      namePosition: "Software Developer - Cybersecurity",
       visit: "Visit web site",
       contactMe: "Contact me",
       writeToMe: "Write to me"
