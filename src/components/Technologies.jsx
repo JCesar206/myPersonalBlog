@@ -1,10 +1,10 @@
-import {
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub, FaVuejs, FaJava } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub, FaVuejs, FaJava } from "react-icons/fa";
 import { SiTailwindcss, SiJest, SiPostman, SiIntellijidea } from "react-icons/si";
 import { BiLogoTypescript, BiLogoSpringBoot } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { VscVscode } from "react-icons/vsc";
 import { MdOutlineSecurity } from "react-icons/md";
+import { RiNextjsFill } from "react-icons/ri";
 
 import { texts } from "../i18n/texts";
 
@@ -21,6 +21,7 @@ export default function Technologies({ language }) {
     { name: "CSS3", icon: FaCss3Alt },
     { name: "JavaScript", icon: FaJs },
     { name: "React", icon: FaReact },
+    { name: "Next.js", icon: RiNextjsFill },
     { name: "TypeScript", icon: BiLogoTypescript },
     { name: "Vue", icon: FaVuejs },
     { name: "Java", icon: FaJava },
