@@ -38,6 +38,7 @@ export const texts = {
     },
     buttons: {
       downloadCV: "Descargar CV",
+      chooseCertificate: "Selecciona un certificado",
       downloadCertificate: "Descargar certificado",
       introductionToCibersecurity: "Introducción a Ciberseguridad",
       cyberThreatManagment: "Administración de Amenazas Cibernéticas",
@@ -119,6 +120,7 @@ export const texts = {
     },
     buttons: {
       downloadCV: "Download CV",
+      chooseCertificate: "Select a certificate",
       downloadCertificate: "Download Certificate",
       introductionToCibersecurity: "Introduction to Cibersecurity",
       cyberThreatManagment: "Cyber Threat Managment",

@@ -71,11 +71,11 @@ export default function Navbar({ setDarkMode, setLanguage, language, darkMode })
           {/* Links SocialMedia Desktop */}
           <div className="hidden md:flex items-center gap-3 font-serif">
             <a href="https://github.com/JCesar206" target="_blank" rel="noopener noreferrer"
-            className="hover:scale-145 hover:text-purple-600 dark:hover:text-violet-400">
+            className="hover:scale-145 hover:text-purple-600 dark:hover:text-violet-400" title="Github">
               <FaGithub size={18}/>
             </a>
             <a href="https://www.linkedin.com/in/jcesar206" target="_blank" rel="noopener noreferrer"
-            className="hover:scale-150 hover:text-purple-600 dark:hover:text-violet-400">
+            className="hover:scale-150 hover:text-purple-600 dark:hover:text-violet-400" title="LinkedIn">
               <FaLinkedin size={18}/>
             </a>
           </div>
