@@ -1,6 +1,6 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub, FaVuejs, FaJava } from "react-icons/fa";
-import { SiTailwindcss, SiJest, SiPostman, SiIntellijidea } from "react-icons/si";
-import { BiLogoTypescript, BiLogoSpringBoot } from "react-icons/bi";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGithubAlt, FaGithub, FaPython } from "react-icons/fa";
+import { SiTailwindcss, SiJest, SiPostman } from "react-icons/si";
+import { BiLogoTypescript } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { VscVscode } from "react-icons/vsc";
 import { MdOutlineSecurity } from "react-icons/md";
@@ -23,21 +23,23 @@ export default function Technologies({ language }) {
     { name: "React", icon: FaReact },
     { name: "Next.js", icon: RiNextjsFill },
     { name: "TypeScript", icon: BiLogoTypescript },
-    { name: "Vue", icon: FaVuejs },
-    { name: "Java", icon: FaJava },
     { name: "Tailwind", icon: SiTailwindcss },
     { name: "MySQL", icon: GrMysql },
     { name: "Node.js", icon: FaNodeJs },
-    // { name: "PHP", icon: FaPhp },
-    { name: "Spring Boot", icon: BiLogoSpringBoot },
+    { name: "Python", icon: FaPython},
     { name: "Jest", icon: SiJest },
     { name: "Git", icon: FaGithubAlt },
     { name: "GitHub", icon: FaGithub },
     { name: "VS Code", icon: VscVscode },
-    { name: "Intellij", icon: SiIntellijidea },
     { name: "Postman", icon: SiPostman },
-    // { name: "Azure", icon: VscAzure },
-
+    /* 
+    { name: "Vue", icon: FaVuejs },
+    { name: "Java", icon: FaJava },
+    { name: "PHP", icon: FaPhp },
+    { name: "Spring Boot", icon: BiLogoSpringBoot }, 
+     { name: "Intellij", icon: SiIntellijidea },
+    { name: "Azure", icon: VscAzure },
+     */
     // 👇 i18n real aquí
     {
       name: language === "es" ? "Ciberseguridad" : "Cybersecurity",

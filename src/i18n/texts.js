@@ -10,7 +10,7 @@ export const texts = {
       title: "Acerca de mí",
       description: [
         "Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y accesibilidad. Especializado en ","HTML",",","CSS",",","JavaScript",
-        "y frameworks como ","React", ",","Vue", ",","TypeScript"," y ","Java",", con conocimientos en",
+        "y frameworks como ","React",",","TypeScript"," y ","Python",", con conocimientos en",
         "UX/UI","  diseño responsivo y","Ciberseguridad","."
       ]
     },
@@ -92,7 +92,7 @@ export const texts = {
       title: "About me",
       description: [
         "Web developer with experience creating websites and applications optimized for performance and accessibility. Specialized in ","HTML", ",", "CSS", ",", "JavaScript"," and frameworks such as ",
-        "React", ",", "Vue", ",","TypeScript"," and ", "Java",", with knowledge of ","UX/UI",
+        "React", ",","TypeScript"," and ", "Python",", with knowledge of ","UX/UI",
         ", responsive design and ","Cibersecurity","."
       ]
     },
