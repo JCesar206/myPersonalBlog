@@ -4,7 +4,7 @@ import { BiLogoTypescript } from "react-icons/bi";
 import { GrMysql } from "react-icons/gr";
 import { VscVscode } from "react-icons/vsc";
 import { MdOutlineSecurity } from "react-icons/md";
-import { RiNextjsFill } from "react-icons/ri";
+// import { RiNextjsFill } from "react-icons/ri";
 
 import { texts } from "../i18n/texts";
 
@@ -21,7 +21,6 @@ export default function Technologies({ language }) {
     { name: "CSS3", icon: FaCss3Alt },
     { name: "JavaScript", icon: FaJs },
     { name: "React", icon: FaReact },
-    { name: "Next.js", icon: RiNextjsFill },
     { name: "TypeScript", icon: BiLogoTypescript },
     { name: "Tailwind", icon: SiTailwindcss },
     { name: "MySQL", icon: GrMysql },
@@ -33,6 +32,7 @@ export default function Technologies({ language }) {
     { name: "VS Code", icon: VscVscode },
     { name: "Postman", icon: SiPostman },
     /* 
+    { name: "Next.js", icon: RiNextjsFill },
     { name: "Vue", icon: FaVuejs },
     { name: "Java", icon: FaJava },
     { name: "PHP", icon: FaPhp },
@@ -52,7 +52,6 @@ export default function Technologies({ language }) {
       <h2 className="text-center text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-gradient-x hover:scale-105">
         {techTitle}
       </h2>
-
       {/* GRID */}
       <div className="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-4 gap-6 p-4">
         {techs.map(({ name, icon: Icon }) => (
@@ -61,7 +60,6 @@ export default function Technologies({ language }) {
             className="flex flex-col items-center justify-center gap-6 rounded-2xl bg-white dark:bg-gray-900 p-3 min-h-44 min-w-[97px] w-full shadow-md hover:shadow-xl transition"
           >
             <Icon className="text-4xl sm:text-5xl md:text-6xl text-indigo-600" />
-
             <span className="text-center text-xs font-semibold text-gray-800 dark:text-gray-200 break-words leading-tight">
               {name}
             </span>

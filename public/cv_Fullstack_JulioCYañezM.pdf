@@ -17,7 +17,7 @@
 endobj
 4 0 obj
 <<
-/Length 10148
+/Length 11346
 >>
 stream
 0.200025 w
@@ -163,21 +163,35 @@ BT
 10.9249999999999989 TL
 0.118 g
 56. 558.1800000000000637 Td
-(Frontend Engineering:) Tj
+(Frontend:) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-157.5550000000000068 558.1800000000000637 Td
-( TypeScript, JavaScript \(ES6+\), ReactJS, Next.js, HTML5, CSS3, Tailwind CSS, Responsive) Tj
+100.1749999999999972 558.1800000000000637 Td
+( React, Next.js, Vue.js, HTML5, CSS3, Tailwind CSS) Tj
 ET
 BT
 /F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 545.6400000000001 Td
+(•) Tj
+ET
+BT
+/F2 9.5 Tf
 10.9249999999999989 TL
 0.118 g
 56. 545.6400000000001 Td
-(Web Design.) Tj
+(Languages:) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+109.0099999999999909 545.6400000000001 Td
+( JavaScript, TypeScript, Java) Tj
 ET
 BT
 /F1 9.5 Tf
@@ -191,21 +205,35 @@ BT
 10.9249999999999989 TL
 0.118 g
 56. 533.1000000000000227 Td
-(Backend & APIs:) Tj
+(Tools:) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-131.6200000000000045 533.1000000000000227 Td
-( Node.js, Express.js, Python, RESTful APIs, Axios, Authentication \(JWT, bcrypt\), Middleware) Tj
+83.6450000000000102 533.1000000000000227 Td
+( Git, GitHub, GitHub Actions, Vite, Axios, Postman) Tj
 ET
 BT
 /F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 520.5600000000000591 Td
+(•) Tj
+ET
+BT
+/F2 9.5 Tf
 10.9249999999999989 TL
 0.118 g
 56. 520.5600000000000591 Td
-(Development.) Tj
+(Backend:) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+98.4650000000000034 520.5600000000000591 Td
+( Node.js, Express.js, REST APIs, Spring Boot) Tj
 ET
 BT
 /F1 9.5 Tf
@@ -219,14 +247,14 @@ BT
 10.9249999999999989 TL
 0.118 g
 56. 508.0200000000000387 Td
-(Databases & Persistence:) Tj
+(Databases:) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-171.3300000000000409 508.0200000000000387 Td
-( MySQL, PostgreSQL, Relational Database Design, Query Optimization, Data Integrity.) Tj
+106.2549999999999955 508.0200000000000387 Td
+( MySQL, PostgreSQL) Tj
 ET
 BT
 /F1 9.5 Tf
@@ -240,14 +268,14 @@ BT
 10.9249999999999989 TL
 0.118 g
 56. 495.4800000000000182 Td
-(Tools, DevOps & Testing:) Tj
+(Cloud & DevOps:) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-169.5249999999999773 495.4800000000000182 Td
-( Git, GitHub, GitHub Actions \(CI/CD\), Postman, Vite, Cloud Platforms \(Render\), API Testing.) Tj
+133.8999999999999773 495.4800000000000182 Td
+( CI/CD, Azure, Render, GitHub Pages) Tj
 ET
 BT
 /F1 9.5 Tf
@@ -261,14 +289,14 @@ BT
 10.9249999999999989 TL
 0.118 g
 56. 482.9399999999999977 Td
-(Engineering Practices:) Tj
+(Security:) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-158.410000000000025 482.9399999999999977 Td
-( Technical Documentation, Code Review, OWASP Security Guidelines, Agile Workflows.) Tj
+96.375 482.9399999999999977 Td
+( JWT, bcrypt, Authentication, OWASP Basics) Tj
 ET
 BT
 /F2 11 Tf
@@ -287,7 +315,7 @@ BT
 11.5 TL
 0.118 g
 42. 442.8999999999999773 Td
-(Full Stack Software Engineer | AsteroiDev \(Lerma, Edo. Mex.\) — AsteroiDev) Tj
+(Full Stack Web Developer — AsteroiDev \(Full Stack Projects\)) Tj
 ET
 BT
 /F3 9.5 Tf
@@ -308,14 +336,21 @@ BT
 10.9249999999999989 TL
 0.118 g
 56. 417.6599999999999682 Td
-(Developed, tested, and maintained responsive, high-performance web applications using ReactJS, Next.js, TypeScript,) Tj
+(Designed, developed and deployed RESTful web applications using React, Node.js and MySQL.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 405.1199999999999477 Td
+(•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
 56. 405.1199999999999477 Td
-(and Node.js.) Tj
+(Built responsive and accessible interfaces with Tailwind CSS.) Tj
 ET
 BT
 /F1 9.5 Tf
@@ -329,14 +364,21 @@ BT
 10.9249999999999989 TL
 0.118 g
 56. 392.5799999999999272 Td
-(Built and integrated RESTful APIs and backend services in Node.js and Python, ensuring reliable data flow and secure) Tj
+(Developed backend APIs, database integrations and authentication flows.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 380.0399999999999068 Td
+(•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
 56. 380.0399999999999068 Td
-(client-server communication.) Tj
+(Managed deployments, Git-based workflows and CI/CD pipelines using GitHub Actions and Azure.) Tj
 ET
 BT
 /F1 9.5 Tf
@@ -350,84 +392,98 @@ BT
 10.9249999999999989 TL
 0.118 g
 56. 367.4999999999998863 Td
-(Designed relational database schemas and optimized SQL queries across MySQL and PostgreSQL databases.) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-45. 354.9599999999998658 Td
-(•) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 354.9599999999998658 Td
-(Configured automated deployment pipelines using GitHub Actions and managed cloud hosting environments) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 342.4199999999998454 Td
-(\(Azure/Render\).) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-45. 329.8799999999998249 Td
-(•) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 329.8799999999998249 Td
-(Investigated defects, refactored existing codebases to improve maintainability, and authored technical implementation) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 317.3399999999998045 Td
-(notes.) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-45. 304.799999999999784 Td
-(•) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 304.799999999999784 Td
-(Applied web security best practices \(OWASP standards, JWT authentication\) across all application layers.) Tj
+(Applied secure development and cybersecurity best practices.) Tj
 ET
 BT
 /F2 10 Tf
 11.5 TL
 0.118 g
-42. 287.7599999999997635 Td
+42. 350.4599999999998658 Td
 (Helpdesk & Web Systems Specialist - Banorte - Through the consultancy firm Inetum \(Mexico City\) — Afore XXI) Tj
 ET
 BT
 /F2 10 Tf
 11.5 TL
 0.118 g
-42. 274.5599999999997181 Td
+42. 337.2599999999998772 Td
 (Banorte) Tj
 ET
 BT
 /F3 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 261.8599999999997863 Td
+42. 324.5599999999998886 Td
 (San Mateo Atenco, México | Nov 2024 – Feb 2025) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 312.0199999999998681 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 312.0199999999998681 Td
+(Built and maintained web-based internal tools using TypeScript, React, and Python/Express to automate call logging and) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 299.4799999999998477 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 299.4799999999998477 Td
+(reporting workflows.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 286.9399999999998272 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 286.9399999999998272 Td
+(Executed end-to-end testing \(unit and integration tests\) on newly developed web features before deploying patches to) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 274.3999999999998636 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 274.3999999999998636 Td
+(staging and production environments.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 261.8599999999997863 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 261.8599999999997863 Td
+(Optimized relational database queries and maintained data integrity between call center management software and) Tj
 ET
 BT
 /F1 9.5 Tf
@@ -441,133 +497,182 @@ BT
 10.9249999999999989 TL
 0.118 g
 56. 249.3199999999998226 Td
-(Built and maintained web-based internal tools using TypeScript, React, and Python/Express to automate call logging and) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 236.779999999999859 Td
-(reporting workflows.) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-45. 224.2399999999998954 Td
-(•) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 224.2399999999998954 Td
-(Executed end-to-end testing \(unit and integration tests\) on newly developed web features before deploying patches to) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 211.6999999999999318 Td
-(staging and production environments.) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-45. 199.1599999999999682 Td
-(•) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 199.1599999999999682 Td
-(Optimized relational database queries and maintained data integrity between call center management software and) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 186.6200000000000045 Td
 (internal reporting servers.) Tj
 ET
 BT
 /F2 10 Tf
 11.5 TL
 0.118 g
-42. 169.5800000000000409 Td
+42. 232.279999999999859 Td
 (Operations Automation & Junior Web Developer | Call Center / Helpdesk - Inbursa - Through the consultancy) Tj
 ET
 BT
 /F2 10 Tf
 11.5 TL
 0.118 g
-42. 156.3799999999999955 Td
+42. 219.0799999999998136 Td
 (firm Inetum \(Mexico City\) — Seguros Inbursa) Tj
 ET
 BT
 /F3 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 143.67999999999995 Td
+42. 206.3799999999997681 Td
 (Toluca, México | May 2024 – Jul 2024) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 131.1399999999999864 Td
+45. 193.8399999999998045 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 131.1399999999999864 Td
+56. 193.8399999999998045 Td
 (Developed and deployed custom web modules and internal forms using HTML5, CSS3, Tailwind CSS, and JavaScript to) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 118.6000000000000227 Td
+45. 181.2999999999998408 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 181.2999999999998408 Td
 (streamline internal technical ticket logging.) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 106.0600000000000591 Td
+45. 168.7599999999998772 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 106.0600000000000591 Td
+56. 168.7599999999998772 Td
 (Investigated, debugged, and resolved front-end and back-end application defects reported by frontline call center agents.) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 93.5200000000000955 Td
+45. 156.2199999999999136 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 93.5200000000000955 Td
+56. 156.2199999999999136 Td
 (Authored clear technical documentation, API integration guides, and system release notes for cross-functional teams and) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 80.9800000000001319 Td
+45. 143.67999999999995 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 143.67999999999995 Td
 (system administrators.) Tj
+ET
+BT
+/F2 10 Tf
+11.5 TL
+0.118 g
+42. 126.6399999999999864 Td
+(Helpdesk & Web Systems Specialist - Atento - Through the consultancy firm Inetum \(Mexico City\) — Atento) Tj
+ET
+BT
+/F3 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+42. 113.9399999999999409 Td
+(Toluca, México | Oct 2023 – Apr 2024) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 101.3999999999999773 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 101.3999999999999773 Td
+(Developed and deployed custom web modules and internal forms using HTML5, CSS3, Tailwind CSS, and JavaScript to) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 88.8600000000000136 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 88.8600000000000136 Td
+(streamline internal technical ticket logging.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 76.32000000000005 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 76.32000000000005 Td
+(Investigated, debugged, and resolved front-end and back-end application defects reported by frontline call center agents.) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 63.7800000000000864 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 63.7800000000000864 Td
+(Managed deployment releases for internal web tools using Git/GitHub, performing version control and regression testing) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+45. 51.2400000000001228 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 51.2400000000001228 Td
+(prior to production launches.) Tj
 ET
 endstream
 endobj
@@ -577,18 +682,15 @@ endobj
 /Resources 2 0 R
 /MediaBox [0 0 612. 792.]
 /Annots [
-<</Type /Annot /Subtype /Link /Rect [42. 462.2199999999999704 257.2000000000001023 450.2199999999999704] /Border [0 0 0] /A <</S /URI /URI (https://jcesar206.github.io/ecommerceFront/) >> >>
-<</Type /Annot /Subtype /Link /Rect [42. 394.8599999999999 199.1000000000000227 382.8599999999999] /Border [0 0 0] /A <</S /URI /URI (https://jcesar206.github.io/notesFront/) >> >>
-<</Type /Annot /Subtype /Link /Rect [42. 327.4999999999998295 132.7000000000000171 315.4999999999998295] /Border [0 0 0] /A <</S /URI /URI (https://jcesar206.github.io/passwordManager/) >> >>
-<</Type /Annot /Subtype /Link /Rect [119.1399999999999864 285.2199999999997999 213.5699999999999932 273.7199999999997999] /Border [0 0 0] /A <</S /URI /URI (https://github.com/JCesar206) >> >>
-<</Type /Annot /Subtype /Link /Rect [221.3599999999999852 285.2199999999997999 299.5449999999999591 273.7199999999997999] /Border [0 0 0] /A <</S /URI /URI (https://julioym.asteroi.dev) >> >>
+<</Type /Annot /Subtype /Link /Rect [119.1399999999999864 390.1999999999998749 213.5699999999999932 378.6999999999998749] /Border [0 0 0] /A <</S /URI /URI (https://github.com/JCesar206) >> >>
+<</Type /Annot /Subtype /Link /Rect [221.3599999999999852 390.1999999999998749 299.5449999999999591 378.6999999999998749] /Border [0 0 0] /A <</S /URI /URI (https://julioym.asteroi.dev) >> >>
 ]
 /Contents 6 0 R
 >>
 endobj
 6 0 obj
 <<
-/Length 7540
+/Length 6378
 >>
 stream
 0.6 w
@@ -598,405 +700,363 @@ BT
 11.5 TL
 0.118 g
 42. 740. Td
-(Helpdesk & Web Systems Specialist - Atento - Through the consultancy firm Inetum \(Mexico City\) — Atento) Tj
-ET
-BT
-/F3 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-42. 727.2999999999999545 Td
-(Toluca, México | Oct 2023 – Apr 2024) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-45. 714.7599999999999909 Td
-(•) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 714.7599999999999909 Td
-(Developed and deployed custom web modules and internal forms using HTML5, CSS3, Tailwind CSS, and JavaScript to) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 702.2200000000000273 Td
-(streamline internal technical ticket logging.) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-45. 689.67999999999995 Td
-(•) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 689.67999999999995 Td
-(Investigated, debugged, and resolved front-end and back-end application defects reported by frontline call center agents.) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-45. 677.1399999999999864 Td
-(•) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 677.1399999999999864 Td
-(Managed deployment releases for internal web tools using Git/GitHub, performing version control and regression testing) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-56. 664.5999999999999091 Td
-(prior to production launches.) Tj
-ET
-BT
-/F2 10 Tf
-11.5 TL
-0.118 g
-42. 647.5599999999999454 Td
 (IT Support & Internal Web Developer | Customer Operations / BPO | CitiBanamex SA de CV \(Metepec, Edo.) Tj
 ET
 BT
 /F2 10 Tf
 11.5 TL
 0.118 g
-42. 634.3600000000000136 Td
-(Mex.\) — Citibanamex SA de CV) Tj
+42. 726.7999999999999545 Td
+(Mex.\) — CitiBanamex) Tj
 ET
 BT
 /F3 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 621.6599999999999682 Td
-(Metepec | Jul 2017 – Aug 2023) Tj
+42. 714.1000000000000227 Td
+(Metepec, México | Jul 2017 – Aug 2023) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 609.1200000000000045 Td
+45. 701.5599999999999454 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 609.1200000000000045 Td
+56. 701.5599999999999454 Td
 (Engineered and maintained internal web-based dashboards using React, JavaScript \(ES6+\), and Node.js to track) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 596.5800000000000409 Td
+45. 689.0199999999999818 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 689.0199999999999818 Td
 (real-time agent metrics and ticketing volume.) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 584.0399999999999636 Td
+45. 676.4800000000000182 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 584.0399999999999636 Td
+56. 676.4800000000000182 Td
 (Designed, tested, and deployed regular software updates and feature enhancements to internal CRM and helpdesk tools,) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 571.5 Td
+45. 663.9399999999999409 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 663.9399999999999409 Td
 (ensuring 99.8% system uptime.) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 558.9600000000000364 Td
+45. 651.3999999999999773 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 558.9600000000000364 Td
+56. 651.3999999999999773 Td
 (Integrated RESTful APIs and SQL databases \(MySQL/PostgreSQL\) to automate customer data retrieval, reducing) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 546.4200000000000728 Td
+45. 638.8600000000000136 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 638.8600000000000136 Td
 (average handle time \(AHT\) across operations.) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 533.8800000000001091 Td
+45. 626.3199999999999363 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 533.8800000000001091 Td
+56. 626.3199999999999363 Td
 (Configured CI/CD deployment pipelines via GitHub Actions to deliver smooth, zero-downtime updates to internal web) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 521.3400000000000318 Td
+45. 613.7799999999999727 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 613.7799999999999727 Td
 (applications.) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 508.8000000000000114 Td
+45. 601.2400000000000091 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 508.8000000000000114 Td
+56. 601.2400000000000091 Td
 (Troubleshot, debugged, and refactored legacy internal codebases, improving web application loading speeds and user) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 496.2599999999999909 Td
+45. 588.7000000000000455 Td
+(•) Tj
+ET
+BT
+/F1 9.5 Tf
+10.9249999999999989 TL
+0.118 g
+56. 588.7000000000000455 Td
 (experience for 50+ daily active users.) Tj
 ET
 BT
 /F2 11 Tf
 12.6499999999999986 TL
 0.118 g
-42. 470.2199999999999704 Td
+42. 562.6600000000000819 Td
 (PROJECTS) Tj
 ET
 0.47 G
 0.6 w
-42. 467.2199999999999704 m
-570. 467.2199999999999704 l
+42. 559.6600000000000819 m
+570. 559.6600000000000819 l
 S
 BT
 /F2 10 Tf
 11.5 TL
-0.063 0.251 0.588 rg
-42. 452.2199999999999704 Td
-(DevShop - Full-stack e-commerce application) Tj
+0.118 g
+42. 544.6600000000000819 Td
+(DevShop — Full Stack E-commerce Application) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 439.5199999999999818 Td
-(Full-stack e-commerce application developed with React, Node.js, Express.js, and MySQL. It features JWT authentication, a) Tj
+42. 531.9600000000000364 Td
+(Full-stack e-commerce application built with React, Node.js, Express.js and MySQL. Implemented JWT authentication,) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 426.9799999999999613 Td
-(shopping cart, an admin dashboard, image uploading, multi-language support, and a responsive interface. Deployed on) Tj
+42. 519.4200000000000728 Td
+(shopping cart, admin dashboard, image uploading, multi-language support and responsive UI. Deployed on GitHub Pages and) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 414.4399999999999409 Td
-(GitHub Pages and Render.) Tj
+42. 506.8799999999999955 Td
+(Render.) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 401.8999999999999204 Td
+42. 494.339999999999975 Td
 (Technologies: React, Tailwind CSS, Axios, Node.js, Express.js, MySQL, JWT, Git, GitHub) Tj
 ET
 BT
 /F2 10 Tf
 11.5 TL
-0.063 0.251 0.588 rg
-42. 384.8599999999999 Td
-(Crazy Note - Full-stack notes app) Tj
+0.118 g
+42. 477.2999999999999545 Td
+(Crazy Note — Full Stack Notes Application) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 372.1599999999999113 Td
-(A notes application for creating, updating, and managing notes, adding emojis, and marking them as favorites or completed. It) Tj
+42. 464.5999999999999659 Td
+(Notes application to create, update and manage notes, add emojis and mark notes as favorites or completed. React frontend) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 359.6199999999998909 Td
-(features a React frontend connected to a Node.js and Express.js backend, with PostgreSQL integration and JWT-based) Tj
+42. 452.0599999999999454 Td
+(connected to a Node.js and Express.js backend with PostgreSQL integration and JWT authentication.) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 347.0799999999998704 Td
-(authentication.) Tj
-ET
-BT
-/F1 9.5 Tf
-10.9249999999999989 TL
-0.118 g
-42. 334.5399999999998499 Td
+42. 439.519999999999925 Td
 (Technologies: React, Tailwind CSS, Axios, Node.js, Express.js, PostgreSQL, JWT) Tj
 ET
 BT
 /F2 10 Tf
 11.5 TL
-0.063 0.251 0.588 rg
-42. 317.4999999999998295 Td
+0.118 g
+42. 422.4799999999999045 Td
 (Password Manager) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 304.7999999999998408 Td
-(Web application for managing usernames and passwords locally, featuring a simple and adaptable user interface.) Tj
+42. 409.7799999999999159 Td
+(Web application to manage usernames and passwords locally, with a responsive and simple user interface.) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 292.2599999999998204 Td
+42. 397.2399999999998954 Td
 (Technologies: React, Tailwind CSS) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 275.7199999999997999 Td
+42. 380.6999999999998749 Td
 (Code and demos: ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.063 0.251 0.588 rg
-119.1399999999999864 275.7199999999997999 Td
+119.1399999999999864 380.6999999999998749 Td
 (github.com/JCesar206) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-213.5699999999999932 275.7199999999997999 Td
+213.5699999999999932 380.6999999999998749 Td
 ( | ) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.063 0.251 0.588 rg
-221.3599999999999852 275.7199999999997999 Td
+221.3599999999999852 380.6999999999998749 Td
 (julioym.asteroi.dev) Tj
 ET
 BT
 /F2 11 Tf
 12.6499999999999986 TL
 0.118 g
-42. 253.6799999999998363 Td
+42. 358.6599999999998545 Td
 (EDUCATION) Tj
 ET
 0.47 G
 0.6 w
-42. 250.6799999999998363 m
-570. 250.6799999999998363 l
+42. 355.6599999999998545 m
+570. 355.6599999999998545 l
 S
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 236.1799999999998363 Td
-(Bachelor's Degree in Administrative Informatics - Universidad Insurgentes, Naucalpan, State of Mexico | 2007 – 2010) Tj
+42. 341.1599999999998545 Td
+(Bachelor's Degree in Administrative Informatics — Universidad Insurgentes, Naucalpan, Estado de México | 2007 – 2010) Tj
 ET
 BT
 /F2 11 Tf
 12.6499999999999986 TL
 0.118 g
-42. 212.1399999999998727 Td
+42. 317.119999999999834 Td
 (CERTIFICATIONS) Tj
 ET
 0.47 G
 0.6 w
-42. 209.1399999999998727 m
-570. 209.1399999999998727 l
+42. 314.119999999999834 m
+570. 314.119999999999834 l
 S
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 194.6399999999998727 Td
+45. 299.619999999999834 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 194.6399999999998727 Td
-(Introduction to Cybersecurity - Cisco) Tj
+56. 299.619999999999834 Td
+(Introduction to Cybersecurity — Cisco) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-45. 182.0999999999999091 Td
+45. 287.0799999999998136 Td
 (•) Tj
 ET
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-56. 182.0999999999999091 Td
-( C y b e r     T h r e a t   M a n a g e m e n t   -   C i s c o) Tj
+56. 287.0799999999998136 Td
+(Cyber Threat Management — Cisco) Tj
 ET
 BT
 /F2 11 Tf
 12.6499999999999986 TL
 0.118 g
-42. 160.0599999999999454 Td
+42. 265.0399999999997362 Td
 (LANGUAGES) Tj
 ET
 0.47 G
 0.6 w
-42. 157.0599999999999454 m
-570. 157.0599999999999454 l
+42. 262.0399999999997362 m
+570. 262.0399999999997362 l
 S
 BT
 /F1 9.5 Tf
 10.9249999999999989 TL
 0.118 g
-42. 142.5599999999999454 Td
-(English - Upper-intermediate/Advanced \(B2+\) | Spanish - Native) Tj
+42. 247.5399999999997362 Td
+(English — Intermediate-Upper \(B2+\) | Spanish — Native) Tj
 ET
 endstream
 endobj
@@ -1170,7 +1230,7 @@ endobj
 21 0 obj
 <<
 /Producer (jsPDF 2.5.1)
-/CreationDate (D:20261012094513-06'00')
+/CreationDate (D:20261012151832-06'00')
 >>
 endobj
 22 0 obj
@@ -1184,35 +1244,35 @@ endobj
 xref
 0 23
 0000000000 65535 f 
-0000019947 00000 n 
-0000021772 00000 n 
+0000019419 00000 n 
+0000021244 00000 n 
 0000000015 00000 n 
 0000001088 00000 n 
-0000011289 00000 n 
-0000012355 00000 n 
-0000020010 00000 n 
-0000020135 00000 n 
-0000020265 00000 n 
-0000020398 00000 n 
-0000020536 00000 n 
-0000020660 00000 n 
-0000020789 00000 n 
-0000020921 00000 n 
-0000021057 00000 n 
-0000021185 00000 n 
-0000021312 00000 n 
-0000021441 00000 n 
-0000021574 00000 n 
-0000021676 00000 n 
-0000022022 00000 n 
-0000022108 00000 n 
+0000012487 00000 n 
+0000012989 00000 n 
+0000019482 00000 n 
+0000019607 00000 n 
+0000019737 00000 n 
+0000019870 00000 n 
+0000020008 00000 n 
+0000020132 00000 n 
+0000020261 00000 n 
+0000020393 00000 n 
+0000020529 00000 n 
+0000020657 00000 n 
+0000020784 00000 n 
+0000020913 00000 n 
+0000021046 00000 n 
+0000021148 00000 n 
+0000021494 00000 n 
+0000021580 00000 n 
 trailer
 <<
 /Size 23
 /Root 22 0 R
 /Info 21 0 R
-/ID [ <6922A8F6E5168241FCB60337A74CE968> <6922A8F6E5168241FCB60337A74CE968> ]
+/ID [ <554AA9F1B114FE70CB354FA68BD64F32> <554AA9F1B114FE70CB354FA68BD64F32> ]
 >>
 startxref
-22212
+21684
 %%EOF
