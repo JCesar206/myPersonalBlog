@@ -3,15 +3,15 @@ import DownloadCertificate from "./DownloadCertificate";
 import { texts } from "../i18n/texts.js";
 
 const techStyles = {
-  HTML: "tech-badge bg-orange-100 text-orange-700 ring-orange-300 font-semibold",
-  CSS: "tech-badge bg-blue-100 text-blue-700 ring-blue-300 font-semibold",
-  JavaScript: "tech-badge bg-yellow-100 text-yellow-700 ring-yellow-300 font-semibold",
-  React: "tech-badge bg-cyan-100 text-cyan-700 ring-cyan-300 font-semibold",
-  TypeScript: "tech-badge bg-indigo-100 text-indigo-700 ring-indigo-300 font-semibold",
-  Python: "tech-badge bg-green-100 text-green-700 ring-red-300 font-semibold",
-  "UX/UI": "tech-badge bg-purple-100 text-purple-700 ring-purple-300 font-semibold",
-  Ciberseguridad: "tech-badge bg-blue-100 text-blue-700 ring-blue-300 font-semibold",
-  Cibersecurity: "tech-badge bg-blue-100 text-blue-700 ring-blue-300 font-semibold",
+  HTML: "inline-block px-2 py-0.5 rounded-md bg-orange-100 dark:bg-orange-950/60 text-orange-700 dark:text-orange-400 font-medium text-sm",
+  CSS: "inline-block px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 font-medium text-sm",
+  JavaScript: "inline-block px-2 py-0.5 rounded-md bg-yellow-100 dark:bg-yellow-950/60 text-yellow-700 dark:text-yellow-400 font-medium text-sm",
+  React: "inline-block px-2 py-0.5 rounded-md bg-cyan-100 dark:bg-cyan-950/60 text-cyan-700 dark:text-cyan-400 font-medium text-sm",
+  TypeScript: "inline-block px-2 py-0.5 rounded-md bg-indigo-100 dark:bg-indigo-950/60 text-indigo-700 dark:text-indigo-400 font-medium text-sm",
+  Python: "inline-block px-2 py-0.5 rounded-md bg-emerald-100 dark:bg-emerald-950/60 text-emerald-700 dark:text-emerald-400 font-medium text-sm",
+  "UX/UI": "inline-block px-2 py-0.5 rounded-md bg-purple-100 dark:bg-purple-950/60 text-purple-700 dark:text-purple-400 font-medium text-sm",
+  Ciberseguridad: "inline-block px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 font-medium text-sm",
+  Cibersecurity: "inline-block px-2 py-0.5 rounded-md bg-blue-100 dark:bg-blue-950/60 text-blue-700 dark:text-blue-400 font-medium text-sm",
 };
 
 export default function Hero({ language }) {
@@ -19,34 +19,59 @@ export default function Hero({ language }) {
   const description = t.hero.description;
 
   return (
-    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 gap-12 md:items-center">
-      {/* Content */}
+    <section id="hero" className="grid grid-cols-1 md:grid-cols-2 gap-12 md:items-center py-6">
+      
+      {/* Columna de Contenido / Información Personal */}
       <div className="text-center md:text-left space-y-6">
-        <h1
-        className="text-center text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-500 animate-gradient-x hover:scale-105">
-          {t.hero.title}
+        
+        {/* Título Principal */}
+        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 dark:from-indigo-400 dark:via-purple-400 dark:to-pink-400">
+            {t.hero.title}
+          </span>
         </h1>
 
-        <p className="text-gray-600 dark:text-gray-800 font-extralight italic max-w-xl mx-auto md:mx-0">
+        {/* Descripción dinámica con resaltado de tecnologías */}
+        <p className="text-slate-600 dark:text-slate-400 text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
           {Array.isArray(description) &&
-            description.map((part, i) => (
-              <span key={i} className={`mr-2 ${techStyles[part.replace(/[.,]/g).trim()] || ""}`}>{part}</span>
-            ))}
+            description.map((part, i) => {
+              // Limpiamos puntuación para emparejar con el diccionario techStyles
+              const cleanWord = part.replace(/[.,]/g, "").trim();
+              const styleClass = techStyles[cleanWord];
+
+              if (styleClass) {
+                return (
+                  <span key={i} className={`mx-1 ${styleClass}`}>
+                    {part}
+                  </span>
+                );
+              }
+              return <span key={i}> {part}</span>;
+            })}
         </p>
 
-        {/* CTA */}
-        <div className="flex flex-wrap gap-4 justify-center md:justify-start items-center">
-          <DownloadCV language={language}/>
-          <DownloadCertificate language={language}/>
+        {/* Botones de Acción (CTA) */}
+        <div className="flex flex-wrap gap-4 justify-center md:justify-start items-center pt-2">
+          <DownloadCV language={language} />
+          <DownloadCertificate language={language} />
         </div>
       </div>
 
-      {/* Avatar */}
-      <div className="flex justify-center md:justify-start">
-        <div className="relative">
-          <img src="/myAvatar.jpg" alt="Avatar"
-            className="w-80 md:w-72 rounded-3xl object-contain shadow-xl transition-transform duration-500 hover:scale-110 ring-4 ring-indigo-500"/>
-          <span className="absolute -bottom-4 -right-4 bg-indigo-600 text-white p-5 rounded-full shadow-lg font-extrabold animate-bounce">↗</span>
+      {/* Columna del Avatar / Imagen de Perfil */}
+      <div className="flex justify-center md:justify-end">
+        <div className="relative group">
+          {/* Marco decorativo difuminado de fondo */}
+          <div className="absolute -inset-1 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl blur-md opacity-30 group-hover:opacity-75 transition duration-500"></div>
+          
+          <img
+            src="/myAvatar.jpg"
+            alt="Avatar de Julio César"
+            className="relative w-72 md:w-80 rounded-3xl object-cover shadow-2xl border-2 border-slate-200 dark:border-slate-800 transition-transform duration-500 group-hover:scale-[1.02]"
+          />
+          {/* Insignia flotante decorativa */}
+          <div className="absolute -bottom-3 -right-3 bg-indigo-600 text-white p-3 rounded-2xl shadow-lg font-bold flex items-center justify-center transform transition-transform group-hover:rotate-12">
+            🚀
+          </div>
         </div>
       </div>
     </section>
