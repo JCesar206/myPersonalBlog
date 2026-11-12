@@ -4,37 +4,51 @@ export const texts = {
       hero: "Acerca de mí",
       technologies: "Tecnologías",
       projects: "Proyectos",
-      contact: "Contacto"
+      contact: "Contacto",
     },
     hero: {
       title: "Acerca de mí",
       description: [
-        "Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y accesibilidad. Especializado en ","HTML",",","CSS",",","JavaScript",
-        "y frameworks como ","React",",","TypeScript"," y ","Python",", con conocimientos en",
-        "UX/UI","  diseño responsivo y","Ciberseguridad","."
-      ]
+        "Desarrollador web con experiencia en la creación de sitios y aplicaciones optimizadas para rendimiento y accesibilidad. Especializado en ",
+        "HTML",
+        ",",
+        "CSS",
+        ",",
+        "JavaScript",
+        " y tecnologías como ",
+        "React",
+        ",",
+        "TypeScript",
+        " y ",
+        "Python",
+        ", con sólidos conocimientos en ",
+        "UX/UI",
+        ", diseño responsivo y ",
+        "Ciberseguridad",
+        ".",
+      ],
     },
     technologies: {
       title: "Tecnologías y Herramientas",
-      cybersecurity: "Ciberseguridad"
+      cybersecurity: "Ciberseguridad",
     },
     contact: {
       title: "Contacto",
-      question: "¿Tienes un proyecto o una idea? Escríbeme.",
+      question: "¿Tienes un proyecto o una vacante en mente? Hablemos.",
       legend: "Deja un comentario",
       yourName: "Tu nombre",
       yourEmail: "Tu correo (Opcional)",
-      writeYourComment: "Escribe tu comentario",
+      writeYourComment: "Escribe tu mensaje o comentario",
       sending: "Enviando...",
       error: "Ocurrió un error. Intenta de nuevo.",
-      sentComment: "Comentario enviado ✔",
+      sentComment: "Comentario enviado",
       clearFields: "Limpiar campos",
       sendComment: "Enviar comentario",
-      iHaveWork: "He trabajado en: ",
-      namePosition: "Desarrollador de Software - Cyberseguridad",
-      visit: "Visita el sitio web",
+      iHaveWork: "Colaboración actual en:",
+      namePosition: "Desarrollador de Software - Ciberseguridad",
+      visit: "Visitar sitio web",
       contactMe: "Contáctame",
-      writeToMe: "Escribeme"
+      writeToMe: "Escríbeme",
     },
     buttons: {
       downloadCV: "Descargar CV",
@@ -42,124 +56,151 @@ export const texts = {
       downloadCertificate: "Descargar certificado",
       introductionToCibersecurity: "Introducción a Ciberseguridad",
       cyberThreatManagment: "Administración de Amenazas Cibernéticas",
-      clearFields: "Limpiar campos",
-      sendComment: "Enviar comentario",
-      viewProject: "Ver proyecto",
-      viewCode: "Ver código"
+      clearFields: "Limpiar",
+      sendComment: "Enviar mensaje",
+      viewDemo: "Ver demo",
+      viewCode: "Código",
     },
     projects: {
-      title: "Proyectos",
+      title: "Proyectos Destacados",
       items: [
         {
           title: "Administrador de Contraseñas",
-          description: "Aplicación administradora de contraseñas. La app guarda localmente su nombre de usuario y contraseña de forma segura."
+          description:
+            "Aplicación de gestión segura de credenciales. Permite almacenar, organizar y consultar usuarios y contraseñas localmente con enfoque en privacidad y usabilidad.",
         },
-				{
-          title: "Comercio Electrónico",
-          description: "DevShop es un ecommerce Full Stack desarrollado con React, Node.js, Express y MySQL que integra autenticación JWT, carrito de compras, panel administrativo, carga de imágenes, soporte multilenguaje y diseño responsive, desplegado en GitHub Pages y Render."
+        {
+          title: "DevShop — Comercio Electrónico",
+          description:
+            "Plataforma e-commerce Full Stack desarrollada con React, Node.js, Express y MySQL. Integra autenticación JWT, carrito de compras, panel administrativo, carga de imágenes y soporte multilenguaje.",
         },
-				{
-          title: "Nota Loka",
-          description: "Nota Loca Local. La aplicación permite guardar notas en una base de datos que permite agregar emojis y también actualizar la información incluso poner como notas favoritas o completadas."
+        {
+          title: "Nota Loka — Gestor de Notas",
+          description:
+            "Aplicación web interactiva para crear, editar y organizar notas persistentes con soporte de emojis, filtrado por estado, marcadores de favoritos y tareas completadas.",
         },
-				{
-          title: "Finanzas Personales",
-          description: "Finanzas personales. Permite gestionar de forma simple los gastos e ingresos a una cuenta."
+        {
+          title: "Control de Finanzas Personales",
+          description:
+            "Aplicación de gestión financiera que permite registrar, categorizar y visualizar el balance entre ingresos y gastos en tiempo real con una interfaz limpia.",
         },
-				{
+        {
           title: "Mini Red Social",
-          description: "Finanzas personales. Permite gestionar de forma simple los gastos e ingresos a una cuenta."
+          description:
+            "Plataforma social interactiva construida con React y TypeScript que permite publicar actualizaciones, compartir imágenes, reaccionar con emojis y gestionar comentarios dinámicos.",
         },
-				{
-          title: "PockétApi App",
-          description: "PocketApi App Esta app permite buscar a tu pokémon favorito por nombre o número de identificador mostrando sus caracteristicas y hábilidades. Un pequeño viaje a la nostalgia."
-        }
-      ]
+        {
+          title: "PokéApi Explorer",
+          description:
+            "Aplicación web que consume una API REST para consultar información detallada de Pokémon por nombre o identificador, mostrando estadísticas base, tipos y habilidades.",
+        },
+      ],
     },
-		footer: {
-			nameApp: "Mi portafolio personal.",
-			rights: "Todos los derechos reservados."
-		}
+    footer: {
+      nameApp: "Portafolio Profesional",
+      rights: "Todos los derechos reservados.",
+    },
   },
   en: {
     navbar: {
       hero: "About",
       technologies: "Technologies",
       projects: "Projects",
-      contact: "Contact"
+      contact: "Contact",
     },
     hero: {
       title: "About me",
       description: [
-        "Web developer with experience creating websites and applications optimized for performance and accessibility. Specialized in ","HTML", ",", "CSS", ",", "JavaScript"," and frameworks such as ",
-        "React", ",","TypeScript"," and ", "Python",", with knowledge of ","UX/UI",
-        ", responsive design and ","Cibersecurity","."
-      ]
+        "Web developer experienced in building websites and applications optimized for performance and accessibility. Specialized in ",
+        "HTML",
+        ",",
+        "CSS",
+        ",",
+        "JavaScript",
+        ", and technologies such as ",
+        "React",
+        ",",
+        "TypeScript",
+        ", and ",
+        "Python",
+        ", with strong knowledge of ",
+        "UX/UI",
+        ", responsive design, and ",
+        "Cybersecurity",
+        ".",
+      ],
     },
     technologies: {
       title: "Technologies and Tools",
-      cybersecurity: "Cybersecurity"
+      cybersecurity: "Cybersecurity",
     },
     contact: {
       title: "Contact",
-      question: "Have a project or an idea? Let's talk.",
+      question: "Have a project or an opportunity in mind? Let's talk.",
       legend: "Leave a comment",
       yourName: "Your name",
       yourEmail: "Your email (Optional)",
-      writeYourComment: "Write your comment",
+      writeYourComment: "Write your message or comment",
       sending: "Sending...",
-      error: "Something went wrong. Try again.",
-      sentComment: "Comment sent ✔",
+      error: "Something went wrong. Please try again.",
+      sentComment: "Comment sent",
       clearFields: "Clear fields",
       sendComment: "Send comment",
-      iHaveWork: "I have work in: ",
+      iHaveWork: "Currently collaborating at:",
       namePosition: "Software Developer - Cybersecurity",
-      visit: "Visit web site",
+      visit: "Visit website",
       contactMe: "Contact me",
-      writeToMe: "Write to me"
+      writeToMe: "Write to me",
     },
     buttons: {
       downloadCV: "Download CV",
       chooseCertificate: "Select a certificate",
       downloadCertificate: "Download Certificate",
-      introductionToCibersecurity: "Introduction to Cibersecurity",
-      cyberThreatManagment: "Cyber Threat Managment",
-      clearFields: "Clear fields",
-      sendComment: "Send comment",
-      sending: "Sending..."
+      introductionToCibersecurity: "Introduction to Cybersecurity",
+      cyberThreatManagment: "Cyber Threat Management",
+      clearFields: "Clear",
+      sendComment: "Send message",
+      viewDemo: "Live Demo",
+      viewCode: "Code",
     },
     projects: {
-      title: "Projects",
+      title: "Featured Projects",
       items: [
         {
           title: "Password Manager",
-          description: "Password manager app. The app securely stores your username and password locally."
+          description:
+            "Secure credential management application allowing users to store, organize, and retrieve usernames and passwords locally with a focus on privacy and usability.",
         },
         {
-          title: "Ecommerce",
-          description: "DevShop is a full-stack e-commerce application built with React, Node.js, Express, and MySQL that features JWT authentication, a shopping cart, an admin dashboard, image uploading, multi-language support, and a responsive design, deployed on GitHub Pages and Render."
+          title: "DevShop — E-Commerce Platform",
+          description:
+            "Full-stack e-commerce application built with React, Node.js, Express, and MySQL featuring JWT authentication, shopping cart, admin dashboard, image uploads, and multi-language support.",
         },
-				{
-          title: "Crazy Note",
-          description: "Local Notes. The app lets you save notes in a database, add emojis, update information, and even mark notes as favorites or completed."
+        {
+          title: "Crazy Note — Notes Manager",
+          description:
+            "Interactive web application to create, update, and organize persistent notes with emoji support, status filtering, favorites, and task completion tracking.",
         },
-				{
-          title: "Personal Finance",
-          description: "Personal finance. It allows you to easily manage expenses and income to an account."
+        {
+          title: "Personal Finance Tracker",
+          description:
+            "Financial management application enabling users to record, categorize, and monitor income and expense balances in real time through a clean interface.",
         },
-				{
-          title: "Mini Social Media",
-          description: "A mini social network that allows you to add images, emojis, and comments in a fun way."
+        {
+          title: "Mini Social Network",
+          description:
+            "Interactive social platform built with React and TypeScript that enables users to publish posts, share images, react with emojis, and manage dynamic comment threads.",
         },
-				{
-          title: "PocketApi App",
-          description: "PocketApi App This app lets you search for your favorite Pokémon by name or ID number, displaying its characteristics and abilities. A little trip down memory lane."
-        }
-      ]
+        {
+          title: "PokéApi Explorer",
+          description:
+            "Web application consuming a REST API to search and display detailed Pokémon data by name or ID, including base stats, types, and abilities.",
+        },
+      ],
     },
-		footer: {
-			nameApp: "My personal portfolio.",
-			rights: "All rights reserved."
-		}
-  }
+    footer: {
+      nameApp: "Professional Portfolio",
+      rights: "All rights reserved.",
+    },
+  },
 };

@@ -83,7 +83,7 @@ export default function Projects({ language }) {
             image={project.image}
             github={project.github}
             demo={project.demo || project.url}
-            techs={project.techs}
+            techs={project.tech}
             title={project.title}
             description={project.description}
             language={language}
