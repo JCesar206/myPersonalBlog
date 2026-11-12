@@ -1,12 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { TbMessageLanguage } from "react-icons/tb";
-import { FaSun, FaMoon } from "react-icons/fa6";
+import { FaSun, FaMoon, FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { MdOutlineSegment } from "react-icons/md";
-import { texts } from "../i18n/texts.js";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { texts } from "../i18n/texts";
 import DownloadCV from "./DownloadCV";
-import DownloadCertificate from "./DownloadCertificate";
+import DownloadCertificates from "./DownloadCertificate";
 
 export default function Navbar({ setDarkMode, setLanguage, language, darkMode }) {
   const t = texts[language];
@@ -19,114 +18,151 @@ export default function Navbar({ setDarkMode, setLanguage, language, darkMode })
     { id: "projects", label: t.navbar.projects },
     { id: "contact", label: t.navbar.contact }
   ];
-
+  // Sincroniza la clase dark en el HTML
   useEffect(() => {
     document.documentElement.classList.toggle("dark", darkMode);
   }, [darkMode]);
 
   const toggleTheme = () => setDarkMode(prev => !prev);
-  const toggleLanguage = () =>
-    setLanguage(prev => (prev === "es" ? "en" : "es"));
-
+  const toggleLanguage = () => setLanguage(prev => (prev === "es" ? "en" : "es"));
+  // Cerrar menú móvil con tecla ESC
   useEffect(() => {
     const handleEsc = (e) => {
       if (e.key === "Escape") setOpen(false);
     };
-
     if (open) window.addEventListener("keydown", handleEsc);
     return () => window.removeEventListener("keydown", handleEsc);
   }, [open]);
-
+  // Cerrar menú móvil al hacer click fuera
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (menuRef.current && !menuRef.current.contains(e.target)) {
         setOpen(false);
       }
     };
-
     if (open) document.addEventListener("mousedown", handleClickOutside);
-    return () =>
-      document.removeEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [open]);
 
   return (
     <>
-      {/* Navbar */}
-      <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-5xl">
-        <div className="flex items-center justify-between px-6 py-2 rounded-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl shadow-md">
-
-          {/* Logo */}
-          <span className="font-extrabold text-lg bg-indigo-800 rounded-full px-4 py-3 text-white">JC</span>
-
-          {/* Desktop links */}
-          <div className="hidden md:flex items-center gap-5 font-mono font-semibold">
-            {navItems.map((item) => (
-              <a key={item.id} href={`#${item.id}`}
-                className="text-gray-700 dark:text-gray-200 hover:bg-indigo-800 hover:text-white px-4 py-3 rounded-full transition">
+    {/* Barra de Navegación Flotante */}
+    <nav className="fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[92%] max-w-5xl">
+      <div className="flex items-center justify-between px-6 py-3 rounded-full bg-white/80 dark:bg-slate-900/80 backdrop-blur-md shadow-lg shadow-slate-200/50 dark:border-slate-800/50 transition-colors duration-300">
+        {/* Logo/Iniciales */}
+        <a href="#hero" className="flex items-center justify-center font-extrabold text-sm tracking-wider bg-indigo-600 hover:bg-indigo-700 w-10 h-10 rounded-full text-white shadow-sm transition-transform hover:scale-105">JC</a>
+        {/* Enlances de Navegación (Desktop) */}
+        <div className="hidden md:flex items-center gap-1 text-sm font-medium">
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              className="text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 px-4 py-2 rounded-full transition-all duration-200">
                 {item.label}
-              </a>
-            ))}
+            </a>
+          ))}
+        </div>
+
+        {/* Redes sociales y controles de interfaz */}
+        <div className="flex items-center gap-3">
+          {/* Redes sociales (Desktop) */}
+          <div className="hidden md:flex items-center gap-2 border-r border-slate-200 dark:border-slate-800 pr-3">
+            <a
+              href="https://github.com/JCesar206"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-transform hover:scale-110"
+              title="Github"
+            >
+              <FaGithub size={18} />
+            </a>
+            <a
+              href="https://www.linkedin/in/jcesar206"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-transform hover:scale-110"
+              title="LinkedIn"
+            >
+              <FaLinkedin size={18} />
+            </a>
           </div>
 
-          {/* Links SocialMedia Desktop */}
-          <div className="hidden md:flex items-center gap-3 font-serif">
-            <a href="https://github.com/JCesar206" target="_blank" rel="noopener noreferrer"
-            className="hover:scale-145 hover:text-purple-600 dark:hover:text-violet-400" title="Github">
-              <FaGithub size={18}/>
+          {/* Botón de Modo Obscuro/Claro */}
+          <button
+            onClick={toggleTheme}
+            className="p-2 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-transform hover:scale-110 cursor-pointer"
+            aria-label="Cambiar tema"
+          >
+            {darkMode ? <FaSun size={18} /> : <FaMoon size={18} />}
+          </button>
+
+          {/* Botón de Idioma */}
+          <button
+            onClick={toggleLanguage}
+            className="p-2 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-transform hover:scale-110 cursor-pointer"
+            aria-label="Cambiar idioma"
+            title={language === "es" ? "Switch to English" : "Cambiar a Español"}
+          >
+            <TbMessageLanguage size={20} />
+          </button>
+
+          {/* Botón de Menú Móvil */}
+          <button
+            onClick={() => setOpen(!open)}
+            className="md:hidden p-2 text-slate-600 dark:text-slate-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-transform hover:scale-110 cursor-pointer"
+            aria-label="Menú de navegación"
+          >
+            {open ? <IoClose size={22} /> : <MdOutlineSegment size={22} />}
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    {/* Menú desplegable para dispositivos móviles*/}
+    {open && (
+      <div className="fixed inset-0 z-40 bg-slate-900/40 backdrop-blur-sm md:hidden transition-opacity">
+        <div
+          ref={menuRef}
+          className="absolute top-24 left-1/2 -translate-x-1/2 w-[90%] bg-white dark:bg-slate-900 rounded-3xl shadow-2xl flex flex-col gap-4 text-center border border-slate-200 dark:border-slate-800"
+        >
+          {navItems.map((item) => (
+            <a
+              key={item.id}
+              href={`#${item.id}`}
+              onClick={() => setOpen(false)}
+              className="font-medium text-slate-700 dark:text-slate-200 hover:text-indigo-600 dark:hover:text-indigo-400 py-2 transition-colors"
+            >
+              {item.label}
             </a>
-            <a href="https://www.linkedin.com/in/jcesar206" target="_blank" rel="noopener noreferrer"
-            className="hover:scale-150 hover:text-purple-600 dark:hover:text-violet-400" title="LinkedIn">
-              <FaLinkedin size={18}/>
+          ))}
+          <hr className="border-slate-200 dark:border-slate-800 my-1" />
+          {/* Redes y documentos en móvil */}
+          <div className="flex justify-center gap-4 py-2">
+            <a
+              href="https://github.com/JCesar206"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-slate-700 dark:text-slate-300 hover:text-indigo-600"
+            >
+              <FaGithub size={20} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jcesar206"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="p-2 text-slate-700 dark:text-slate-300 hover:text-indigo-600"
+            >
+              <FaLinkedin size={20} />
             </a>
           </div>
 
-          {/* Controls */}
-          <div className="flex items-center gap-4">
-            {/* Links SocialMedia Desktop Mobile */}
-            <div className="flex md:hidden items-center gap-3">
-              <a href="https://github.com/JCesar206" target="_blank" rel="noopener noreferrer"
-                className="text-gray-700 dark:text-gray-200 hover:text-purple-600 dark:hover:text-violet-400 transition hover:scale-150"><FaGithub size={20}/>
-              </a>
-              <a href="https://www.linkedin.com/in/jcesar206" target="_blank" rel="noopener noreferrer"
-                className="text-gray-700 dark:text-gray-200 hover:text-purple-600 dark:hover:text-violet-400 transition hover:scale-150"><FaLinkedin size={20} />
-            </a>
-            </div>
-            {/* Theme */}
-            <button onClick={toggleTheme}
-              className="hover:text-purple-600 dark:hover:text-violet-400 transition cursor-pointer hover:scale-150">
-              {darkMode ? <FaSun size={20}/> : <FaMoon size={20}/>}
-            </button>
-
-            {/* Language */}
-            <button onClick={toggleLanguage}
-              className="hover:text-purple-600 dark:hover:text-violet-400 transition cursor-pointer hover:scale-150">
-              <TbMessageLanguage size={20}/>
-            </button>
-
-            {/* Mobile menu */}
-            <button onClick={() => setOpen(!open)}
-              className="md:hidden hover:text-purple-600 dark:hover:text-violet-400 transition cursor-pointer hover:scale-150">
-              {open ? <IoClose size={20}/> : <MdOutlineSegment size={20}/>}
-            </button>
+          <div className="flex flex-col gap-2 pt-2">
+            <DownloadCV language={language} />
+            <DownloadCertificates language={language} />
           </div>
         </div>
-      </nav>
-
-      {/* Mobile menu */}
-      {open && (
-        <div className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm md:hidden">
-          <div ref={menuRef} className="absolute top-24 left-1/2 -translate-x-1/2 w-[90%] bg-white dark:bg-gray-900 rounded-3xl shadow-2xl p-6 flex flex-col gap-6 text-center">
-            {navItems.map((item) => (
-              <a key={item.id} href={`#${item.id}`} onClick={() => setOpen(false)}
-                className="font-semibold dark:hover:text-violet-400 hover:font-extrabold transition">
-                {item.label}
-              </a>
-            ))}
-            <DownloadCV language={language}/>
-            <DownloadCertificate language={language}/>
-          </div>
-        </div>
-      )}
+      </div>
+    )}
     </>
   );
 }
